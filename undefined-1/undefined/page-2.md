@@ -32,11 +32,11 @@
 
 ## 계층 구조 아키텍처
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 상위계층에서 바로 밑 하위 계층으로의 의존만 하는 것이 일반적인 구조이지만 편의를 위해 아래와 같이 더 아래 계층으로의 의존도 발생한다.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -59,7 +59,7 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 ### 고수준 모듈과 저수준 모듈
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 책에서 예로 들고 있는 고수준 모듈과 저수준 모듈이다. 고수준 모듈은 의미 있는 단일 기능을 제공하는 모듈이며, 저수준 모듈은 고수준 모듈의 기능을 구현하기 위한 구체화된 하위 기능을 의미한다. 위키백과에는 고수준 모듈은 '정책 결정' 이고 하위 모듈은 '세부 사항' 이라고 정리되어 있다.
 
@@ -71,33 +71,45 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 아래는 위키 백과에 있는 그림이다. 위에 있는 것이 전통적인 형태의 의존 관계로 고수준이 저수준에 의존하고 있는 모습이고 아래의 모습이 추상화(인터페이스)를 이용해서 저수준(Mechanism Layer)이 고수준에 의존하도록 의존 방향을 역전 시킨 모습이다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+이렇게 고수준 모듈에 인터페이스를 만들고 저수준 모듈이 이 인터페이스를 구현하고 이를 사용해야하는 고수준 모듈에서는 동일한 계층의 해당 인터페이스를 의존하면 DIP 가 적용되는 것이다. 이렇게 하면 위에서 말한 고수준 모듈이 저수준 모듈에 직접 의존함으로써 생기는 문제 두 가지가 해결된다.
+
+1. 기술을 변경해야할 상황이 생겼을때 이미 응용 계층에서 많은 코드가 특정 기술에 종속되어 있어서 기술 변경이 어려워진다.\
+   해결: 응용 계층에서는 오직 인터페이스와 인터페이스가 제공해주는 메소드에만 의존하는 형태로 바뀔 것이고, 기술 변경이 발생할 경우 구현체만 바꿔주면 된다. 즉, 기술 변경이 발생해도 응용 계층에는 코드 변경이 발생하지 않아도 되는 것이다.\
+
+2. 해당 응용 서비스 코드를 테스트하려면 의존하고 있는 그 특정 기술까지 함께 동작해야해서 의도치 않게 검증 단위가 커진다.\
+   해결: 인터페이스에 의존함으로써 테스트 때는 다른 구현체를 손쉽게 사용할 수 있다. 예를 들어 프로덕션 환경에서는 JPA 를 사용하고 테스트에서는 InMemory 에서 동작하도록 Repository 를 직접 만들 수도 있는 것이다.
 
 
 
 ### DIP 주의사항
 
-핵심은 추상화를 통해서 저수준이 고수준에 의존하도록 하는 것이다. 따라서 인터페이스 혹 은 추상클래스는 고수준 모듈에 속해야 한다.
+핵심은 추상화를 통해서 저수준이 고수준에 의존하도록 하는 것이다. 따라서 인터페이스 혹은 추상 클래스는 고수준 모듈에 속해야 한다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>d</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 위와 같은 형태가 제대로 구현된 DIP 이다.
 
 
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+위와 같은 형태가 책에서 소개하는 잘못된 DIP 의 구현 사례이다. 얼핏 보면 고수준 모듈이 저수준 모듈에 직접 의존하지 않고 추상계층에 의존하고 있는 모습이지만 인터페이스 자체도 저수준 모듈이므로 결국 고수준이 저수준에 의존하고 있는 모양 그대로이다.
+
+결국 추상화된 계층이 어느 모듈에 속해야 하는지 정확히 이해하는 것과 이에 맞는 패키지에 위치 시키면 된다.
+
+결론적으로 DIP를 적용시키면 인프라스트럭처 계층이 응용 계층 및 도메인 계층에 의존하게 된다. 아래 그림은 책에서 소개하고 있는 최종적으로 DIP 가 잘 적용된 아키텍처이다.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+이렇게 DIP를 녹여서 구조를 설계함으로써 기술만 바꿔야할 경우 응용 계층이나 도메인 계층에 변경이 발생하지 않고 저수준 모듈의 구현체에만 변경이 발생하게 된다.
 
 
 
-
-
-
-
-
-
-
+## 도메인 영역의 주요 구성요소
 
 
 
