@@ -3,6 +3,8 @@
 ## 강의
 
 * [스프링 데이터 JPA(백기선)](README.md)
+  * [CH01 핵심개념이해](undefined/jpa/ch01.md)
+  * [CH02 스프링 데이터 JPA 활용](undefined/jpa/ch02-jpa.md)
 
 ## 도서
 
