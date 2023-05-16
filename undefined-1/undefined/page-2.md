@@ -89,7 +89,7 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 핵심은 추상화를 통해서 저수준이 고수준에 의존하도록 하는 것이다. 따라서 인터페이스 혹은 추상 클래스는 고수준 모듈에 속해야 한다.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 위와 같은 형태가 제대로 구현된 DIP 이다.
 
