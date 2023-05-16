@@ -2,7 +2,7 @@
 
 ## 강의
 
-* [Page 3](README.md)
+* [스프링 데이터 JPA(백기선)](README.md)
 
 ## 도서
 
