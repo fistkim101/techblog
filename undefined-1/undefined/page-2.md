@@ -36,7 +36,7 @@
 
 상위계층에서 바로 밑 하위 계층으로의 의존만 하는 것이 일반적인 구조이지만 편의를 위해 아래와 같이 더 아래 계층으로의 의존도 발생한다.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -59,7 +59,7 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 ### 고수준 모듈과 저수준 모듈
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 책에서 예로 들고 있는 고수준 모듈과 저수준 모듈이다. 고수준 모듈은 의미 있는 단일 기능을 제공하는 모듈이며, 저수준 모듈은 고수준 모듈의 기능을 구현하기 위한 구체화된 하위 기능을 의미한다. 위키백과에는 고수준 모듈은 '정책 결정' 이고 하위 모듈은 '세부 사항' 이라고 정리되어 있다.
 
@@ -89,7 +89,7 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 핵심은 추상화를 통해서 저수준이 고수준에 의존하도록 하는 것이다. 따라서 인터페이스 혹은 추상 클래스는 고수준 모듈에 속해야 한다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 위와 같은 형태가 제대로 구현된 DIP 이다.
 
