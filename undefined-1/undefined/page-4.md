@@ -145,7 +145,7 @@ public class ChangeOrderService {
 
 그래서 해결책으로 책에서는 아래와 같이 ID를 이용한 간접 참조 방식을 소개하고 있다.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 처리하면 위에서 언급한 문제들이 어떻게 해결될까?
 

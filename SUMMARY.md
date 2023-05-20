@@ -1,8 +1,10 @@
 # Table of contents
 
+* [Intro](README.md)
+
 ## 강의
 
-* [스프링 데이터 JPA(백기선)](README.md)
+* [스프링 데이터 JPA(백기선)](<README (1).md>)
   * [CH01 핵심개념이해](undefined/jpa/ch01.md)
   * [CH02 스프링 데이터 JPA 활용](undefined/jpa/ch02-jpa.md)
 
@@ -40,4 +42,10 @@
 
 ## 기타
 
-* [백로그](undefined-2/undefined.md)
+* [일지](undefined-2/undefined/README.md)
+  * [2023. 05](undefined-2/undefined/2023.-05.md)
+  * [2023. 04](undefined-2/undefined/2023.-04.md)
+  * [2023. 03](undefined-2/undefined/2023.-03.md)
+  * [2023. 02](undefined-2/undefined/2023.-02.md)
+  * [2023. 01](undefined-2/undefined/2023.-01.md)
+* [백로그](undefined-2/undefined-1.md)
