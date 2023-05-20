@@ -24,7 +24,7 @@
   * [CH11 CQRS](undefined-1/undefined/ch11-cqrs.md)
 * [자바 ORM 표준 JPA 프로그래밍](undefined-1/orm-jpa/README.md)
   * [CH01 JPA 소개](undefined-1/orm-jpa/ch01-jpa.md)
-  * [CH02 시작](undefined-1/orm-jpa/ch02.md)
+  * [CH02 JPA 시작](undefined-1/orm-jpa/ch02-jpa.md)
   * [CH03 영속성 관리](undefined-1/orm-jpa/ch03.md)
   * [CH04 엔티티 매핑](undefined-1/orm-jpa/ch04.md)
   * [CH05 연관관계 매핑 기초](undefined-1/orm-jpa/ch05.md)

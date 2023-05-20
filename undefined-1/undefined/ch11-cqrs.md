@@ -4,7 +4,7 @@
 
 ### 단일 모델의 단점
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 위와 같이 특정 조회 화면에서 여러 애그리거트를 조회해야할 경우가 있다. 물론 이렇게 여러 애그리거트를 조회해와서 응답에 필요한 DTO 를 조합, 생성해서 응답으로 내보내는 것이 일반적이고 크게 문제는 없다. 하지만 CQRS 는 기능 수행(데이터 변경 등을 수행하는 모델)시 사용되는 모델과 위의 경우처럼 단순 조회시에 사용되는 모델 모두 동일한 단일 모델을 사용하다보면 경우에 따라 코드가 복잡해질 수 있다는 문제 의식을 전제로 한다.
 
