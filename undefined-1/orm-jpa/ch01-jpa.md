@@ -86,6 +86,6 @@ JPA 에서는 같은 트랜잭션에서 동일한 row 에 대해서 동일성 �
 
 Java Persistence API 는 자바 진영의 ORM 기술 표준이다. JPA 를 애플리케이션 계층 구조에서 보면 아래와 같다. 뒤에 다루겠지만 JPA 는 단지 자바 진영에서 정한 ORM 기술 표준, 명세일 뿐이고 이를 실제 구현한 구현 프레임워크 중 하나가 하이버네이트이다. 하이버네이트는 JPA 에서 선택한 표준 프레임워크이다.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 위에서 살펴본 바와 같이 JPA 가 객체 지향 패러다임과 데이터베이스 패러다임 간의 불일치를 해결해주는 덕분에 JPA 를 사용하면 객체 지향 패러다임에 입각한 개발에 더 집중할 수 있다.
