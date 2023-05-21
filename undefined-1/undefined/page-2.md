@@ -71,9 +71,9 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 아래는 위키 백과에 있는 그림이다. 위에 있는 것이 전통적인 형태의 의존 관계로 고수준이 저수준에 의존하고 있는 모습이고 아래의 모습이 추상화(인터페이스)를 이용해서 저수준(Mechanism Layer)이 고수준에 의존하도록 의존 방향을 역전 시킨 모습이다.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 고수준 모듈에 인터페이스를 만들고 저수준 모듈이 이 인터페이스를 구현하고 이를 사용해야하는 고수준 모듈에서는 동일한 계층의 해당 인터페이스를 의존하면 DIP 가 적용되는 것이다. 이렇게 하면 위에서 말한 고수준 모듈이 저수준 모듈에 직접 의존함으로써 생기는 문제 두 가지가 해결된다.
 
