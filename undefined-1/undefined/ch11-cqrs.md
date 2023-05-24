@@ -16,7 +16,7 @@
 
 결론적으로 상태 변경을 명령하는 모델과 조회하는 모델을 분리시키는 것을 CQRS 라고 한다.
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
