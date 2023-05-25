@@ -4,6 +4,8 @@
 
 ## 강의
 
+* [실전 Querydsl](undefined/querydsl/README.md)
+  * [Page 1](undefined/querydsl/page-1.md)
 * [스프링 데이터 JPA](<README (1).md>)
   * [CH01 핵심개념이해 1](undefined/jpa/ch01-1.md)
   * [CH02 핵심개념이해 2](undefined/jpa/ch02-2.md)
