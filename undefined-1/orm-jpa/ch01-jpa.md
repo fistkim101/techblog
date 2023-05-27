@@ -102,7 +102,7 @@ Java Persistence API 는 자바 진영의 ORM 기술 표준이다. JPA 를 애�
 
 ### JPA
 
-자바로 영속성을 관리하기 위한 API(Java Persistence API, JPA)이다. 같은 말이지만 자바 API 인데 그 목적이 영속성 관리인 것이다.it easier to build Spring-powered applications that use data access technologies.
+Java Persistence API 는 자바 진영의 ORM 기술 표준이다. 자바 진영에서 정한 ORM 기술 표준, 명세이다.
 
 ### hibernate
 
