@@ -91,3 +91,22 @@ Java Persistence API 는 자바 진영의 ORM 기술 표준이다. JPA 를 애�
 <figure><img src="../../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 위에서 살펴본 바와 같이 JPA 가 객체 지향 패러다임과 데이터베이스 패러다임 간의 불일치를 해결해주는 덕분에 JPA 를 사용하면 객체 지향 패러다임에 입각한 개발에 더 집중할 수 있다.
+
+아래는 백기선님 강의에서 정리한 내용인데, 같은 내용이어서 옮겨둔다. 각 계층에 대해서 짚어본다.
+
+### Spring Data JPA
+
+스프링 공식문서에도 잘 나와있다시피 Spring Data JPA 는 JPA based data access layer 를 support 하는 목적으로 만들어진 라이브러리이다.
+
+> Spring Data JPA, part of the larger Spring Data family, makes it easy to easily implement JPA based repositories. This module deals with enhanced support for JPA based data access layers. It makes&#x20;
+
+### JPA
+
+자바로 영속성을 관리하기 위한 API(Java Persistence API, JPA)이다. 같은 말이지만 자바 API 인데 그 목적이 영속성 관리인 것이다.it easier to build Spring-powered applications that use data access technologies.
+
+### hibernate
+
+ORM 프레임워크이다. 달리 표현하자면 JPA 의 구현체라고 할 수 있다. JPA 에서는 hibernate 를 내부적으로 가지고 있고 이를 활용하고 있다. (참고로 그래서 JPA를 거치지 않고 hibernate를 직접 활용하는 것도 가능하다.)
+
+hibernate 공식 홈페이지에도 hibernate를 JPA 의 구현체라고 밝히고 있다.
+
