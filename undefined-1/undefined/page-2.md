@@ -59,7 +59,7 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 ### 고수준 모듈과 저수준 모듈
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 책에서 예로 들고 있는 고수준 모듈과 저수준 모듈이다. 고수준 모듈은 의미 있는 단일 기능을 제공하는 모듈이며, 저수준 모듈은 고수준 모듈의 기능을 구현하기 위한 구체화된 하위 기능을 의미한다. 위키백과에는 고수준 모듈은 '정책 결정' 이고 하위 모듈은 '세부 사항' 이라고 정리되어 있다.
 

@@ -155,7 +155,7 @@ public class ChangeOrderService {
     어떤 DB 시스템이든 PK 를 사용하는 일반적인 형태는 같으므로 필요시 ID를 이용해서 검색하면 되기 때문에 처음부터 저렇게 설계를 해두면 아래와 같이 확장(시스템의 이원화)도 쉽게 가능하다.\
 
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -258,56 +258,3 @@ public class RegisterProductService {
 ```
 
 \~Validator 는 해당 애그리거트의 여러 기능 수행시 필요한 validation 전부를 책임진다. Bean 으로 만들어지므로 필요한 리포지터리를 주입 받아서 validation 수행시 필요한 조회(당연히 오직 조회만 써야한다)를 통해서 validation에 필요한 다른 애그리거트의 데이터를 확인할 수 있다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
