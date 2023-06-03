@@ -51,13 +51,18 @@
   * [CH15 고급 주제와 성능 최적화](undefined-1/orm-jpa/ch15.md)
   * [CH16 트랜잭션과 락, 2차 캐시](undefined-1/orm-jpa/ch16-2.md)
 
+## 토픽
+
+* [데이터베이스 구성 및 흐름](undefined-2/undefined.md)
+* [객체지향생활체조 원칙](undefined-2/undefined-1.md)
+
 ## 기타
 
-* [일지](undefined-2/undefined/README.md)
-  * [2023. 06](undefined-2/undefined/2023.-06.md)
-  * [2023. 05](undefined-2/undefined/2023.-05.md)
-  * [2023. 04](undefined-2/undefined/2023.-04.md)
-  * [2023. 03](undefined-2/undefined/2023.-03.md)
-  * [2023. 02](undefined-2/undefined/2023.-02.md)
-  * [2023. 01](undefined-2/undefined/2023.-01.md)
-* [백로그](undefined-2/undefined-1.md)
+* [일지](undefined-3/undefined/README.md)
+  * [2023. 06](undefined-3/undefined/2023.-06.md)
+  * [2023. 05](undefined-3/undefined/2023.-05.md)
+  * [2023. 04](undefined-3/undefined/2023.-04.md)
+  * [2023. 03](undefined-3/undefined/2023.-03.md)
+  * [2023. 02](undefined-3/undefined/2023.-02.md)
+  * [2023. 01](undefined-3/undefined/2023.-01.md)
+* [백로그](undefined-3/undefined-1.md)
