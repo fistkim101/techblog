@@ -5,6 +5,7 @@
 ## 강의
 
 * [실전 Querydsl](undefined/querydsl/README.md)
+  * [CH01 프로젝트 환경구성](undefined/querydsl/ch01.md)
   * [Page 1](undefined/querydsl/page-1.md)
 * [스프링 데이터 JPA](<README (1).md>)
   * [CH01 핵심개념이해 1](undefined/jpa/ch01-1.md)
