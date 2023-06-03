@@ -18,6 +18,12 @@
   * [CH03 핵심개념이해 3](undefined/jpa/ch03-3.md)
   * [CH04 Spring Data Common](undefined/jpa/ch04-spring-data-common.md)
   * [CH05 Spring Data JPA](undefined/jpa/ch05-spring-data-jpa.md)
+* [실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화](undefined/jpa-2-api/README.md)
+  * [Page 1](undefined/jpa-2-api/page-1.md)
+  * [Page 5](undefined/jpa-2-api/page-5.md)
+  * [Page 4](undefined/jpa-2-api/page-4.md)
+  * [Page 3](undefined/jpa-2-api/page-3.md)
+  * [Page 2](undefined/jpa-2-api/page-2.md)
 
 ## 도서
 
