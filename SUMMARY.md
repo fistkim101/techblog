@@ -65,4 +65,5 @@
   * [2023. 03](undefined-2/undefined/2023.-03.md)
   * [2023. 02](undefined-2/undefined/2023.-02.md)
   * [2023. 01](undefined-2/undefined/2023.-01.md)
+  * [2022. 12](undefined-3/undefined/2022.-12.md)
 * [백로그](undefined-2/undefined-1.md)
