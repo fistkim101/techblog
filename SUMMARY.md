@@ -5,8 +5,13 @@
 ## 강의
 
 * [실전 Querydsl](undefined/querydsl/README.md)
-  * [CH01 프로젝트 환경구성](undefined/querydsl/ch01.md)
-  * [Page 1](undefined/querydsl/page-1.md)
+  * [CH01 프로젝트 환경구성](undefined/querydsl/page-1.md)
+  * [CH02 예제 도메인 모델](undefined/querydsl/ch02.md)
+  * [CH03 기본문법](undefined/querydsl/ch03.md)
+  * [CH04 중급 문법](undefined/querydsl/ch04.md)
+  * [Page 3](undefined/querydsl/page-3.md)
+  * [Page 2](undefined/querydsl/page-2.md)
+  * [Page 1](<undefined/querydsl/page-1 (1).md>)
 * [스프링 데이터 JPA](<README (1).md>)
   * [CH01 핵심개념이해 1](undefined/jpa/ch01-1.md)
   * [CH02 핵심개념이해 2](undefined/jpa/ch02-2.md)
