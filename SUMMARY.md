@@ -11,7 +11,7 @@
   * [CH04 중급 문법](undefined/querydsl/ch04.md)
   * [CH05 실무활용 (스프링 데이터 JPA와 Querydsl)](undefined/querydsl/ch05-jpa-querydsl.md)
   * [CH06 스프링데이터JPA 가 제공하는 Querydsl 기능](undefined/querydsl/ch06-jpa-querydsl.md)
-  * [(추가) 별칭(alias) 관련 정리](undefined/querydsl/alias.md)
+  * [(추가) 별칭(alias)](undefined/querydsl/alias.md)
   * [(추가) Slice 쿼리](undefined/querydsl/slice.md)
 * [스프링 데이터 JPA](<README (1).md>)
   * [CH01 핵심개념이해 1](undefined/jpa/ch01-1.md)

@@ -2,7 +2,6 @@
 
 ### 우선순위
 
-* (강의) 실전 Querydsl
 * (강의) 실전 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화
 * (강의) 초보를 위한 쿠버네티스 안내서
 * 데이터베이스 작동원리 등 조인 작동원리 등 학습한거 그거&#x20;
@@ -22,7 +21,7 @@
 * [x] (도서) 자바 ORM 표준 JPA 프로그래밍
 * [x] (강의) 자바 ORM 표준 JPA 프로그래밍 - 기본편
 * [ ] (강의) 실전 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화
-* [ ] (강의) 실전 Querydsl
+* [x] (강의) 실전 Querydsl
 * [ ] (강의) 재고시스템으로 알아보는 동시성 이슈 해결방법
 * [ ] (강의) Master Microservices with Java, Spring, Docker, Kubernetes
 * [ ] (강의) Microservices: Clean Architecture, DDD, SAGA, Outbox & Kafka
