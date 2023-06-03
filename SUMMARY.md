@@ -59,6 +59,7 @@
 
 ## 토픽
 
+* [JAVA GC](undefined-2/java-gc.md)
 * [데이터베이스 구성 및 흐름](undefined-2/undefined.md)
 * [객체지향생활체조 원칙](<undefined-2/undefined-1 (1).md>)
 
@@ -73,3 +74,10 @@
   * [2023. 01](undefined-2/undefined/2023.-01.md)
   * [2022. 12](undefined-3/undefined/2022.-12.md)
 * [백로그](undefined-2/undefined-1.md)
+* [Business Model](undefined-3/business-model/README.md)
+  * [아이디어 불패의 법칙](undefined-3/business-model/undefined.md)
+  * [린 모바일 앱 개발](undefined-3/business-model/undefined-1.md)
+  * [린 스타트업](undefined-3/business-model/undefined-2.md)
+  * [제로투원](undefined-3/business-model/undefined-3.md)
+  * [MIT 스타트업 바이블](undefined-3/business-model/mit.md)
+  * [린치핀](undefined-3/business-model/undefined-4.md)
