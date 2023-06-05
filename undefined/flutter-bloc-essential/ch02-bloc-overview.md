@@ -45,6 +45,128 @@
 
 <figure><img src="https://fistkim101.github.io/images/BlocListener+and+BlocConsumer-page-005.jpg" alt=""><figcaption></figcaption></figure>
 
+다수의 Bloc 을 구독하여 이 결과들을 복합적으로 참조하여 새로운 결과를 만들어야할 경우 아래와 같이 MultiBlocListener를 사용할 수 있다.
+
+```dart
+import 'package:bloc_sample_todo_app/blocs/filtered_todos/filtered_todos_bloc.dart';
+import 'package:bloc_sample_todo_app/blocs/search_term/search_term_bloc.dart';
+import 'package:bloc_sample_todo_app/blocs/selected_filter/selected_filter_bloc.dart';
+import 'package:bloc_sample_todo_app/blocs/todos/todos_bloc.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../widgets/widgets.dart';
+
+class TodoList extends StatefulWidget {
+  const TodoList({Key? key}) : super(key: key);
+
+  @override
+  State<TodoList> createState() => _TodoListState();
+}
+
+class _TodoListState extends State<TodoList> {
+  @override
+  Widget build(BuildContext context) {
+    return MultiBlocListener(
+      listeners: [
+        BlocListener<TodosBloc, TodosState>(listener: (context, state) {
+          context.read<FilteredTodosBloc>().add(CalculateFilteredTodosEvent(
+                currentTodos: state.todos,
+                selectedFilter:
+                    context.read<SelectedFilterBloc>().state.selectedFilter,
+                searchTerm: context.read<SearchTermBloc>().state.searchTerm,
+              ));
+        }),
+        BlocListener<SearchTermBloc, SearchTermState>(
+            listener: (context, state) {
+          context.read<FilteredTodosBloc>().add(CalculateFilteredTodosEvent(
+                currentTodos: context.read<TodosBloc>().state.todos,
+                selectedFilter:
+                    context.read<SelectedFilterBloc>().state.selectedFilter,
+                searchTerm: state.searchTerm,
+              ));
+        }),
+        BlocListener<SelectedFilterBloc, SelectedFilterState>(
+            listener: (context, state) {
+          context.read<FilteredTodosBloc>().add(CalculateFilteredTodosEvent(
+                currentTodos: context.read<TodosBloc>().state.todos,
+                selectedFilter: state.selectedFilter,
+                searchTerm: context.read<SearchTermBloc>().state.searchTerm,
+              ));
+        }),
+      ],
+      child: BlocBuilder<FilteredTodosBloc, FilteredTodosState>(
+        builder: (context, state) {
+          return ListView.separated(
+            primary: false,
+            shrinkWrap: true,
+            separatorBuilder: (_, __) {
+              return const Divider(color: Colors.grey);
+            },
+            itemCount: state.filteredTodos.length,
+            itemBuilder: (_, index) =>
+                TodoItem(todo: state.filteredTodos[index]),
+          );
+        },
+      ),
+    );
+  }
+}
+
+```
+
+```dart
+import 'package:bloc/bloc.dart';
+import 'package:bloc_sample_todo_app/domain/models/models.dart';
+import 'package:bloc_sample_todo_app/enums/enums.dart';
+import 'package:equatable/equatable.dart';
+
+part 'filtered_todos_event.dart';
+part 'filtered_todos_state.dart';
+
+class FilteredTodosBloc extends Bloc<FilteredTodosEvent, FilteredTodosState> {
+  FilteredTodosBloc() : super(FilteredTodosState.initial()) {
+    on<CalculateFilteredTodosEvent>((event, emit) {
+      final List<TodoModel> _currentTodos = event.currentTodos;
+      final FilterType _selectedFilter = event.selectedFilter;
+      final String _searchTerm = event.searchTerm;
+
+      List<TodoModel> _filteredTodos;
+
+      switch (_selectedFilter) {
+        case FilterType.active:
+          _filteredTodos = _currentTodos
+              .where((TodoModel todo) => !todo.isCompleted)
+              .toList();
+          break;
+        case FilterType.completed:
+          _filteredTodos = _currentTodos
+              .where((TodoModel todo) => todo.isCompleted)
+              .toList();
+          break;
+        case FilterType.all:
+        default:
+          _filteredTodos = _currentTodos;
+          break;
+      }
+
+      if (_searchTerm.isNotEmpty) {
+        _filteredTodos = _filteredTodos
+            .where((TodoModel todo) => todo.description
+                .toLowerCase()
+                .contains(_searchTerm.toLowerCase()))
+            .toList();
+      }
+
+      emit(state.copyWith(filteredTodos: _filteredTodos));
+    });
+  }
+}
+
+```
+
+
+
 <figure><img src="https://fistkim101.github.io/images/BlocListener+and+BlocConsumer-page-006.jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://fistkim101.github.io/images/BuildContext+extension+methods-page-001.jpg" alt=""><figcaption></figcaption></figure>
