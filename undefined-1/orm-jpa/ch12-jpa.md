@@ -36,7 +36,7 @@ public @interface EnableJpaRepositories {
 
 결국 여기서 org.springframework.data.jpa.repository.JpaRepository 를 상속하는 interface 를 repository 로 사용할 수 있도록 bean 으로 등록해주고, 기본적인 자원들을 내부적으로 만들어준다고 볼 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
 ```
 @NoRepositoryBean
@@ -105,7 +105,7 @@ public interface Repository<T, ID> {
 
 또 한가지 재미있는 것은 아래와 같이 Common 계층과 Jpa 계층이 따로 있어서 다른 데이터베이스로의 변경도 고려가 되어 있다는 점이다.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
