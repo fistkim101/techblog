@@ -67,7 +67,7 @@
 
 ## 기타
 
-* [일지](undefined-2/undefined/README.md)
+* [작업일지](undefined-2/undefined/README.md)
   * [2023. 06](undefined-2/undefined/2023.-06.md)
   * [2023. 05](undefined-2/undefined/2023.-05.md)
   * [2023. 04](undefined-2/undefined/2023.-04.md)
@@ -75,7 +75,6 @@
   * [2023. 02](undefined-2/undefined/2023.-02.md)
   * [2023. 01](undefined-2/undefined/2023.-01.md)
   * [2022. 12](undefined-3/undefined/2022.-12.md)
-* [백로그](undefined-2/undefined-1.md)
 * [Business Model](undefined-3/business-model/README.md)
   * [아이디어 불패의 법칙](undefined-3/business-model/undefined.md)
   * [린 모바일 앱 개발](undefined-3/business-model/undefined-1.md)
@@ -83,3 +82,4 @@
   * [제로투원](undefined-3/business-model/undefined-3.md)
   * [MIT 스타트업 바이블](undefined-3/business-model/mit.md)
   * [린치핀](undefined-3/business-model/undefined-4.md)
+* [백로그](undefined-2/undefined-1.md)
