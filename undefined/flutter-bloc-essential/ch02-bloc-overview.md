@@ -167,4 +167,155 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
 
 <figure><img src="https://fistkim101.github.io/images/Cubit+vs+Bloc-page-002.jpg" alt=""><figcaption></figcaption></figure>
 
-\
+## Bloc 에서 언제 state 가 바뀌나
+
+결론부터 말하자면 emit 과정에서 state 를 갈아치운다. (기존 state와 비교하여 달라진 state 가 들어온 경우에만) Bloc\<Event, State>가 BlocBase\<State>를 상속하고 있고 BlocBase\<State>가 state를 필드로 갖고 있는 상태이다. &#x20;
+
+코드에서 확인할 수 있듯이 Bloc\<Event, State>의 emit 은 결국 super.emit(state)로 결국 BlocBase\<State>의 emit 을 호출하는 것이며 여기서 필드로 관리중인 기존 state 와 비교 후 다르면 새로운 state 을 할당해주는 방식으로 동작한다.
+
+```dart
+abstract class Bloc<Event, State> extends BlocBase<State>
+    implements BlocEventSink<Event> {
+  
+  ...
+      
+  @visibleForTesting
+  @override
+  void emit(State state) => super.emit(state);
+
+  ...
+    
+  }
+```
+
+```dart
+abstract class BlocBase<State>
+    implements StateStreamableSource<State>, Emittable<State>, ErrorSink {
+ 
+ ...
+ 
+   /// Updates the [state] to the provided [state].
+  /// [emit] does nothing if the [state] being emitted
+  /// is equal to the current [state].
+  ///
+  /// To allow for the possibility of notifying listeners of the initial state,
+  /// emitting a state which is equal to the initial state is allowed as long
+  /// as it is the first thing emitted by the instance.
+  ///
+  /// * Throws a [StateError] if the bloc is closed.
+  @protected
+  @visibleForTesting
+  @override
+  void emit(State state) {
+    try {
+      if (isClosed) {
+        throw StateError('Cannot emit new states after calling close');
+      }
+      if (state == _state && _emitted) return;
+      onChange(Change<State>(currentState: this.state, nextState: state));
+      _state = state;
+      _stateController.add(_state);
+      _emitted = true;
+    } catch (error, stackTrace) {
+      onError(error, stackTrace);
+      rethrow;
+    }
+  }
+
+...
+       
+}    
+```
+
+## Bloc 에서 언제 구독 위젯이 state 변화를 알게 되는가
+
+state 변화에 대해서 이를 구독하고 있는 위젯에 변화를 알리는 것은 핸들러 등록 부분에서 발생한다. 아래 코드를 보자.
+
+````dart
+  /// Register event handler for an event of type `E`.
+  /// There should only ever be one event handler per event type `E`.
+  ///
+  /// ```dart
+  /// abstract class CounterEvent {}
+  /// class CounterIncrementPressed extends CounterEvent {}
+  ///
+  /// class CounterBloc extends Bloc<CounterEvent, int> {
+  ///   CounterBloc() : super(0) {
+  ///     on<CounterIncrementPressed>((event, emit) => emit(state + 1));
+  ///   }
+  /// }
+  /// ```
+  ///
+  /// * A [StateError] will be thrown if there are multiple event handlers
+  /// registered for the same type `E`.
+  ///
+  /// By default, events will be processed concurrently.
+  ///
+  /// See also:
+  ///
+  /// * [EventTransformer] to customize how events are processed.
+  /// * [package:bloc_concurrency](https://pub.dev/packages/bloc_concurrency) for an
+  /// opinionated set of event transformers.
+  ///
+  void on<E extends Event>(
+    EventHandler<E, State> handler, {
+    EventTransformer<E>? transformer,
+  }) {
+    assert(() {
+      final handlerExists = _handlers.any((handler) => handler.type == E);
+      if (handlerExists) {
+        throw StateError(
+          'on<$E> was called multiple times. '
+          'There should only be a single event handler per event type.',
+        );
+      }
+      _handlers.add(_Handler(isType: (dynamic e) => e is E, type: E));
+      return true;
+    }());
+
+    final _transformer = transformer ?? _eventTransformer;
+    final subscription = _transformer(
+      _eventController.stream.where((event) => event is E).cast<E>(),
+      (dynamic event) {
+        void onEmit(State state) {
+          if (isClosed) return;
+          if (this.state == state && _emitted) return;
+          onTransition(Transition(
+            currentState: this.state,
+            event: event as E,
+            nextState: state,
+          ));
+          emit(state);
+        }
+
+        final emitter = _Emitter(onEmit);
+        final controller = StreamController<E>.broadcast(
+          sync: true,
+          onCancel: emitter.cancel,
+        );
+
+        void handleEvent() async {
+          void onDone() {
+            emitter.complete();
+            _emitters.remove(emitter);
+            if (!controller.isClosed) controller.close();
+          }
+
+          try {
+            _emitters.add(emitter);
+            await handler(event as E, emitter);
+          } catch (error, stackTrace) {
+            onError(error, stackTrace);
+            rethrow;
+          } finally {
+            onDone();
+          }
+        }
+
+        handleEvent();
+        return controller.stream;
+      },
+    ).listen(null);
+    _subscriptions.add(subscription);
+  }
+````
