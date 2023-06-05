@@ -61,7 +61,8 @@
 ## 토픽
 
 * [JAVA GC](undefined-2/java-gc.md)
-* [데이터베이스 구성 및 흐름](undefined-2/undefined.md)
+* [데이터베이스 구성 및 작동 흐름](undefined-2/undefined.md)
+* [데이터베이스 JOIN 원리](undefined-2/join.md)
 * [객체지향생활체조 원칙](<undefined-2/undefined-1 (1).md>)
 
 ## 기타
