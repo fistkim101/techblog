@@ -27,11 +27,17 @@
   * [Page 2](undefined/jpa-2-api/page-2.md)
 * [Flutter Provider Essential](undefined/flutter-provider-essential/README.md)
   * [CH01 Introduction](undefined/flutter-provider-essential/ch01-introduction.md)
-  * [CH02 Provider Overview](undefined/flutter-provider-essential/ch02-provider-overview.md)
+  * [CH02 Provider Overview](undefined/flutter-provider-essential/ch02-provider-overvie.md)
   * [CH03 TODO App](undefined/flutter-provider-essential/ch03-todo-app.md)
   * [CH04 Weather App](undefined/flutter-provider-essential/ch04-weather-app.md)
   * [CH05 Firebase Authentication App](undefined/flutter-provider-essential/ch05-firebase-authentication-app.md)
   * [(추가) Flutter + Firebase 연동](undefined/flutter-provider-essential/flutter-+-firebase.md)
+* [Flutter Bloc Essential](undefined/flutter-bloc-essential/README.md)
+  * [CH01 Introduction](undefined/flutter-bloc-essential/ch01-introduction.md)
+  * [CH02 Bloc Overview](undefined/flutter-bloc-essential/ch02-bloc-overview.md)
+  * [CH03 TODO App](undefined/flutter-bloc-essential/ch03-todo-app.md)
+  * [CH04 Weather App](undefined/flutter-bloc-essential/ch04-weather-app.md)
+  * [CH05 Firebase Authentication App](undefined/flutter-bloc-essential/ch05-firebase-authentication-app.md)
 
 ## 도서
 

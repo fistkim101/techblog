@@ -1,4 +1,4 @@
-# CH02 Provider Overvie
+# CH02 Provider Overview
 
 <figure><img src="https://fistkim101.github.io/images/section-overview-page-001.jpg" alt=""><figcaption></figcaption></figure>
 
