@@ -181,6 +181,28 @@ class FilteredTodosBloc extends Bloc<FilteredTodosEvent, FilteredTodosState> {
 
 <figure><img src="https://fistkim101.github.io/images/BuildContext+extension+methods-page-006.jpg" alt=""><figcaption></figcaption></figure>
 
+다음은 BlocBuilder, BlocConsumer, BlocListener 의 차이에 관한 내용이다.
+
+> Flutter에서 사용되는 상태관리 라이브러리인 Bloc 패턴에서, UI와 상태관리 블록(Bloc) 간의 상호작용을 돕는 위젯들에는 BlocBuilder, BlocConsumer, BlocListener가 있다. 이들의 차이는 다음과 같다.
+>
+>
+>
+> 1. BlocBuilder
+>
+> BlocBuilder는 UI를 화면에 그릴 때 사용되는 위젯 중 하나로, BlocProvider로부터 Bloc을 가져와서 화면에 그리기 위한 Builder 함수를 호출한다. Builder 함수는 현재 상태에 따라 UI를 생성하는데, 이 UI는 상태가 변경될 때마다 새로 그려진다. 따라서 BlocBuilder는 Bloc의 상태가 변경될 때마다 UI를 갱신하는데 사용된다.
+>
+> 2. BlocConsumer
+>
+> BlocConsumer는 BlocBuilder와 유사하지만, UI를 그리는 Builder 함수뿐만 아니라 상태가 변경될 때마다 수행할 이벤트도 등록할 수 있다. 즉, BlocBuilder와 달리 상태 변경 이벤트에 따른 동작을 처리할 수 있다.
+>
+>
+>
+> 3. BlocListener
+>
+> BlocListener는 Bloc의 상태 변경 이벤트를 수신하는 위젯으로, BlocBuilder나 BlocConsumer와 달리 UI를 그리지는 않는다. 대신, Bloc에서 상태가 변경될 때마다 수행할 이벤트를 등록할 수 있다. BlocListener는 Bloc이 발생시키는 상태 변경 이벤트에 따라 적절한 동작을 수행하는데 사용된다. 예를 들어, 상태가 변경될 때마다 화면에 Toast 메시지를 출력하는 등의 동작을 처리할 수 있다.
+
+즉, BlocBuilder는 상태를 바라보고, BlocConsumer는 상태를 바라보면서 이벤트를 처리하고, BlocListener는 이벤트를 바라본다고 할 수 있다. 이들은 각각의 상황에서 필요에 따라 적절한 위젯을 선택하여 사용하면 된다.
+
 <figure><img src="https://fistkim101.github.io/images/Bloc+Access+-+context-page-001.jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://fistkim101.github.io/images/Bloc+Access+-+context-page-002.jpg" alt=""><figcaption></figcaption></figure>
