@@ -1,4 +1,4 @@
-# (추가) 별칭(alias) 관련 정리
+# (+) 별칭(alias)
 
 queryDsl 로 join 을 할 때, alias 를 걸어줘도 되고 안걸어줘도 무관하다.
 
