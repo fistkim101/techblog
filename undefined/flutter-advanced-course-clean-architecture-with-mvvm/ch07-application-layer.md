@@ -1,4 +1,4 @@
-# CH04 Application Layer
+# CH07 Application Layer
 
 ## Application Layer 역할
 
@@ -6,7 +6,7 @@
 
 <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
-## 내가 생각하는 Application Layer 구성
+## 내가 생각하는 이상적인 Application Layer 구성
 
 내 생각에는 더 들어갈 만한 것들이 있어서 최종적으로 아래와 같이 들어가면 좋을 것 같다.
 

@@ -11,8 +11,8 @@
   * [CH04 중급 문법](undefined/querydsl/ch04.md)
   * [CH05 실무활용 (스프링 데이터 JPA와 Querydsl)](undefined/querydsl/ch05-jpa-querydsl.md)
   * [CH06 스프링데이터JPA 가 제공하는 Querydsl 기능](undefined/querydsl/ch06-jpa-querydsl.md)
-  * [(추가) 별칭(alias)](undefined/querydsl/alias.md)
-  * [(추가) Slice 쿼리](undefined/querydsl/slice.md)
+  * [(+) 별칭(alias)](undefined/querydsl/+-alias.md)
+  * [(+) Slice 쿼리](undefined/querydsl/+-slice.md)
 * [스프링 데이터 JPA](<README (1).md>)
   * [CH01 핵심개념이해 1](undefined/jpa/ch01-1.md)
   * [CH02 핵심개념이해 2](undefined/jpa/ch02-2.md)
@@ -42,13 +42,13 @@
   * [CH01 Introduction](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch01-introduction.md)
   * [CH02 Clean Architecture 4 Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch02-clean-architecture-4-layer.md)
   * [CH03 MVVM](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch03-mvvm.md)
-  * [CH04 Application Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-application-layer.md)
+  * [CH04 Data Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer.md)
+  * [CH05 Domain Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch05-domain-layer.md)
+  * [CH06 Presentation Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch06-presentation-layer.md)
+  * [CH07 Application Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer.md)
   * [(+) Application Layer - DI](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-di.md)
   * [(+) Application Layer - l10n](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-l10n.md)
   * [(+) Application Layer - environment](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-environment.md)
-  * [CH05 Presentation Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch05-presentation-layer.md)
-  * [CH06 Domain Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch06-domain-layer.md)
-  * [CH07 Data Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-data-layer.md)
 
 ## 도서
 
