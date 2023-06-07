@@ -90,7 +90,7 @@
 * [데이터베이스 JOIN 원리](undefined-2/join.md)
 * [객체지향생활체조 원칙](<undefined-2/undefined-1 (1).md>)
 * [Flutter](undefined-2/flutter/README.md)
-  * [Flutter Basic](undefined-2/flutter/flutter-basic.md)
+  * [Flutter Basic](undefined-2/flutter/page-6.md)
   * [StatefulWidget 생명주기](undefined-2/flutter/statefulwidget.md)
   * [Flutter 가 위젯을 그리는 원리](undefined-2/flutter/flutter.md)
   * [Column 과 Row 의 MainAxisSize](undefined-2/flutter/column-row-mainaxissize.md)

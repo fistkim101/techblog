@@ -194,4 +194,4 @@ public class SpringJpaWhiteshipStudyApplication {
 
 메소드 이름 분석의 경우 정해진 규칙에 따라 분석을 하는데 이건 방식이 이렇다고만 인지하면 된다. 아래 내용은 규칙에 대한 극히 일부를 정리한 것이며 메소드 선언시 IDE 의 도움을 받아서 편하게 선언하자.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
