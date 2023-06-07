@@ -2,7 +2,7 @@
 description: firebase_cli 이용한 firebase 와 flutter 연동
 ---
 
-# (추가) Flutter + Firebase 연동
+# (+) Flutter + Firebase 연동
 
 ## 1. firebase-cli 를 설치해야한다. mac 에서는 brew 로 설치가 가능하다. firebase 에 생성된 프로젝트 정보들을 가져오기 위해서 필요하다. <a href="#1-firebase-cli-mac-brew-firebase" id="1-firebase-cli-mac-brew-firebase"></a>
 

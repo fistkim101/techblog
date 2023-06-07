@@ -31,7 +31,7 @@
   * [CH03 TODO App](undefined/flutter-provider-essential/ch03-todo-app.md)
   * [CH04 Weather App](undefined/flutter-provider-essential/ch04-weather-app.md)
   * [CH05 Firebase Authentication App](undefined/flutter-provider-essential/ch05-firebase-authentication-app.md)
-  * [(+) Flutter + Firebase 연동](undefined/flutter-provider-essential/+-flutter-+-firebase.md)
+  * [(+) Flutter + Firebase 연동](undefined/flutter-provider-essential/flutter-+-firebase.md)
 * [Flutter Bloc Essential](undefined/flutter-bloc-essential/README.md)
   * [CH01 Introduction](undefined/flutter-bloc-essential/ch01-introduction.md)
   * [CH02 Bloc Overview](undefined/flutter-bloc-essential/ch02-bloc-overview.md)
@@ -42,13 +42,14 @@
   * [CH01 Introduction](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch01-introduction.md)
   * [CH02 Clean Architecture 4 Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch02-clean-architecture-4-layer.md)
   * [CH03 MVVM](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch03-mvvm.md)
-  * [CH04 Data Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer.md)
+  * [CH04 Data Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer/README.md)
+    * [(+) Data Layer - Network](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer/+-data-layer-network.md)
   * [CH05 Domain Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch05-domain-layer.md)
   * [CH06 Presentation Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch06-presentation-layer.md)
-  * [CH07 Application Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer.md)
-  * [(+) Application Layer - DI](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-di.md)
-  * [(+) Application Layer - l10n](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-l10n.md)
-  * [(+) Application Layer - environment](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-environment.md)
+  * [CH07 Application Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/README.md)
+    * [(+) Application Layer - DI](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-di.md)
+    * [(+) Application Layer - l10n](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-l10n.md)
+    * [(+) Application Layer - environment](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-environment.md)
 
 ## 도서
 
@@ -89,7 +90,11 @@
 * [데이터베이스 JOIN 원리](undefined-2/join.md)
 * [객체지향생활체조 원칙](<undefined-2/undefined-1 (1).md>)
 * [Flutter](undefined-2/flutter/README.md)
-  * [Page 6](undefined-2/flutter/page-6.md)
+  * [Flutter Basic](undefined-2/flutter/flutter-basic.md)
+  * [StatefulWidget 생명주기](undefined-2/flutter/statefulwidget.md)
+  * [Flutter 가 위젯을 그리는 원리](undefined-2/flutter/flutter.md)
+  * [Column 과 Row 의 MainAxisSize](undefined-2/flutter/column-row-mainaxissize.md)
+  * [Column 과 SingleChildScrollView](undefined-2/flutter/column-singlechildscrollview.md)
 
 ## 기타
 
