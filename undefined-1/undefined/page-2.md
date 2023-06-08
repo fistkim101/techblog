@@ -103,7 +103,7 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 결론적으로 DIP를 적용시키면 인프라스트럭처 계층이 응용 계층 및 도메인 계층에 의존하게 된다. 아래 그림은 책에서 소개하고 있는 최종적으로 DIP 가 잘 적용된 아키텍처이다.
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 DIP를 녹여서 구조를 설계함으로써 기술만 바꿔야할 경우 응용 계층이나 도메인 계층에 변경이 발생하지 않고 저수준 모듈의 구현체에만 변경이 발생하게 된다.
 

@@ -2,7 +2,7 @@
 
 ## 쿼리 실행 구조도
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
 
