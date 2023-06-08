@@ -4,6 +4,12 @@
 
 ## 강의
 
+* [코딩으로 학습하는 GoF의 디자인 패턴](undefined/gof/README.md)
+  * [Page 10](undefined/gof/page-10.md)
+  * [Page 9](undefined/gof/page-9.md)
+  * [Page 8](undefined/gof/page-8.md)
+  * [Page 7](undefined/gof/page-7.md)
+  * [Page 6](undefined/gof/page-6.md)
 * [실전 Querydsl](undefined/querydsl/README.md)
   * [CH01 프로젝트 환경구성](undefined/querydsl/page-1.md)
   * [CH02 예제 도메인 모델](undefined/querydsl/ch02.md)
@@ -20,11 +26,9 @@
   * [CH04 Spring Data Common](undefined/jpa/ch04-spring-data-common.md)
   * [CH05 Spring Data JPA](undefined/jpa/ch05-spring-data-jpa.md)
 * [실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화](undefined/jpa-2-api/README.md)
-  * [Page 1](undefined/jpa-2-api/page-1.md)
-  * [Page 5](undefined/jpa-2-api/page-5.md)
-  * [Page 4](undefined/jpa-2-api/page-4.md)
-  * [Page 3](undefined/jpa-2-api/page-3.md)
-  * [Page 2](undefined/jpa-2-api/page-2.md)
+  * [CH01 지연 로딩과 조회 성능 최적화](undefined/jpa-2-api/ch01.md)
+  * [CH02 컬렉션 조회 최적화](undefined/jpa-2-api/ch02.md)
+  * [CH03 전체 정리](undefined/jpa-2-api/ch03.md)
 * [Flutter Provider Essential](undefined/flutter-provider-essential/README.md)
   * [CH01 Introduction](undefined/flutter-provider-essential/ch01-introduction.md)
   * [CH02 Provider Overview](undefined/flutter-provider-essential/ch02-provider-overvie.md)
