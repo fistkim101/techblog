@@ -4,6 +4,7 @@
 
 ## 강의
 
+* [스프링 프레임워크 핵심 기술](undefined/undefined.md)
 * [코딩으로 학습하는 GoF의 디자인 패턴](undefined/gof/README.md)
   * [Page 10](undefined/gof/page-10.md)
   * [Page 9](undefined/gof/page-9.md)
