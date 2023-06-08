@@ -73,7 +73,7 @@ DIP 를 이해하기 위해서는 먼저 고수준 모듈과 저수준 모듈이
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 고수준 모듈에 인터페이스를 만들고 저수준 모듈이 이 인터페이스를 구현하고 이를 사용해야하는 고수준 모듈에서는 동일한 계층의 해당 인터페이스를 의존하면 DIP 가 적용되는 것이다. 이렇게 하면 위에서 말한 고수준 모듈이 저수준 모듈에 직접 의존함으로써 생기는 문제 두 가지가 해결된다.
 
