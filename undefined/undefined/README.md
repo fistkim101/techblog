@@ -1,5 +1,3 @@
-# 스프링 프레임워크 핵심 기술
+# 스프링 시큐리티
 
-{% embed url="https://www.inflearn.com/course/spring-framework_core/dashboard" %}
-
-엄청 오래전에 들었던 강의인데, 스스로 얼마나 늘었는지 점검도 하고 내가 기본적인 부분에서 놓치고 있는 것이 있는지 점검도 할겸 빠르게 다시 돌아보았다. 해당 강의에서 메인으로 소개하는 스프링의 핵심 개념 두 가지만 뽑아서 간략하게나마 정리를 다시 하고, 추가로 내가 필요하다 싶은 내용도 함께 덧붙인다.
+{% embed url="https://www.inflearn.com/course/%EB%B0%B1%EA%B8%B0%EC%84%A0-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0/dashboard" %}
