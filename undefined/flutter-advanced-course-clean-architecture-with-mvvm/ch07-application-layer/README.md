@@ -4,7 +4,7 @@
 
 어플리케이션 전체에서 공유되는 자원들을 정의하는 Layer 이다. 강의 샘플 코드에서는 아래와 같이 정의되어 있다. functions 의 경우 util 성격의 함수들을 클래스 없이 따로 선언해둔 것이다.
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 내가 생각하는 이상적인 Application Layer 구성
 
