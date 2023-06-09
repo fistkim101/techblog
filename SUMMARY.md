@@ -5,10 +5,10 @@
 ## 강의
 
 * [스프링 프레임워크 핵심 기술](undefined/undefined/README.md)
-  * [CH01 IOC 컨테이너](undefined/undefined/ch01-ioc/README.md)
-    * [(+) 스프링 의존성 관리](undefined/undefined/ch01-ioc/+.md)
-    * [(+) 생성자 주입 장점](undefined/undefined/ch01-ioc/+-1.md)
+  * [CH01 IOC 컨테이너](undefined/undefined/ch01-ioc.md)
   * [CH02 AOP](undefined/undefined/ch02-aop.md)
+  * [(+) 스프링 의존성 관리](undefined/undefined/+.md)
+  * [(+) 생성자 주입 장점](undefined/undefined/+-1.md)
 * [코딩으로 학습하는 GoF의 디자인 패턴](undefined/gof/README.md)
   * [Page 10](undefined/gof/page-10.md)
   * [Page 9](undefined/gof/page-9.md)
@@ -51,14 +51,14 @@
   * [CH01 Introduction](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch01-introduction.md)
   * [CH02 Clean Architecture 4 Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch02-clean-architecture-4-layer.md)
   * [CH03 MVVM](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch03-mvvm.md)
-  * [CH04 Data Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer/README.md)
-    * [(+) Data Layer - Network](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer/+-data-layer-network.md)
+  * [CH04 Data Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer.md)
+  * [(+) Data Layer - Network](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-data-layer-network.md)
   * [CH05 Domain Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch05-domain-layer.md)
   * [CH06 Presentation Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch06-presentation-layer.md)
-  * [CH07 Application Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/README.md)
-    * [(+) Application Layer - DI](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-di.md)
-    * [(+) Application Layer - l10n](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-l10n.md)
-    * [(+) Application Layer - environment](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-environment.md)
+  * [CH07 Application Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer.md)
+  * [(+) Application Layer - l10n](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-l10n.md)
+  * [(+) Application Layer - DI](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-di.md)
+  * [(+) Application Layer - environment](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-environment.md)
 
 ## 도서
 
