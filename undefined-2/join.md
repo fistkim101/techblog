@@ -52,13 +52,13 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 > 만약 두 테이블간에 매칭되지 않는 행들의 집합을 결과물로 원할때 가장 간단한 접근은 두 개의 네스티드 루프를 두는 것이다. 하나는 왼쪽 테이블을 바깥쪽 반복문에 두는 것이고 하나는 오른쪽 테이블을 바깥쪽 반복문에 두는 것이다. 여기서 보면 결국 두 테이블이 모두 바깥쪽 반복문에 위치한다. 그래서 FULL OUTER JOIN 이다.
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 전체 벤다이어그램
 
 누군가 정리를 잘 해놓은 것을 찾아서 아래에 옮겨왔다.
 
-<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>출처 : <a href="https://inpa.tistory.com/entry/MYSQL-%F0%9F%93%9A-JOIN-%EC%A1%B0%EC%9D%B8-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EA%B8%B0%EC%89%BD%EA%B2%8C-%EC%A0%95%EB%A6%AC">https://inpa.tistory.com/entry/MYSQL-%F0%9F%93%9A-JOIN-%EC%A1%B0%EC%9D%B8-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EA%B8%B0%EC%89%BD%EA%B2%8C-%EC%A0%95%EB%A6%AC</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption><p>출처 : <a href="https://inpa.tistory.com/entry/MYSQL-%F0%9F%93%9A-JOIN-%EC%A1%B0%EC%9D%B8-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EA%B8%B0%EC%89%BD%EA%B2%8C-%EC%A0%95%EB%A6%AC">https://inpa.tistory.com/entry/MYSQL-%F0%9F%93%9A-JOIN-%EC%A1%B0%EC%9D%B8-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EA%B8%B0%EC%89%BD%EA%B2%8C-%EC%A0%95%EB%A6%AC</a></p></figcaption></figure>
 
 ## JOIN 알고리즘
 

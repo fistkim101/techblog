@@ -18,7 +18,7 @@
 
 <figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 극단적으로는 아래와 같이 아예 명령과 조회를 위한 저장소까지 구분할 수 있다. 이때 데이터 동기화는 필수이다.
 

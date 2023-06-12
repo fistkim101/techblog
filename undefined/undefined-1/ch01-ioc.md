@@ -14,7 +14,7 @@ IOC 는 말 그대로 제어의 역전을 의미한다. 제어는 뭘 제어한�
 
 아래 예시 코드를 보자.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 public class UserService {
@@ -90,6 +90,6 @@ IOC 컨테이너는 위에서 자세히 정리한 IOC 를 위해 필요한 '컨�
 
 ### BeanFactory와 ApplicationContext
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 위 간단한 클래스 다이어그램에서도 알 수 있듯이 최상위에 BeanFactory 가 존재하며 ApplicationContext는 BeanFactory 이외에 여러 자원들을 상속하며 기능을 확장, 제공한다.
