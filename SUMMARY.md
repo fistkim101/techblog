@@ -8,7 +8,7 @@
   * [CH01 스프링 시큐리티 아키텍처](undefined/undefined/ch01.md)
   * [Page 5](undefined/undefined/page-5.md)
   * [Page 4](undefined/undefined/page-4.md)
-  * [Page 3](undefined/undefined/page-3.md)
+  * [(+) 스프링 시큐리티 + JWT](undefined/undefined/+-+-jwt.md)
 * [모든 개발자를 위한 HTTP 웹 기본 지식](undefined/http/README.md)
   * [CH01 인터넷 네트워크](undefined/http/ch01.md)
   * [CH02 HTTP 기본](undefined/http/ch02-http.md)
