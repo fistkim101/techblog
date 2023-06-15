@@ -6,9 +6,10 @@
 
 * [스프링 시큐리티](undefined/undefined/README.md)
   * [CH01 스프링 시큐리티 아키텍처](undefined/undefined/ch01.md)
-  * [Page 5](undefined/undefined/page-5.md)
+  * [딱 자주 쓰거나 필요한 필터만 정리하자](undefined/undefined/undefined.md)
   * [Page 4](undefined/undefined/page-4.md)
   * [(+) 스프링 시큐리티 + JWT](undefined/undefined/+-+-jwt.md)
+  * [(+) 과거 정리 노트](undefined/undefined/+.md)
 * [모든 개발자를 위한 HTTP 웹 기본 지식](undefined/http/README.md)
   * [CH01 인터넷 네트워크](undefined/http/ch01.md)
   * [CH02 HTTP 기본](undefined/http/ch02-http.md)
