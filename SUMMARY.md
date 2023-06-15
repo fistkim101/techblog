@@ -5,7 +5,7 @@
 ## 강의
 
 * [스프링 시큐리티](undefined/undefined/README.md)
-  * [Page 1](undefined/undefined/page-1.md)
+  * [CH01 스프링 시큐리티 아키텍처](undefined/undefined/ch01.md)
   * [Page 5](undefined/undefined/page-5.md)
   * [Page 4](undefined/undefined/page-4.md)
   * [Page 3](undefined/undefined/page-3.md)
