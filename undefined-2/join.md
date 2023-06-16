@@ -14,7 +14,7 @@
 
 즉, NL Join 시에 바깥쪽 반복문에서 드라이빙 테이블을 가져와 순차적으로 진행하면서 안쪽 반복문에 드라이븐 테이블을 두고 이중 반복문을 돌리는데, 이때 안쪽 반복문에 두는 드라이븐 테이블과 공통적으로 존재하는 컬럼을 기준으로 최종 반환 결과 집합(composite rows)을 산출 하는 것이 INNER JOIN 이기 때문에 INNER 인 것이다.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
 
 ```sql
 SELECT * FROM TableA
@@ -52,7 +52,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 > 만약 두 테이블간에 매칭되지 않는 행들의 집합을 결과물로 원할때 가장 간단한 접근은 두 개의 네스티드 루프를 두는 것이다. 하나는 왼쪽 테이블을 바깥쪽 반복문에 두는 것이고 하나는 오른쪽 테이블을 바깥쪽 반복문에 두는 것이다. 여기서 보면 결국 두 테이블이 모두 바깥쪽 반복문에 위치한다. 그래서 FULL OUTER JOIN 이다.
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 전체 벤다이어그램
 
@@ -81,7 +81,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 ### Sort Merge Join <a href="#sort-merge-join" id="sort-merge-join"></a>
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -94,7 +94,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 ### Hash Join <a href="#hash-join" id="hash-join"></a>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
 Hash Join 은 네스티드 루프 조인의 랜덤 액세스 문제와 Sort 머지 조인의 정렬 비용 문제를 해결한 방식이다. 네스티드 루프 조인에서 인덱스가 따로 존재하지 않아서 랜덤 액세스가 발생해야 하는 경우나 소트 머지 조인이 부적합한 경우 사용할 수 있다.
 

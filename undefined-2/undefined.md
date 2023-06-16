@@ -4,7 +4,7 @@
 
 <figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 백엔드 상에서 데이터베이스와 통신을 하는 것을 가정하면 위 그림에서 사용자가 곧 백엔드 서버가 된다.
 
