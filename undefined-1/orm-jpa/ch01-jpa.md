@@ -26,7 +26,7 @@ SQL 에 의존적인 개발이란 일일이 필요한 SQL 을 직접 다 작성�
 
 #### 상속 패러다임 불일치
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 왼쪽은 객체 패러다임이고 오른쪽은 데이터베이스 패러다임의 모습이다. 데이터베이스에서는 상속이라는 개념을 수용하고 있지 않다. 따라서 저렇게 테이블을 각각 만들어서 데이터를 보관해야한다.
 
