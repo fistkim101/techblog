@@ -8,7 +8,7 @@
     * Examples are : RestFul API calls, DB Calls
   * these calls may fail intermittently
 
-<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 에러가 발생하면 무한히 다시 subscribe()를 시도한다. onComplete() 을 받지 못했다면 끝없이 subscribe()를 다시 시도한다.
 
@@ -75,7 +75,7 @@ index equals 5
 
 반면에 아래와 같이 parameter로 retry count를 넣어주면 정해준 count 만큼만 retry를 시도한다.
 
-<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -121,7 +121,7 @@ retryWhen은 공식 문서의 설명이 너무 길어서 마블 다이어그램�
 * Use it when you have an use-case to subscribe to same publisher again
 * This operator works as long as No Exception is thrown
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 다시 구독(=반복)을 하기 위한 연산자이다. 강의에서도 설명하고 있고, 공식 문서에도 나와있듯이 onComplete() 이 실행되어야만 반복 구독을 실행한다. retry() 와 마찬가지로 parameter를 넣어주지 않으면 무한히 반복하고 parameter로 반복 횟수를 제한 할 수 있다.&#x20;
 

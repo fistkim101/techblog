@@ -35,7 +35,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 
 AbstractAutoProxyCreator 가 이 역할을 담당한다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27) (2).png" alt=""><figcaption></figcaption></figure>
 
 주석을 보면 아래와 같이 적혀있다.
 
