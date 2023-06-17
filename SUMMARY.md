@@ -6,8 +6,8 @@
 
 * [Reactive Programming in Modern Java using Project Reactor](undefined/reactive-programming-in-modern-java-using-project-reactor/README.md)
   * [Reactor execution model 1](undefined/reactive-programming-in-modern-java-using-project-reactor/reactor-execution-model-1.md)
-  * [Page 19](undefined/reactive-programming-in-modern-java-using-project-reactor/page-19.md)
-  * [Page 18](undefined/reactive-programming-in-modern-java-using-project-reactor/page-18.md)
+  * [Reactor execution model 2](undefined/reactive-programming-in-modern-java-using-project-reactor/reactor-execution-model-2.md)
+  * [Reactor execution model 3 - parallelism](undefined/reactive-programming-in-modern-java-using-project-reactor/reactor-execution-model-3-parallelism.md)
   * [Page 17](undefined/reactive-programming-in-modern-java-using-project-reactor/page-17.md)
   * [Page 16](undefined/reactive-programming-in-modern-java-using-project-reactor/page-16.md)
   * [Page 15](undefined/reactive-programming-in-modern-java-using-project-reactor/page-15.md)
