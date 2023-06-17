@@ -4,7 +4,7 @@
 
 ## 스프링 데이터 JPA 란
 
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 스프링 공식문서에도 잘 나와있다시피 Spring Data JPA 는 JPA based data access layer 를 support 하는 목적으로 만들어진 라이브러리이다.
 
@@ -107,7 +107,7 @@ public interface Repository<T, ID> {
 
 <figure><img src="../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 ## 커스텀 Repository 구현
 
