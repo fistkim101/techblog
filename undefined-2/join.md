@@ -83,7 +83,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 <figure><img src="../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 정렬할 데이터가 많은 경우 임시 영역(디스크)을 사용하기 때문에 정렬 비용으로 인해 성능이 떨어질 수도 있다.&#x20;
 
