@@ -11,7 +11,7 @@
   * [Reactor execution model 4 - overview](undefined/reactive-programming-in-modern-java-using-project-reactor/reactor-execution-model-4-overview.md)
   * [Transform](undefined/reactive-programming-in-modern-java-using-project-reactor/transform.md)
   * [Combine](undefined/reactive-programming-in-modern-java-using-project-reactor/combine.md)
-  * [Page 14](undefined/reactive-programming-in-modern-java-using-project-reactor/page-14.md)
+  * [Side Effect Methods](undefined/reactive-programming-in-modern-java-using-project-reactor/side-effect-methods.md)
   * [Page 13](undefined/reactive-programming-in-modern-java-using-project-reactor/page-13.md)
   * [Page 12](undefined/reactive-programming-in-modern-java-using-project-reactor/page-12.md)
   * [Page 5](undefined/reactive-programming-in-modern-java-using-project-reactor/page-5.md)

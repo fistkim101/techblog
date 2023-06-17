@@ -44,6 +44,6 @@ class LocaleManager {
 
 그 외에 아래와 같이 json 파일을 만들어줘야  하고, 파일 내에 아무것도 없으면 launch 시 에러가 난다. 파일이 없거나 파일 내용이 empty 라는 메세지가 뜬다. 당장 뭔가 쓸 일이 없어도 내용을 채워둬야한다.
 
-<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 다양한 사용법은 [공식문서](https://pub.dev/packages/easy\_localization)를 참고하자. 따로 연습한 샘플 프로젝트는 [여기](https://github.com/fistkim101/flutter\_i18n\_sample/tree/master/assets/translations)에 있다.
