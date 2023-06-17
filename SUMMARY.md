@@ -6,7 +6,11 @@
 
 * [NEXTSTEP 클린코드 with java 9기](undefined/nextstep-with-java-9/README.md)
   * [정리노트](undefined/nextstep-with-java-9/undefined.md)
-* [Page 5](undefined/page-5.md)
+* [NEXTSTEP DDD 세레나데 2기](undefined/nextstep-ddd-2/README.md)
+  * [CH01 도메인 주도 설계 이해](undefined/nextstep-ddd-2/ch01.md)
+  * [CH02 크게 소리 내어 모델링 하기](undefined/nextstep-ddd-2/ch02.md)
+  * [Page 12](undefined/nextstep-ddd-2/page-12.md)
+  * [Page 5](undefined/nextstep-ddd-2/page-5.md)
 * [Page 3](undefined/page-3.md)
 * [Page 1](undefined/page-1.md)
 * [스프링 시큐리티](undefined/undefined/README.md)
