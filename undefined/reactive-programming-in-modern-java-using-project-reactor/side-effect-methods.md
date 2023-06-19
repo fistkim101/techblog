@@ -8,7 +8,7 @@ side effect method(operator) 들은 Publisher에 의해서 emit 되는 모든 ev
 
 reactor에서는 여러가지 side effect method 들을 제공한다.
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 내가 잘못 알고 있었던 부분은 이러한 side effect method 들의 실행 순서이다. 왜 그렇게 생각하고 있었는지 이유는 정확히 모르겠지만 모든 doOn\~ operator 들이 target event의 직후에 발생한다고 생각했었다. 하지만 오히려 반대로 target event 바로 직전에 호출되는 것이 일반적인 흐름이었다.
 
