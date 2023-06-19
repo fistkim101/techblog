@@ -8,7 +8,7 @@
     * Examples are : RestFul API calls, DB Calls
   * these calls may fail intermittently
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 에러가 발생하면 무한히 다시 subscribe()를 시도한다. onComplete() 을 받지 못했다면 끝없이 subscribe()를 다시 시도한다.
 
@@ -75,13 +75,13 @@ index equals 5
 
 반면에 아래와 같이 parameter로 retry count를 넣어주면 정해준 count 만큼만 retry를 시도한다.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 
 
 ## retryWhen()
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 retryWhen은 공식 문서의 설명이 너무 길어서 마블 다이어그램만 발췌해 왔다. retry를 무작정 하지 않고 retrySpec에 의거하여 retry 를 한다는 것이 특징이다. 사실 실무에서는 retry 보다 retryWhen 을 쓸 가능성이 크다고 판단된다. 특히 정상적인 요청에 대해서 상대 서버가 간헐적으로 이상한 값을 내려준다면 이를 조건적으로 판단해서 retry 해주는 로직이 필요하므로 그 때 사용하면 좋다.
 
@@ -121,7 +121,7 @@ retryWhen은 공식 문서의 설명이 너무 길어서 마블 다이어그램�
 * Use it when you have an use-case to subscribe to same publisher again
 * This operator works as long as No Exception is thrown
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 다시 구독(=반복)을 하기 위한 연산자이다. 강의에서도 설명하고 있고, 공식 문서에도 나와있듯이 onComplete() 이 실행되어야만 반복 구독을 실행한다. retry() 와 마찬가지로 parameter를 넣어주지 않으면 무한히 반복하고 parameter로 반복 횟수를 제한 할 수 있다.&#x20;
 
