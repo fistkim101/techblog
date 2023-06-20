@@ -133,9 +133,9 @@ publisher - subscription - subscriber 원형에서 보면 subscribe에 따른 on
 
 강의에서는 reactor가 제공하는 exception/error 를 핸들링하는 operator 를 크게 두 부류로 나눠서 알려주고 있다.
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 로직 처리중 에러가 발생했을시 에러에 기반하여 응답을 해줘야 하는 경우가 있고, 에러가 났다고 해도 이를 무시하고 처리하던 flow를 이어서 처리를 해야할 경우가 있는데 이 두 경우를 고려하여 적절한 operator 를 사용해야 한다.
 
@@ -145,7 +145,7 @@ publisher - subscription - subscriber 원형에서 보면 subscribe에 따른 on
 
 ## onErrorReturn
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 up-stream 을 구독중에 에러가 발생하면 그 즉시 구독이 멈추는 것이 대전제임을 항상 명심한다.(위에 정리했다시피 new Subscription() 내부에서 try\~catch 방식이라는 점을 기억) onErrorReturn operator는 catch 에서 정해준 특정한 값을 onNext() 를 통해서 보내주는 역할을 수행한다.
 
@@ -187,7 +187,7 @@ up-stream 을 구독중에 에러가 발생하면 그 즉시 구독이 멈추는
 
 ## onErrorResume
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 onErrorReturn 은 단지 up-stream 구독중 error 가 발생했을때 원하는 특정한 값으로 대체해주는 operator 인 것과 대조적으로 onErrorResume 은 단어 그대로 에러가 나도 이를 '재개'해준다. 그리고 이렇게 구독을 재개해줄때 에러가 난 publisher 를 대체해줄 recovery publisher를 정의할 수 있도록 해준다.
 
@@ -261,7 +261,7 @@ onErrorResume()은 에러가 발생 했을때 '대체'될 publisher를 주는 �
 
 ## onErrorContinue
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 onErrorContinue 의 핵심은 에러를 발생시킨 element 를 drop 시킴으로써 element의 emit이 지속되도록 유지시켜 준다는 것이다. 그림과 같이 앞단의 operator의 subscribe에 영향을 줄 수 있다(influences upstream).
 
@@ -312,7 +312,7 @@ Process finished with exit code 0
 
 ## onErrorMap
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -349,7 +349,7 @@ recover 하진 않고 error를 바꿔준다. onErrorMap 의 parameter 자체가 
 
 ## doOnError
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 error 가 발생 했을때 부가적으로 처리하고자 하는 것이 있을때 사용한다. 일반적인 doOn\~ 의 순서처럼 target event 보다 먼저 실행됨을 기억해두기.
 
