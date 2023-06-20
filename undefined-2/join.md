@@ -69,7 +69,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 중첩 반복문(시간 복잡도 O(N\*M))(외부 테이블 행의 수 N, 내부 테이블 행의 수 M) 방식으로 동작하는 조인 방식이다. 그래서 대용량 데이터에는 적합하지 않다. 반복문의 외부에 있는 테이블을 선행 테이블 또는 외부 테이블(Outer Table)이라고 하며 반복문 내부에 있는 테이블을 후행 테이블 또는 내부 테이블(Inner Table)이라고 한다.
 
