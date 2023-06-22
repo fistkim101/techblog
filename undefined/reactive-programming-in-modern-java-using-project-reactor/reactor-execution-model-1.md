@@ -38,11 +38,11 @@ description: 리액터의 동작 모델&원리에 관한 탐구
 
 ## Spring MVC의 처리방식
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 Spring MVC는 **request per thread** 가 원칙이다. 즉, 각 요청에 대해서 스레드풀 내에 있는 하나의 스레드가 이를 전적으로 책임지고 끝까지 로직을 처리하여 응답을 주는 것이다. 위 그림은 이에 대한 설명이다. 브라우저의 요청에 대해서 스레드풀의 6번째 스레드가 이를 받아 처리하는 모습이다. (일반적으로 톰캣의 기본 스레드 설정은 200개 이다.)&#x20;
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 위 그림은 첫번째 그림의 Spring MVC Application 내부에서 스레드가 일하는 모습이다. 양쪽으로 검정색 선의 네모가 보이는데 둘은 서버이다. 즉, 좌측의 서버가 우측의 서버에 REST API를 호출하여 응답을 받아 처리하는 모습이다.
 
@@ -60,7 +60,7 @@ reactor의 execution model을 이해하기 위해 이 부분에서 유의하여 
 
 ## Spring WebFlux의 처리방식
 
-<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -68,7 +68,7 @@ Spring WebFlux는 Event Loop 방식으로 동작한다. 즉, 사용자들의 요
 
 Spring WebFlux는 reactor 와 netty를 기반으로 동작하는데 위 장표에도 나와있다시피 netty의 스레드 풀의 스레드 개수는 코어 \* 2 이다.
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -79,7 +79,7 @@ Spring WebFlux는 reactor 와 netty를 기반으로 동작하는데 위 장표�
 * 스레드의 수 자체가 적어서 CPU 경합시 발생하는 오버헤드가 상대적으로 적다.
 * 스레드가 블로킹되지 않아서 context switching 으로 인한 오버헤드 비용이 줄어든다.
 
-![](<../../.gitbook/assets/image (34).png>)
+![](<../../.gitbook/assets/image (63).png>)
 
 결국 위 그림과 같이 스레드들이 블로킹 되지 않는 시간적 구간에 다른 일을 처리할 수 있어서 성능을 쥐어 짤 수 있다. 위 MVC 때와 비교하자면 1번 스레드가 Task 1 을 수행하고 블로킹이 된 상태로 무의미하게 대기를 했었는데 WebFlux의 경우에는 그 시간에 다른 일을 처리할 수 있는 것이다.
 
@@ -151,6 +151,6 @@ project reactor는 Reactive Streams([https://www.reactive-streams.org/](https://
 
 IBM의 글에서 '비동기', '논블로킹' 모델 하나만 가져오자면 아래와 같다.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 블로킹과 논블로킹을 가르는 핵심은 요청자 측에서 요청 직후 '다른 일을 할 수 있는가'의 기준이다. 스레드 입장에서 보면 요청 직후 결과가 어찌되었건 상태가 waiting이 되는 것이 아니라 runnable을 그대로 유지할 수 있어야만 '논블로킹'하다고 할 수 있다.
