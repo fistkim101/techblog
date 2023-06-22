@@ -1,0 +1,104 @@
+# (최종 검토 필요) TestContainers
+
+
+
+## 아래
+
+#### 1. H2 인메모리 사용하면 되는데 왜 컨테이너로 테스트 할까? <a href="#1-h2" id="1-h2"></a>
+
+테스트시 인메모리 DB를 사용하면 빠르고 편리하다는 이점은 있다. 하지만 강의에서는 인메모리에서 발생되지 않는 문제가 개발이나 운영에서 나타날 수 있다고 한다. 근본적으로 그러한 문제는 인메모리 DB와 운영의 DB가 다른 부분에서 비롯되는 것인데 컨테이너를 이용해서 개발 및 운영의 DB 환경과 테스트 DB 환경을 똑같게 맞춰주어서 그런 상황을 미연에 방지할 수 있다.
+
+검색을 하던 중 [같은 이슈에 대해서 자세히 설명해둔 블로그](https://umbum.dev/1127) 를 찾았는데 정리가 엄청나게 잘되어있어서 여기 옮긴다.
+
+그리고 TestContainers와 같은 특별한 툴을 사용하지 않아도 테스트 환경에서 application-test.properties에서 db 정보를 지정해주고 지정된 정보와 같게 컨테이너로 DB를 띄워줘서 사용하면 되는데, 이러한 모든 상황을 간편하게 코드로 가능하도록 해주는 것이 TestContainers이다.
+
+\
+\
+
+
+#### 2. TestContainers 사용 <a href="#2-testcontainers" id="2-testcontainers"></a>
+
+강의에서는 docker-compose를 이용해서 테스트 컨테이너를 띄워서 사용하는 것까지 진행했는데, 그건 필요하면 추가적으로 정리하는 게 좋을 것 같고 지금은 가장 간단하게 mysql을 테스트 컨테이너로 띄워서 테스트에 사용하는 것을 정리해보았다.
+
+\
+
+
+**1) 의존성 추가(예제는 mysql 로 수행)**
+
+```
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
+    testImplementation group: 'org.testcontainers', name: 'mysql', version: '1.15.3'
+    testImplementation group: 'org.testcontainers', name: 'junit-jupiter', version: '1.15.2'
+```
+
+* mysql:mysql-connector-java -> 컨테이너로 한다고 해도 단지 컨테이너일뿐 결국 mysql DB에 연결해야하므로 드라이버가 필요하다.\
+
+* org.testcontainers:mysql -> @Container를 이용해서 테스트 인스턴스들이 전역적으로 접근하여 사용할 Container를 생성할 때 mysql 로 만들어야 하므로 필요하다.\
+
+* org.testcontainers:junit-jupiter -> @Testcontainers 와 @Container 를 제공해준다
+
+\
+
+
+**2) 테스트 코드 작성**
+
+```
+@SpringBootTest
+@ActiveProfiles("test")
+@Testcontainers
+class StudyTest {
+
+    @Autowired
+    StudyRepository studyRepository;
+
+    @Container
+    static GenericContainer mySQLContainer = new MySQLContainer("mysql:5.7")
+            .withDatabaseName("study-db")
+            .withExposedPorts(13306); // 포트를 선언해주지 않으면 알아서 랜덤하게 포트를 연다
+
+    @Test
+    void createTest() {
+        Study study = new Study();
+        studyRepository.save(study);
+    }
+
+}
+```
+
+* @ActiveProfiles -> 테스트로 컨테이너를 사용하기 위해서 properties로 설정을 잡아줘야할 몇 가지들이 있고 그걸 application-test.properties 를 만들어서 이용할 생각이므로 해당 테스트 클래스의 profile을 선언해준다.
+* @Testcontainers -> JUnit 5 확장팩으로 테스트 클래스에 @Container를 사용한 필드를 찾아서 컨테이너 라이프사이클 관련 메소드를 실행해준다. 이게 없으면 @BeforeAll, @AfterAll 을 이용해서 mysqlContainer.start(), mysqlContainer.stop() 같은 걸 해줘야한다.\
+
+* @Container -> 인스턴스 필드에 사용하면 모든 테스트 마다 컨테이너를 재시작 하고, 스태틱 필드에 사용하면 클래스 내부 모든 테스트에서 동일한 컨테이너를 재사용한다.
+
+\
+
+
+**3) application-test.properties**
+
+```
+spring.datasource.url=jdbc:tc:mysql:5.7:///study-db
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.datasource.driver-class-name=org.testcontainers.jdbc.ContainerDatabaseDriver
+```
+
+properties 를 설정해주지 않은 상태로 테스트를 실행하게되면 테스트를 위한 컨테이너 자체는 뜨지만 테스트 컨테이너의 존재 유무와 포트번호 등 테스트 컨테이너에 관한 정보는 스프링이 알고 있지 못하다. 내가 아무리 테스트 컨테이너를 사용한다고 의존성을 주입받아서 코드로 세팅을 해뒀다고 해도 아직 스프링에게 ‘여기 테스트 컨테이너 띄웠으니 테스트 할 때 이거 써’라고 알려준 적이 없기 때문이다. 따라서 properties를 통해서 테스트 컨테이너에 스프링이 테스트를 위해 연결되도록 매핑 정보를 넣어줘야 하고 지금 그 과정에서 properties를 작성한 것이다.
+
+주의해서 봐야할 점은 url에서 tc가 붙었다는 것이다. 여기에 관한 공식 document 내용은 아래와 같다.
+
+> As long as you have Testcontainers and the appropriate JDBC driver on your classpath, you can simply modify regular JDBC connection URLs to get a fresh containerized instance of the database each time your application starts up.
+
+> TC needs to be on your application’s classpath at runtime for this to work
+
+> We will use /// (host-less URIs) from now on to emphasis the unimportance of the host:port pair. From Testcontainers’ perspective, jdbc:mysql:5.7.22://localhost:3306/databasename and jdbc:mysql:5.7.22:///databasename is the same URI.
+
+\
+
+
+그리고 ContainerDatabaseDriver 는 스프링부트 버전에 따라 필요할 수 도 있고 없을 수도 있다.
+
+> For Spring Boot (Before version 2.3.0) you need to specify the driver manually spring.datasource.driver-class-name=org.testcontainers.jdbc.ContainerDatabaseDriver
+
+\
+테스트를 실행하고 로그를 지켜보고 있으면 컨테이너가 뜨기도 전에 계속 접속 시도를 하다가 연결이 되고 나서 테스트 쿼리를 날리는 것을 볼 수 있다. 이게 싫으면 연결이 될 때까지 일정시간을 기다리게 한다던가 하는 wait 전략을 추가적으로 세팅할 수 있는 것 같다. 자세한 사항은 [공식문서](https://www.testcontainers.org/features/startup\_and\_waits/#wait-strategies) 를 보고 나중에 정리해야겠다.
+
+\
