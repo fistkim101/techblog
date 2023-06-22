@@ -249,7 +249,7 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 ## 인증 원리
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
@@ -259,7 +259,7 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 ## 인가 원리
 
-<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
