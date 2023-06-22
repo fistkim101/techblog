@@ -109,6 +109,8 @@
   * [CH01 지연 로딩과 조회 성능 최적화](undefined/jpa-2-api/page-1.md)
   * [CH02 컬렉션 조회 최적화](undefined/jpa-2-api/page-5.md)
   * [CH03 전체 정리](undefined/jpa-2-api/page-4.md)
+* [초보를 위한 쿠버네티스 안내서](undefined/undefined-4/README.md)
+  * [Page 13](undefined/undefined-4/page-13.md)
 * [Flutter Provider Essential](undefined/flutter-provider-essential/README.md)
   * [CH01 Introduction](undefined/flutter-provider-essential/ch01-introduction.md)
   * [CH02 Provider Overview](undefined/flutter-provider-essential/ch02-provider-overvie.md)
