@@ -156,13 +156,13 @@ subscribeOn()과 publishOn()의 가장 큰 차이점은 publishOn()은 operator 
 
 이 부분에 대해서 그림으로 너무 잘 설명해놓은 자료가 있어 첨부한다. 모든 그림은 이 유투브([https://www.youtube.com/watch?v=hfupNIxzNP4\&t=2194s](https://www.youtube.com/watch?v=hfupNIxzNP4\&t=2194s))에서 가져왔다. 20분 40초 부터 해당 부분에 관련된 내용이 나온다.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 보면 subscribe() 를 시작한 thread가 op1, op2 까지 처리를 하고 publishOn 이후부터 thread 가 바뀌는 것을 볼 수 있다.
 
 
 
-<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 subscribeOn 은 동작하는 것이 약간 다르다. 위 publishOn과는 달리 숫자의 순서가 subscribe가 1이 아닌 것을 알 수 있다. Flux를 구성할때 안에 subscribeOn 이 있으면 무조건 subscribe 를 시작할때 subscribeOn이 지정해준 thread 로 시작을 한다는 의미이다.
 
@@ -170,7 +170,7 @@ subscribeOn 은 동작하는 것이 약간 다르다. 위 publishOn과는 달리
 
 
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 이건 subscribeOn 과 publishOn이 섞인 경우이다. 이거 그림의 숫자가 좀 잘못된 것 같은데 영상에서는 이렇게 나오긴 했다. 아무튼 subscribeOn 이 op1의 앞에 있든, op2의 뒤에 있든, op1과 op2의 중간에 있든 publishOn을 만나기 전까지의 chain 전체에는 subscribeOn에서 명시한 thread로 동작하고 publishOn이후는 publishOn에서 명시한 thread가 처리를 하며 subscribe 내부의 로직은 결국 구독이 되어 나온 시점이므로 publishOn에서 명시한 thread가 이를 처리하는게 맞다.
 

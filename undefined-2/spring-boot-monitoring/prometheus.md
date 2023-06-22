@@ -12,7 +12,7 @@
 
 ## Prometheus 구성
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 * the main [Prometheus server](https://github.com/prometheus/prometheus) which scrapes and stores time series data
 * [client libraries](https://prometheus.io/docs/instrumenting/clientlibs/) for instrumenting application code
