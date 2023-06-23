@@ -1,24 +1,18 @@
-# (최종 검토 필요) java enum은 메모리에 언제, 어떻게 할당되는가
+# java enum은 메모리에 언제, 어떻게 할당되는가
 
+생각해보면 new를 통해서 만들어준 적도 없는데 냅다 갖다 쓰기만 했다. 그 때부터 이상하다고 생각하고 찾아볼 생각을 했어야했다.
 
-
-
-
-## 최종 검토 아직 안했음. 아래 과거 필기.
-
-**java의 enum은 메모리에 언제, 어떻게 할당되는가**
-
-생각해보면 new를 통해서 만들어준 적도 없는데 냅다 갖다 쓰기만 했다. 그 때부터 이상하다고 생각하고 찾아볼 생각을 했어야했다. 아무튼, 생성되기 전의 enum은 private static final 로 선언만 된 채로 jvm의 method area(= static)에 상주해 있다가 처음 만나게 되면 heap에 이를 생성해주고 생성된 heap의 주소값을 열거형으로 선언해준 상수들이 할당 받게 된다. 그래서 동일한 enum 타입을 각기 다른 변수에 할당해주고 비교해줘도 같다는 판단을 할 수 있는 것이다.
+**enum 의 상수들은 static final 로서 해당 상수들은 클래스 로딩 시점에 생성되고 초기화 된다. 즉, 클래스 로딩 시점에 메모리 상의 method area 에 위치하며 싱글톤처럼 사용된다.**
 
 [공식문서에서도 생성자에 관해서](https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html) 아래와 같이 서술되어 있다.
 
 > Sole constructor. Programmers cannot invoke this constructor. It is for use by code emitted by the compiler in response to enum type declarations.
 
-**정리하자면 enum에 정의해주는 value들은 enum 을 선언한 곳에서 모두 그 때 생성이 되게 된다. 그래서 value에 파라미터를 설정할 경우 이에 맞게 사용될 생성자 역시 만들어 주어야 하는 것이고, 이 때 만들어준 생성자가 call 되는 것이다.**
 
-아주 간단한 원리인데 이걸 알고 나니까 enum에 대한 활용도가 매우 높아짐을 느낄 수 있었다.
 
-```
+아래 코드는 NEXTSTEP 의 클린코드 미션 수행중 작성한 코드이며 enum 을 적극 활용한 케이스라서 가져왔다.
+
+```java
 package calculator.entity;
 
 import common.Constant;
@@ -57,7 +51,7 @@ public enum OperationType {
 }
 ```
 
-```
+```java
 package calculator.entity;
 
 import common.Constant;
@@ -95,7 +89,7 @@ public class Calculator {
 
 ```
 
-```
+```java
 package common;
 
 public class Constant {
@@ -115,9 +109,4 @@ public class Constant {
 
 }
 ```
-
-\
-
-
-
 

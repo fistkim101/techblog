@@ -1,13 +1,14 @@
-# (최종 검토 필요) Reactive Streams 원리탐구 - 간단한 예제 직접 작성해보기
+# Reactive Streams 원리탐구 - 간단한 예제 직접 작성해보기
 
-리액티브를 학습하다가 자꾸 개념이 흔들리는 것 같아서 Publisher <-> Subscriber 의 흐름을 확실히 이해하고자 그 원형을 직접 구현해보았다. 정말 간단한 예제인데, 결국 이러한 개념을 바탕으로 Publisher 와 Subscriber 가 동작하며 **Reactor 는 필요한 모든 데이터 시퀀스에 대해서 이렇게 손으로 일일이 작성할 필요없이 알아서 Publisher <-> Subscriber 를 만들어주어서 우리가 편리하게 이를 사용할 수 있게 해주는 라이브러리라고 할 수 있다.**
+리액티브를 학습하다가 자꾸 개념이 흔들리는 것 같아서 Publisher <-> Subscriber 의 흐름을 확실히 이해하고자 그 원형을 직접 구현해보았다.
 
-\
+정말 간단한 예제인데, 결국 이러한 개념을 바탕으로 Publisher 와 Subscriber 가 동작하며 **Reactor 는 필요한 모든 데이터 시퀀스에 대해서 이렇게 손으로 일일이 작성할 필요없이 알아서 Publisher <-> Subscriber 를 만들어주어서 우리가 편리하게 이를 사용할 수 있게 해주는 라이브러리라고 할 수 있다.**
 
+[이 포스팅](https://engineering.linecorp.com/ko/blog/reactive-streams-with-armeria-1)이 정리가 무척 잘되어 있다. 복습시 꼭 읽도록 하자.
 
-#### Publisher <a href="#publisher" id="publisher"></a>
+## Publisher <a href="#publisher" id="publisher"></a>
 
-```
+```java
 package com.fistkim101.reactivestudy;
 
 import org.reactivestreams.Publisher;
@@ -49,12 +50,9 @@ public class FistPublisher implements Publisher<Integer> {
 }
 ```
 
-\
+## Subscriber <a href="#subscriber" id="subscriber"></a>
 
-
-#### Subscriber <a href="#subscriber" id="subscriber"></a>
-
-```
+```java
 package com.fistkim101.reactivestudy;
 
 import org.reactivestreams.Subscriber;
@@ -90,12 +88,9 @@ public class FistSubscriber implements Subscriber<Integer> {
 }
 ```
 
-\
+## Main
 
-
-#### Main <a href="#main" id="main"></a>
-
-```
+```java
 public class ReactiveStudyApplication {
 
     public static void main(String[] args) {
@@ -115,7 +110,4 @@ public class ReactiveStudyApplication {
 [FistSubscriber] onComplete called
 ```
 
-\
-
-
-<figure><img src="http://localhost:4000/assets/images/java/reactive-streams-flow.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
