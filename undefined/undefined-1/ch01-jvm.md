@@ -2,7 +2,7 @@
 
 ## JRE, JDK, JVM
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 위 그림은 JDK, JRE, JVM 간의 관계를 나타내는 그림이다. JVM 은 밑에서 다루기로 하고 JRE와 JDK 관계만 보자.
 
@@ -30,9 +30,9 @@ JVM 의 역할을 한 문장으로 요약하자면 '.class 파일을 실행해�
 
 
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 ### [클래스 로더](https://app.gitbook.com/s/Q0ynUCwOcYxaUYkg5rP6/\~/changes/197/undefined/undefined-1/+)
 
@@ -45,7 +45,7 @@ JVM 의 역할을 한 문장으로 요약하자면 '.class 파일을 실행해�
 
 ### 메모리
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 메모리가 어떻게 구성되어 있고 각 부분들이 어떤 역할을 하는지에 대해서 이해하는 것이 핵심이다.
 
@@ -75,7 +75,7 @@ JIT 컴파일러의 JIT는 Just-In-Time 이라는 뜻이다. 실시간으로 컴
 
 더 이상 참조되지 않는 객체를 모아서 정리한다. 자세한 사항은 따로 정리해둔 페이지를 참고하자. 위에 이미 썼지만 메모리 내 힙이 GC 의 활동 영역이다.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 ### 네이티브 메소드 인터페이스(Java Native Interface)
 
