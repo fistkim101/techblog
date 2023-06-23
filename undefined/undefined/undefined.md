@@ -235,7 +235,7 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 **DeligatingFilterProxy.java**
 
-<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
 
 위와 같이 delegate 에 FilterChainProxy 가 할당되는 모습이고 여기에 처리를 위임한다.
 
@@ -251,7 +251,7 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 <figure><img src="../../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
 예전에 필기한 내용과 강의 자료인데 이는 ThreadLocal 에 저장 된다는 것을 꼭 기억해두자. 동일 쓰레드 스코프이므로 request per thread 환경이라면 어디서든 꺼내서 쓸 수 있다. 웹플럭스 사용시 동일하게 동작할지는 확인해봐야한다.
 
@@ -298,7 +298,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 예외 처리
 
-<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
 
 기본적으로 저 필터에서 예외처리가 발생하고 있고 인증 및 인가 예외에 대한 처리는 내가 커스텀하게 처리가 가능하다. 아래 코드는 내가 실제로 작성한 코드이다.
 
@@ -315,7 +315,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 지원 필터들 순서별 목록(예전 버전이므로 최신 버전은 조금씩 다르다. 참고만 하기, 최신은 위 스크린샷 참고)
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 
 
