@@ -6,7 +6,7 @@ description: 변환에 관한 연산자 정리
 
 ## Flux.flatMap
 
-<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 up-stream 이 emit 하는 각각의 element 들을 들어오는 순서대로 모두 Publisher로 만들고, 이렇게 만들어진 multiple 한 Publisher 들을 모두  eagerly 하게 subscribe 해서 하나의 Flux로 merge 한 down-stream 을 반환한다.
 
@@ -146,7 +146,7 @@ flatMap 처럼 inner publisher 를 비동기적으로 subscribe 하지만 inner 
 
 ## Mono.flatMapMany
 
-<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 up-stream 의 element를 publisher 로 변환하여 이를 subscribe하여 Flux인 down-stream 을 만들어서 반환한다.
 
@@ -195,7 +195,7 @@ up-stream이 empty 일 경우 down-stream 에 제공할 기본 "값" 을 세팅�
 
 ## switchIfEmtpry
 
-<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 up-stream 이 empty  일 경우 down-stream 으로 대체할 "publisher"를 정의해주는 연산자이다. 즉, up-stream 이 비어있다면 switchIfEmpty 에 정의한 "publisher"가 곧 down-stream이 되는 것이다.
 
