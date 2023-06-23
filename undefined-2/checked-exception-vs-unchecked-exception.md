@@ -2,9 +2,9 @@
 
 둘의 차이를 간단히 말하자면 '명시적으로 에러 처리(check)를 강요(안하면 컴파일에서부터 에러가 난다)' 당하면 checked exception 이고 그렇지 않다면 unchecked exception 라고 할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 주의할 것은 runtime exception 의 상속 여부만으로 이를 구분지으면 error 가 포함이 되지 않는다는 것이다. 따라서 명시적으로 에러처리를 해주지 않으면 컴파일 에러가 나는 것이 checked exception 이라고 할 수 있으며, 반대로 명시적으로 에러처리를 해주지 않아도 컴파일 에러가 나지 않는 것이 unchecked exception 라고 할 수 있다. 대표적으로 runtime exception 을 상속하는 모든 exception 들이 unchecked exception 이라고 할 수 있다. 각각 알아보자.
 
