@@ -255,7 +255,7 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 예전에 필기한 내용과 강의 자료인데 이는 ThreadLocal 에 저장 된다는 것을 꼭 기억해두자. 동일 쓰레드 스코프이므로 request per thread 환경이라면 어디서든 꺼내서 쓸 수 있다. 웹플럭스 사용시 동일하게 동작할지는 확인해봐야한다.
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## 인가 원리
 

@@ -4,7 +4,7 @@
 
 매번 테스트 코드 짜는데에 공을 많이 들이긴 했는데, 정작 테스트가 동작 하는 원리에 대해서는 관심을 두지 않았던 것 같다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 IDE가 JUnit Platform Launcher를 로드하고 JUnit Platform Launcher가 JUnit Platform의 테스트 엔진을 로드한다. 그리고 테스트 엔진이 테스트 코드를 실행하는데 이 직전에 컴포넌트 스캔이 수행된다.
 
@@ -247,44 +247,75 @@ public @interface DevelopmentTest {
 
 ## JUnit 5 테스트 인스턴스
 
-JUnit은 기본적으로 @Test 마다 해당 @Test가 속한 클래스의 인스턴스를 새로 만든다. 하나의 테스트 클래스에 두 개의 @Test 가 있으면 테스트 클래스 전체를 테스트시에 기본적으로 클래스가 두 개 생긴다는 것이다. 아래 코드를 보자.
+JUnit은 기본적으로 @Test 마다 해당 @Test가 속한 클래스의 인스턴스를 새로 만든다. 하나의 테스트 클래스에 두 개의 @Test 가 있으면 테스트 클래스 전체를 테스트시에 기본적으로 클래스가 두 개 생긴다는 것이다.
 
-\
-
-
-왜냐하면 @Test 실행마다 이를 위한 독자적인 인스턴스를 늘 만들기 때문이다. 이는 @Test가 서로에게 주는 영향을 없애기 위해서 기본 전략으로 취하는 방법인데, JUnit 5에서는 이 기본 전략을 변경하는 것이 가능하다.
-
-\
-
-
-@TestInstance(Lifecycle.PER\_CLASS)
-
-* 테스트 클래스당 인스턴스를 하나만 만들어 사용한다.
-* 경우에 따라, 테스트 간에 공유하는 모든 상태를 @BeforeEach 또는 @AfterEach에서 초기화 할 필요가 있음
-* @BeforeAll과 @AfterAll을 인스턴스 메소드 또는 인터페이스에 정의한 default 메소드로 정의할 수도 있다.
-
+```java
+@TestInstance(TestInstance.Lifecycle.PER_METHOD)
 ```
-@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class StudyTest {
+
+이것이 기본 값이다. 테스트 인스턴스의 라이프 사이클이 '메소드 마다' 로 정해진다. (당연히 변경할 수 있다) 아래 코드를 보자.
+
+```java
+package com.example.securitysample.sample;
+
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+@TestInstance(TestInstance.Lifecycle.PER_METHOD) // default
+//@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class SampleTest {
+
+    int value = 0;
+    User user = new User();
+
+    @Test
+    void test1() {
+        value++;
+        System.out.println(value);
+        System.out.println(user);
+        Assertions.assertThat(value).isEqualTo(1);
+    }
+
+    @Test
+    void test2() {
+        value++;
+        System.out.println(value);
+        System.out.println(user);
+        Assertions.assertThat(value).isEqualTo(1);
+    }
+
 }
-```
-
-\
-
-
-***
-
-#### 9. JUnit 테스트 순서 <a href="#9-junit" id="9-junit"></a>
-
-한 클래스 내의 @Test 들은 특정한 순서에 의해 실행되지만 어떻게 그 순서를 정하는지는 의도적으로 분명히 하지 않는다. 이유는 테스트 인스턴스를 @Test 마다 독립적으로 생성하는 것과 같다. **즉, 제대로된 Unit 테스트라면 각 Unit test간에 누가 먼저 실행되든 서로에게 영향이 없어야 하기 때문이다.(멱등성의 개념과 어느정도 교집합이 있다고 생각된다)**
-
-하지만, 경우에 따라서 특정한 순서대로 테스트를 실행하고 싶을 때가 있는데, 이 때에는 @TestInstance(TestInstance.Lifecycle.PER\_CLASS)과 함께 @TestMethodOrder를 통해서 메소드마다 순서를 정할 수 있다.(굳이 같이 쓸 필요는 없다. 다만, 순서를 정한다는 것이 클래스 내 공유할 자원이 있을 확률이 높기에 예제를 이렇게 다룬 것)
-
-최근에 회사 일을 하면서도 실제로 회원가입을 먼저 해야 가능한 테스트 시나리오 내에서의 유닛 테스트를 위해서 따로 회원가입을 해주는 메소드를 따로 만들었다. 그리고 이를 @BeforeEach 처럼 특정 유닛 테스트전에 실행해서 회원가입을 한 뒤 거기서 토큰 정보를 추출하여 헤더에 이를 심어서 테스트를 하긴 했는데 뭐가 베스트인지는 아직도 잘 모르겠다. 내가 한 방법이 효율성은 떨어지긴 하지만 엄격한 의미에서 독립적인 유닛 테스트의 형태가 맞긴 하다고 생각하기 때문이다.\
-
 
 ```
+
+```
+1
+com.example.securitysample.sample.User@14be750c
+1
+com.example.securitysample.sample.User@4fe2dd02
+```
+
+value 가 두 테스트 중 하나에서는 2가 찍혀야 할텐데 둘 다 1이 찍혔다. 뿐만 아니라 user 라는 객체의 주소값도 두 테스트에서 다른 것을 볼 수 있다. 두 테스트에서 SampleTest 라는 테스트 인스턴스가 따로 따로 생성되어 사용되었다는 것을 알 수 있다.
+
+이는 @Test가 서로에게 주는 영향을 없애기 위해서 기본적으로 메소드 별로 인스턴스를 따로 만들어 주는 것이다. 그러한 기본 철학이 있기 때문에 테스트인스턴스의 라이프사이클 기본 전략이 PER\_METHOD 이다.
+
+PER\_CLASS 로 바꾸게 되면 @BeforeAll과 @AfterAll 을 static 처리 해줄 필요가 없어진다. 애초에 static 이어야 했던 이유가 인스턴스를 테스트 마다 새로 만드니까 모든 테스트 전 또는 후에 호출을 하기 위해서 static 처리를 해준 것인데 하나의 인스턴스에서 모든 테스트를 작동 시킬 거면 static 일 필요가 없기 때문이다.
+
+## JUnit 테스트 순서 <a href="#9-junit" id="9-junit"></a>
+
+한 클래스 내의 @Test 들은 특정한 순서에 의해 실행되지만 어떻게 그 순서를 정하는지는 의도적으로 분명히 하지 않는다. 이유는 테스트 인스턴스를 @Test 마다 독립적으로 생성하는 것과 같다.
+
+즉, 제대로된 Unit 테스트라면 각 Unit test간에 누가 먼저 실행되든 서로에게 영향이 없어야 하기 때문이다.(멱등성의 개념과 어느정도 교집합이 있다고 생각된다)
+
+하지만, 경우에 따라서 특정한 순서대로 테스트를 실행하고 싶을 때가 있는데, 이 때에는 @TestInstance(TestInstance.Lifecycle.PER\_CLASS)과 함께 @TestMethodOrder를 통해서 메소드마다 순서를 정할 수 있다.(굳이 같이 쓸 필요는 없다. 다만, 순서를 정한다는 것이 클래스 내 공유할 자원이 있을 확률이 높기에 예제를 이렇게 다룬 것)\
+
+
+```java
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) // @Order 라는 annotation으로 order를 정해주겠다고 선언하는 의미
@@ -294,15 +325,9 @@ class StudyTest {
 }
 ```
 
-\
+## junit-platform.properties
 
-
-***
-
-#### 10. junit-platform.properties <a href="#10-junit-platformproperties" id="10-junit-platformproperties"></a>
-
-junit-platform.properties는 JUnit 설정 파일로, 클래스패스 루트 (src/test/resources/)에 넣어두면 적용된다.\
-
+junit-platform.properties는 JUnit 설정 파일로, 클래스패스 루트 (src/test/resources/)에 넣어두면 적용된다.
 
 * 테스트 인스턴스 라이프사이클 설정
   * junit.jupiter.testinstance.lifecycle.default = per\_class
@@ -313,12 +338,7 @@ junit-platform.properties는 JUnit 설정 파일로, 클래스패스 루트 (src
 * 테스트 이름 표기 전략 설정
   * junit.jupiter.displayname.generator.default = org.junit.jupiter.api.DisplayNameGenerator$ReplaceUnderscores
 
-\
-
-
-***
-
-#### 11. JUnit 5 확장 모델 <a href="#11-junit-5" id="11-junit-5"></a>
+## JUnit 5 확장 모델
 
 JUnit 4의 확장 모델은 @RunWith(Runner), TestRule, MethodRule.\
 [JUnit 5의 확장 모델](https://junit.org/junit5/docs/current/user-guide/#extensions) 은 단 하나, Extension.\
@@ -335,7 +355,7 @@ JUnit 4의 확장 모델은 @RunWith(Runner), TestRule, MethodRule.\
   * 테스트 라이프사이클 콜백
   * 예외처리
 
-```
+```java
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 @ExtendWith(ExecutionTimeExtension.class)
 class StudyTest {
@@ -345,7 +365,7 @@ class StudyTest {
 \
 만약 위와 같이 THRESHOLD 와 같은 특정 값을 상수화 하지 않고 테스트 마다 다르게 설정하고 싶다면 @RegisterExtension을 이용한다.
 
-```
+```java
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class StudyTest {
 
@@ -354,10 +374,7 @@ class StudyTest {
 }
 ```
 
-\
-
-
-```
+```java
 
 public class ExecutionTimeExtension implements BeforeTestExecutionCallback, AfterTestExecutionCallback {
 
@@ -391,5 +408,3 @@ public class ExecutionTimeExtension implements BeforeTestExecutionCallback, Afte
 
 }
 ```
-
-\

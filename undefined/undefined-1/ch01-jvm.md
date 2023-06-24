@@ -2,7 +2,7 @@
 
 ## JRE, JDK, JVM
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 위 그림은 JDK, JRE, JVM 간의 관계를 나타내는 그림이다. JVM 은 밑에서 다루기로 하고 JRE와 JDK 관계만 보자.
 
@@ -30,7 +30,7 @@ JVM 의 역할을 한 문장으로 요약하자면 '.class 파일을 실행해�
 
 
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,7 +45,7 @@ JVM 의 역할을 한 문장으로 요약하자면 '.class 파일을 실행해�
 
 ### 메모리
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 메모리가 어떻게 구성되어 있고 각 부분들이 어떤 역할을 하는지에 대해서 이해하는 것이 핵심이다.
 
