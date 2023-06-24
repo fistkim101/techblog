@@ -2,7 +2,7 @@
 
 ## 아키텍처 구성
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>출처: 강의자료</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (2).png" alt=""><figcaption><p>출처: 강의자료</p></figcaption></figure>
 
 강의에서는 위 아키텍처를 세부적으로 나눠서 알아봤고 마지막 순서로 이를 종합 및 요약해서 설명해주고 있다. 전체적으로 위와 같은 구조로 실제로 동작하는지 디버거를 통해서 내부적으로 들여다보고, 필요시 부분적으로 상세히 정리한다.
 
@@ -243,13 +243,13 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 **FilterChainProxy.java**
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 스프링 시큐리티에서 제공해주는 여러 필터들을 확인할 수 있다.
 
 ## 인증 원리
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -261,7 +261,7 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 <figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 관리자에서 ROLE 을 사용할 일이 종종 있었다. 커스텀을 하게 될 경우 참고해두자. 참고로 아래와 같이 ROLE 의 하이라키 설정도 가능하다. 근데 잘 안 쓸 것 같다.
 
@@ -298,7 +298,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 예외 처리
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 기본적으로 저 필터에서 예외처리가 발생하고 있고 인증 및 인가 예외에 대한 처리는 내가 커스텀하게 처리가 가능하다. 아래 코드는 내가 실제로 작성한 코드이다.
 
@@ -315,7 +315,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 지원 필터들 순서별 목록(예전 버전이므로 최신 버전은 조금씩 다르다. 참고만 하기, 최신은 위 스크린샷 참고)
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 
 
