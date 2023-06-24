@@ -53,6 +53,7 @@
 * [ ] (도서) JAVA 객체 지향 디자인 패턴 - UML과 Gof 디자인 패턴 핵심 10가지로 배우는
 * [x] (강의) Reactive Programming in Modern Java using Project Reactor
 * [ ] (도서) Kotlin in action
+* [ ] (강의) TDD, 클린 코드 with Kotlin 3기
 * [ ] (강의) Java 멀티스레딩, 병행성 및 성능 최적화 - 전문가 되기
 
 ## Architecture

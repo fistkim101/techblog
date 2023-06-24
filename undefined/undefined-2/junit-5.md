@@ -1,123 +1,68 @@
-# (최종 검토 필요) JUnit 5
+# JUnit 5
+
+## 구동원리
+
+매번 테스트 코드 짜는데에 공을 많이 들이긴 했는데, 정작 테스트가 동작 하는 원리에 대해서는 관심을 두지 않았던 것 같다.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+IDE가 JUnit Platform Launcher를 로드하고 JUnit Platform Launcher가 JUnit Platform의 테스트 엔진을 로드한다. 그리고 테스트 엔진이 테스트 코드를 실행하는데 이 직전에 컴포넌트 스캔이 수행된다.
+
+순서상 정리를 하자면 아래와 같다.
+
+1. IDE가 JUnit Platform Launcher를 로드
+2. JUnit Platform Launcher가 JUnit Platform의 테스트 엔진을 로드
+3. 클래스 로딩 및 컴포넌트 스캔
+4. 테스트 코드 실행
+
+위 그림은 JUnit 전체를 간략하게 도식화 한 것이고 Jupiter는 JUnit 5 의 구현체 API 라고 이해하면 된다.
 
 
 
+## **기본적인 annotation 정리 (JUnit 5 기준)**
 
+NEXTSTEP 에서 아주 강하게 강조하는 것이 테스트 코드 작성이고 들었던 대부분의 강의에서 테스트 코드의 다양한 활용에 대해서 피드백을 받았다. 지금 이 강의는 사실 완강을 꽤 오래전에 하고 다시 정리를 하는 차원에서 보고 있는데, 당시에는 몰랐으나 지금 보니 NEXTSTEP 에서 피드백 해주는 수준의 높은 디테일을 강의에서 다루고 있는 것 같다. 강의의 퀄리티가 좋은 것 같다는 의미이다.
 
+아래는 과거에 강의를 들을 때 정리한 노트이다.
 
+### @BeforeAll / @AfterAll
 
-## 아래
+해당 메소드가 선언된 클래스의 모든 @Test 들이 시작되기 전과 후에 한 번씩 실행되며 **static 으로 만들어 줘야함.** 왜냐하면 나중에 다루겠지만 @TestInstance의 라이프사이클이 각각의 @Test 마다 새로 만들기 때문에 각각의 인스턴스에서 @BeforeAll / @AfterAll로 만들어준 메소드에 접근하려면 static이 필요하다.
 
-#### 1. JUnit 5 소개 <a href="#1-junit-5" id="1-junit-5"></a>
+반대로 @TestInstance의 라이프사이클을 클래스로 변경하면 하나의 클래스에서 여러 테스트들이 동작하기 때문에 static 으로 해줄 필요가 없어진다.
 
-\
-
-
-**용어 정리**
-
-![](http://localhost:4000/assets/images/spring/test-junit5-flow.png)
-
-
-
-* JUnit : 자바 프로그래밍 언어용 유닛테스트 프레임워크. JUnitPlatform 위에서 Jupiter에 의해 구동.
-  * [유닛테스트](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%9B\_%ED%85%8C%EC%8A%A4%ED%8A%B8) : 특정 모듈이 의도된 대로 작동하는지 검증하는 절차
-  * JUnitPlatform : main 메소드 없이 테스트가 실행될 수 있도록 런처를 제공
-  * Jupiter: TestEngine API 구현체로 JUnit 5를 제공
-
-\
-
-
-**생각해볼 것**
-
-* 유닛테스트의 ‘모듈’의 단위를 어떤 기준으로 정할 것인가? 기계적인 1메소드 - 1모듈이 아닌 모듈에 대한 적절한 ‘단위화’가 결국 의미있는 테스트 단위를 만드는 것이 아닐까. 그렇다면 적절한 ‘단위화’는 어떤 기준으로 해야할까.
-
-\
-
-
-***
-
-#### 2. JUnit 5 시작하기 <a href="#2-junit-5" id="2-junit-5"></a>
-
-\
-
-
-**기본적인 annotation 정리 (JUnit 5 기준)**
-
-* @BeforeAll / @AfterAll : 해당 메소드가 선언된 클래스의 모든 @Test 들이 시작되기 전과 후에 한 번씩 실행되며 **static 으로 만들어 줘야함.** 왜냐하면 나중에 다루겠지만 @TestInstance의 라이프사이클이 각각의 @Test 마다 새로 만들기 때문에 각각의 인스턴스에서 @BeforeAll / @AfterAll로 만들어준 메소드에 접근하려면 static이 필요하다.
-* @BeforeEach / @AfterEach : 해당 메소드가 선언된 클래스의 모든 @Test 각각의 전과 후에 실행(@Test 메소드 수만큼 전과 후에 실행됨)
-* @Disabled
-* @Test
-
-```
-    @Test
-    @Disabled
-    void create() {
-        User user = new User();
-        assertNotNull(user);
-    }
-
-    @Test
-    void first() {
-        System.out.println("first");
-    }
-
-    @Test
-    void second() {
-        System.out.println("second");
-    }
-
-    @BeforeEach
-    void beforeEach() {
-        System.out.println("before each");
-    }
-
-    @AfterEach
-    void afterEach() {
-        System.out.println("after each");
-    }
-
-    @AfterAll
-    static void afterAll() {
-        System.out.println("After all");
-    }
-
-    @BeforeAll
-    static void beforeAll() {
-        System.out.println("Before all");
-    }
-
+```java
+@TestInstance(TestInstance.Lifecycle.PER_METHOD) // default
+//@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 ```
 
-\
+### @BeforeEach / @AfterEach&#x20;
 
+해당 메소드가 선언된 클래스의 모든 @Test 각각의 전과 후에 실행(@Test 메소드 수만큼 전과 후에 실행됨)
 
-***
+### @Disabled&#x20;
 
-#### 3. JUnit 5: 테스트 이름 표기하기 <a href="#3-junit-5" id="3-junit-5"></a>
+이 어노테이션이 별거 아닌데 획기적이다. 왜냐면 나는 테스트용으로 쓴걸 주석처리해서 돌리고, 주석 풀고 다시 돌리고 했었기 때문이다. 프로덕선 코드에 써먹는 경우는 만일을 위해서 테스트 코드를 남겨두고 싶지만 주석처리로 해두기 싫으면 써먹으면 좋을 것 같다.
 
-* @DisplayNameGeneration : 해당 클래스 전체의 @Test에 대한 이름을 표기하는 전략을 설정할 수 있음
-* @DisplayName : 개별 @Test의 이름을 설정(@DisplayNameGeneration보다 우선순위 높음)
+## 테스트 이름 표기하기 <a href="#3-junit-5" id="3-junit-5"></a>
 
-```
+### @DisplayNameGeneration
+
+해당 클래스 전체의 @Test에 대한 이름을 표기하는 전략을 설정할 수 있음
+
+### @DisplayName&#x20;
+
+개별 @Test의 이름을 설정(@DisplayNameGeneration보다 우선순위 높음)
+
+```java
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class StudyTest {
 }
 ```
 
-\
+## JUnit 5 Assertion
 
-
-**cf. @DisplayName을 적용하여도 지정한 테스트명이 테스트 콘솔창에 나타나지 않는 경우 테스트 환경 설정을 intellij로 잡아 준다.**
-
-\
-
-
-***
-
-#### 4. JUnit 5 Assertion <a href="#4-junit-5-assertion" id="4-junit-5-assertion"></a>
-
-\
-
+개인적으로 테스트 코드에 대한 습관 자체가 NEXTSTEP 강의를 들으면서 많이 형성이 되었는데, NEXTSTEP에서 org.assertj.core.api.Assertions 을 많이 활용하도록 가이드 해줘서 jupiter 것은 개인적으로 잘 안쓴다. 이건 팀 컨벤션을 따라가면 좋을 듯 하고, 아래는 예전에 정리해둔 노트를 그대로 남긴다.
 
 * assertEquals(expected, actual) : 실제 값이 기대한 값과 같은지 확인(파라미터 순서가 무관하긴 하지만 좌측이 기대값, 우측이 출력값임을 알고 쓰자)
 * assertNotNull(actual) : 출력값이 null이 아닌지 확인
@@ -126,10 +71,7 @@ class StudyTest {
 * assertThrows(expectedType, executable) : 예외 발생 확인
 * assertTimeout(duration, executable) : 특정 시간 안에 실행이 완료되는지 확인
 
-\
-
-
-```
+```java
     @Test
     @DisplayName("스터디 만들기")
     void createNewStudy() {
@@ -145,12 +87,13 @@ class StudyTest {
     }
 ```
 
-테스트 자체가 하나라도 통과하지 못하면 문제가 있기 때문에 assertAll을 사용하지 않아도 결국 테스트가 통과하지 못하면 해당 @Test 자체가 실패한 것으로 인식할 수 있어서 문제될 것은 없다. 하지만 하나의 @Test 내에 두 개 이상의 assert 문이 있고, 테스트를 했을 때 어떤 것은 실패했고 어떤 것은 통과했는지를 구분하여 알 수 있다면 개발 자체가(=테스트 자체가) 더 용이할 수 있기 때문에 assertAll을 사용하는 것이다.
+테스트 자체가 하나라도 통과하지 못하면 문제가 있기 때문에 assertAll을 사용하지 않아도 결국 테스트가 통과하지 못하면 해당 @Test 자체가 실패한 것으로 인식할 수 있어서 문제될 것은 없다.
 
-\
+하지만 하나의 @Test 내에 두 개 이상의 assert 문이 있고, 테스트를 했을 때 어떤 것은 실패했고 어떤 것은 통과했는지를 구분하여 알 수 있다면 개발 자체가(=테스트 자체가) 더 용이할 수 있기 때문에 assertAll을 사용하는 것이다.
 
 
-```
+
+```java
     @Test
     void statusTest() {
         Study study = new Study();
@@ -159,12 +102,10 @@ class StudyTest {
     }
 ```
 
-메세지를 그냥 그대로 넣어주는 것과 람다식으로 넣어주는 방법 둘다 메세지 처리에는 문제가 없는데, 람다식으로 할 경우 테스트가 실패했을 때에만 메세지 연산을 처리한다. 그래서 만약 처리할 메세지 연산의 처리비용이 부담이 될 수준이라면 람다식으로 넣어주는 것이 좋다. 그래서 결론적으로는 모든 메세지를 저렇게 람다식으로 만들어주는 습관을 들이는 것이 좋겠다.
-
-\
+메세지를 그냥 그대로 넣어주는 것과 람다식으로 넣어주는 방법 둘다 메세지 처리에는 문제가 없는데, 람다식으로 할 경우 테스트가 실패했을 때에만 메세지 연산을 처리한다. 그래서 만약 처리할 메세지 연산의 처리비용이 부담이 될 수준이라면 람다식으로 넣어주는 것이 좋다. 그래서 결론적으로는 모든 메세지를 저렇게 람다식으로 만들어주는 습관을 들이는 것이 좋겠다.\
 
 
-```
+```java
     public Study(int limit) {
         if (limit < 0) {
             throw new IllegalArgumentException(Constant.studyLimitErrorMessage);
@@ -174,7 +115,7 @@ class StudyTest {
     }
 ```
 
-```
+```java
     @Test
     void limitTest() {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
@@ -186,58 +127,23 @@ class StudyTest {
 
 assertThrows를 단순히 원하는 에러 타입의 감지에만 사용하는 것 이상으로 에러 메세지의 일치성 여부까지 뽑아서 사용할 수 있다. 동일한 에러 유형 내에서 조건에 따라 에러 메세지를 다양하기 분기하는 경우 사용할 수 있겠다.
 
-\
+## JUnit 5 태깅과 필터링 <a href="#6-junit-5" id="6-junit-5"></a>
 
+### @Tag
 
-***
+테스트 그룹을 만들고 원하는 테스트 그룹만 테스트를 실행할 수 있는 기능. intellij의 test configuration 조작(test kind = Tags, Tag expression = custom tag)을 통해서 특정 태그만 테스트 되도록 한다.
 
-#### 5. JUnit5 조건에 따라 테스트 실행하기 <a href="#5-junit5" id="5-junit5"></a>
-
-**조건 custum**
-
-* assumeTrue(조건) : 조건이 만족할때 해당 @Test가 실행됨
-
-\
-
-
-**조건 종류에 따른 어노테이션 처리**
-
-* Enabled(Disabled)OnOs/onJre : 특정 Os / 특정 자바 버전
-* EnabledIfEnvironmentVariable
-* EnabledIfSystemProperty
-
-\
-
-
-***
-
-#### 6. JUnit 5 태깅과 필터링 <a href="#6-junit-5" id="6-junit-5"></a>
-
-\
-
-
-**태깅**
-
-@Tag : 테스트 그룹을 만들고 원하는 테스트 그룹만 테스트를 실행할 수 있는 기능. intellij의 test configuration 조작(test kind = Tags, Tag expression = custom tag)을 통해서 특정 태그만 테스트 되도록 한다.
-
-\
-
-
-**필터링**
+### **필터링**
 
 profile 별로 특정 태그만 달려있는 @Test 만 실행되도록 하는 방법. 강의에서는 [maven-surefile-plugin](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 을 다뤘고 gradle은 찾아보아야 한다. 이를 이용해 배포 환경에서 빌드시 특정 태그에 대한 테스트를 설정해두고 하나라도 실패한다면 이를 배포하지 않도록 하는 전략을 사용할 수 있다.
 
-\
-
-
-**커스텀 태그**
+### **커스텀 태그**
 
 커스텀 태그를 사용하면 @Test에 부여해줄 여러가지 설정들을 단순화하고 중복을 제거하여 적용시킬 수 있다. 특히 @Tag를 사용해야 한다면 커스텀 태그를 이용하여 type safe하게 @Tag를 사용할 수 있다는 이점이 있다.\
 \
-다수의 @Tag에 매번 원하는 tag를 문자열로 입력하는 것 보다 설정해둔 tag가 적용된 커스텀 태그를 일괄로 적용하는 것이 곧 type safe한 방법이기 때문이다.\
+다수의 @Tag에 매번 원하는 tag를 문자열로 입력하는 것 보다 설정해둔 tag가 적용된 커스텀 태그를 일괄로 적용하는 것이 곧 type safe한 방법이기 때문이다.
 
-
-```
+```java
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Test
@@ -246,20 +152,13 @@ public @interface DevelopmentTest {
 }
 ```
 
-\
+## JUnit 5: 테스트 반복하기
 
+### **@RepeatedTest**
 
-***
+특정 횟수만큼 테스트를 반복하여 하고 싶을 때 사용한다. 테스트 콘솔창에 나오는 테스트명과 반복 횟수 등을 커스텀하게 변경할 수 있다.
 
-#### 7. JUnit 5: 테스트 반복하기 1부 <a href="#7-junit-5-1" id="7-junit-5-1"></a>
-
-**@RepeatedTest**
-
-특정 횟수만큼 테스트를 반복하여 하고 싶을 때 사용한다\
-테스트 콘솔창에 나오는 테스트명과 반복 횟수 등을 커스텀하게 변경할 수 있다.\
-
-
-```
+```java
     @RepeatedTest(value = 10, name = "{displayName}, {currentRepetition} / {totalRepetitions}")
     @DisplayName("스터디 반복 테스트")
     void repeatedTest(RepetitionInfo repetitionInfo) {
@@ -267,15 +166,12 @@ public @interface DevelopmentTest {
     }
 ```
 
-만약 placeholder 들이 제대로 작동하지 않는다면 Build, Execution, Deployment -> Build Tools -> Gradle로 이동한 다음 Run tests using 을 Gradle -> Intellij IDE 로 수정하면 된다.
-
-\
+만약 placeholder 들이 제대로 작동하지 않는다면 Build, Execution, Deployment -> Build Tools -> Gradle로 이동한 다음 Run tests using 을 Gradle -> Intellij IDE 로 수정하면 된다.\
 
 
-**@ParameterizedTest**
+### **@ParameterizedTest**
 
 @ValueSource를 이용해서 하나의 @Test에 여러 다른 매개변수(원하는 대로 선언된)를 대입해가며 반복 실행한다.\
-\
 
 
 추가적으로 사용 가능한 옵션
@@ -284,7 +180,7 @@ public @interface DevelopmentTest {
 * @EmptySource
 * @NullAndEmptySource
 
-```
+```java
     @DisplayName("parameterized Test")
     @ParameterizedTest(name = "{displayName} : {index} // {0}")
     @ValueSource(strings = {"first", "second", "third", "fourth", "fifth"})
@@ -296,16 +192,12 @@ public @interface DevelopmentTest {
     }
 ```
 
-\
-
-
-**@ConvertWith + @ParameterizedTest**
+### **@ConvertWith + @ParameterizedTest**
 
 커스텀한 컨버터를 이용한 테스트를 하고자 할 때 사용. 받은 인자값으로 바로 원하는 객체를 생성하여 사용할 수 있다.(받아서 내부에서 만들지 않고 바로 만들어진 객체를 파라미터로 받음)\
-해당 예제는 SimpleArgumentConverter를 사용한 예제로 2개 이상의 파라미터를 사용할 수는 없다.\
+해당 예제는 SimpleArgumentConverter를 사용한 예제로 2개 이상의 파라미터를 사용할 수는 없다.
 
-
-```
+```java
     @ParameterizedTest
     @ValueSource(ints = {20, 30, 40, 50})
     void converterTest(@ConvertWith(StudyConverter.class) Study study) {
@@ -322,15 +214,11 @@ public @interface DevelopmentTest {
     }
 ```
 
-\
+### **@CsvSource + @AggregateWith + @ParameterizedTest**
 
+복수의 파라미터와 이를 바로 객체로 받아 사용하고 싶을때 사용
 
-**@CsvSource + @AggregateWith + @ParameterizedTest**
-
-복수의 파라미터와 이를 바로 객체로 받아 사용하고 싶을때 사용\
-
-
-```
+```java
     @ParameterizedTest
     @CsvSource({"10, 자바", "20, 스프링"})
     void aggregateTest(@AggregateWith(StudyAggregator.class) Study study) {
@@ -347,14 +235,21 @@ public @interface DevelopmentTest {
     }
 ```
 
+### 그 외 강의 자료에 소개된 것들(다양하게 적재적소에 잘 써먹자)
+
+* @ValueSource
+* @NullSource, @EmptySource, @NullAndEmptySource
+* @EnumSource
+* @MethodSource
+* @CsvSource
+* @CvsFileSource
+* @ArgumentSource
+
+## JUnit 5 테스트 인스턴스
+
+JUnit은 기본적으로 @Test 마다 해당 @Test가 속한 클래스의 인스턴스를 새로 만든다. 하나의 테스트 클래스에 두 개의 @Test 가 있으면 테스트 클래스 전체를 테스트시에 기본적으로 클래스가 두 개 생긴다는 것이다. 아래 코드를 보자.
+
 \
-
-
-***
-
-#### 8. JUnit 5 테스트 인스턴스 <a href="#8-junit-5" id="8-junit-5"></a>
-
-JUnit은 기본적으로 @Test 마다 해당 @Test가 속한 클래스의 인스턴스를 새로 만든다. 달리 말해서, 동일 class 내에서 특정 변수를 선언한 뒤 특정 @Test에서 이를 ++ 시켜주어도 다른 @Test에서는 여전히 그 변수가 ++되지 않은 상태라는 의미이기도 하다.\
 
 
 왜냐하면 @Test 실행마다 이를 위한 독자적인 인스턴스를 늘 만들기 때문이다. 이는 @Test가 서로에게 주는 영향을 없애기 위해서 기본 전략으로 취하는 방법인데, JUnit 5에서는 이 기본 전략을 변경하는 것이 가능하다.
