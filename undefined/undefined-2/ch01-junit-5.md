@@ -4,7 +4,7 @@
 
 매번 테스트 코드 짜는데에 공을 많이 들이긴 했는데, 정작 테스트가 동작 하는 원리에 대해서는 관심을 두지 않았던 것 같다.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 IDE가 JUnit Platform Launcher를 로드하고 JUnit Platform Launcher가 JUnit Platform의 테스트 엔진을 로드한다. 그리고 테스트 엔진이 테스트 코드를 실행하는데 이 직전에 컴포넌트 스캔이 수행된다.
 
