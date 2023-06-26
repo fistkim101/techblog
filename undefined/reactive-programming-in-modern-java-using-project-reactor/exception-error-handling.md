@@ -145,7 +145,7 @@ publisher - subscription - subscriber 원형에서 보면 subscribe에 따른 on
 
 ## onErrorReturn
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 up-stream 을 구독중에 에러가 발생하면 그 즉시 구독이 멈추는 것이 대전제임을 항상 명심한다.(위에 정리했다시피 new Subscription() 내부에서 try\~catch 방식이라는 점을 기억) onErrorReturn operator는 catch 에서 정해준 특정한 값을 onNext() 를 통해서 보내주는 역할을 수행한다.
 
@@ -187,7 +187,7 @@ up-stream 을 구독중에 에러가 발생하면 그 즉시 구독이 멈추는
 
 ## onErrorResume
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 onErrorReturn 은 단지 up-stream 구독중 error 가 발생했을때 원하는 특정한 값으로 대체해주는 operator 인 것과 대조적으로 onErrorResume 은 단어 그대로 에러가 나도 이를 '재개'해준다. 그리고 이렇게 구독을 재개해줄때 에러가 난 publisher 를 대체해줄 recovery publisher를 정의할 수 있도록 해준다.
 
@@ -261,7 +261,7 @@ onErrorResume()은 에러가 발생 했을때 '대체'될 publisher를 주는 �
 
 ## onErrorContinue
 
-<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
 onErrorContinue 의 핵심은 에러를 발생시킨 element 를 drop 시킴으로써 element의 emit이 지속되도록 유지시켜 준다는 것이다. 그림과 같이 앞단의 operator의 subscribe에 영향을 줄 수 있다(influences upstream).
 

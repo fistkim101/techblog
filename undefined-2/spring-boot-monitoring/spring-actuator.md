@@ -34,7 +34,7 @@ Actuator와 prometheus 연동을 위해서는 스프링 어플리케이션의 �
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 이미 actuator 에 micrometer-core 가 포함되어 있다. prometheus 연동을 위해서는 micrometer-registry-prometheus만 추가적으로 runtime scope 으로 의존성 추가를 해주면 된다.
 

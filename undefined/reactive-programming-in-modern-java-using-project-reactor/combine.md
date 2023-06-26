@@ -2,7 +2,7 @@
 
 ## Flux.concat vs Flux.concatWith
 
-<figure><img src="../../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
@@ -37,7 +37,7 @@ static 으로 제공되는 함수다. concatWith은 그걸 사용하는 publishe
 
 ## Flux.merge vs Flux.mergeWith
 
-<figure><img src="../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
@@ -103,7 +103,7 @@ flatMapSequantial() 은 element 들을 변형하여 호출 순서에 맞게 down
 
 ## Flux.zip vs Flux.zipWith
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 zip 은 두 publisher 를 하나로 묶어줄 때 사용한다. concat은 단순히 publisher 를 이어 붙여줬고, merge 가 병렬적으로 subscribe 하여 하나의 down-stream 으로 합쳐줬다면 zip은 publisher 들을 조합함에 있어서 좀더 세밀하게 이를 컨트롤하여 down-stream 자체가 이미 원하는 처리가 되어서 나오도록 구현이 가능하다.
 
@@ -142,7 +142,7 @@ zip 은 두 publisher 를 하나로 묶어줄 때 사용한다. concat은 단순
 
 아래 document와 예제코드는 단순히 결합만 해주는 zip 활용에 대한 내용이다.
 
-<figure><img src="../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ```java
     @Test
@@ -163,7 +163,7 @@ zip 은 두 publisher 를 하나로 묶어줄 때 사용한다. concat은 단순
 
 zipWith 도 이미 concat과 merge에서 다뤘던 내용과 유사하다. zip 이 static 메소드라면 zipWith은 publisher 의 메소드로 특정 publisher 를 parameter로 받아서 tuple형태로 down-stream 에 내려줄 수 있고, 람다로 함수를 parameter로 더 받아서 변형까지 가능하다.
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
     @Test
