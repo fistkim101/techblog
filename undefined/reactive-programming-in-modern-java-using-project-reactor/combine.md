@@ -37,7 +37,7 @@ static 으로 제공되는 함수다. concatWith은 그걸 사용하는 publishe
 
 ## Flux.merge vs Flux.mergeWith
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
@@ -142,7 +142,7 @@ zip 은 두 publisher 를 하나로 묶어줄 때 사용한다. concat은 단순
 
 아래 document와 예제코드는 단순히 결합만 해주는 zip 활용에 대한 내용이다.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
 
 ```java
     @Test

@@ -1,6 +1,6 @@
 # (+) Spy vs Mock
 
-```
+```java
 @SpringBootTest
 public class SampleTest {
 
@@ -38,5 +38,4 @@ public class User {
         return grade;
     }
 }
-
 ```
