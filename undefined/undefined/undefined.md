@@ -315,7 +315,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 지원 필터들 순서별 목록(예전 버전이므로 최신 버전은 조금씩 다르다. 참고만 하기, 최신은 위 스크린샷 참고)
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -1,6 +1,6 @@
 # CH01 Introduction
 
-<figure><img src="../../.gitbook/assets/image (24) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

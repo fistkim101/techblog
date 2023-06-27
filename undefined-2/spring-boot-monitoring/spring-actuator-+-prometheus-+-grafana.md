@@ -8,6 +8,6 @@ Prometheus 에서 정리한 아래 구성도 상에 이미 Spring actuator + Pro
 
 여기서 조금 더 나아가면 Prometheus Target을 eureka로 구성 할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (2).png" alt=""><figcaption></figcaption></figure>
 
 MSA 환경에서는 인스턴스들의 정보가 계속 바뀔 수 있기 때문에 이를 discovery 해주는 eureka 서버를 Prometheus 의 Target으로 설정해주고 서비스 name 으로 이를 추적하게 하면 각 인스턴스들을 Application Name 으로 구분하여 추적이 가능하다.
