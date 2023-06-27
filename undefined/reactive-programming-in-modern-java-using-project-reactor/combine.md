@@ -4,7 +4,7 @@
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (27) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 static 으로 제공되는 함수다. concatWith은 그걸 사용하는 publisher 에 parameter로 받는 publisher를 이어 붙여서 하나의 down-stream을 만들어 주는 반면에 concat 은 이어 붙이기위한 여러 element 들을 가변인자로 받아 줄 수 있다. 또 재미있는 점은 concat의 경우 down-stream 을 구성할 element type 에 대해 조금 더 자유롭다는 것이다.
 
@@ -37,7 +37,7 @@ static 으로 제공되는 함수다. concatWith은 그걸 사용하는 publishe
 
 ## Flux.merge vs Flux.mergeWith
 
-<figure><img src="../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
@@ -77,7 +77,7 @@ merge, mergeWith의 차이는 concat과 concatWith과 유사하게 static 이면
 
 ## Flux.mergeSequantial
 
-<figure><img src="../../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 static 함수로 가변인자로 받은 source들을 eagerly 하게 subsribe() 하지만 최종적으로 반환해주는 down-stream은 호출을 시작한 순서대로 조합하여 구성해준다.
 
@@ -142,7 +142,7 @@ zip 은 두 publisher 를 하나로 묶어줄 때 사용한다. concat은 단순
 
 아래 document와 예제코드는 단순히 결합만 해주는 zip 활용에 대한 내용이다.
 
-<figure><img src="../../.gitbook/assets/image (19) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ```java
     @Test
