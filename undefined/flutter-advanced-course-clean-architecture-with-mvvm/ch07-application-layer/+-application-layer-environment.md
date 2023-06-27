@@ -10,7 +10,7 @@ VM 옵션을 활용해도 될 것 같았는데 일단 앱 기동시 진입 지�
 
 ## 패키지 구성 관점에서 바라본 Environment
 
-![](<../../../.gitbook/assets/image (29) (1).png>)
+![](<../../../.gitbook/assets/image (29) (1) (1).png>)
 
 ## Environment 구현
 
