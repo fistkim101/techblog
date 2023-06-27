@@ -133,9 +133,9 @@ publisher - subscription - subscriber 원형에서 보면 subscribe에 따른 on
 
 강의에서는 reactor가 제공하는 exception/error 를 핸들링하는 operator 를 크게 두 부류로 나눠서 알려주고 있다.
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (3).png" alt=""><figcaption></figcaption></figure>
 
 로직 처리중 에러가 발생했을시 에러에 기반하여 응답을 해줘야 하는 경우가 있고, 에러가 났다고 해도 이를 무시하고 처리하던 flow를 이어서 처리를 해야할 경우가 있는데 이 두 경우를 고려하여 적절한 operator 를 사용해야 한다.
 
@@ -145,7 +145,7 @@ publisher - subscription - subscriber 원형에서 보면 subscribe에 따른 on
 
 ## onErrorReturn
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 up-stream 을 구독중에 에러가 발생하면 그 즉시 구독이 멈추는 것이 대전제임을 항상 명심한다.(위에 정리했다시피 new Subscription() 내부에서 try\~catch 방식이라는 점을 기억) onErrorReturn operator는 catch 에서 정해준 특정한 값을 onNext() 를 통해서 보내주는 역할을 수행한다.
 
@@ -312,7 +312,7 @@ Process finished with exit code 0
 
 ## onErrorMap
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
