@@ -151,6 +151,6 @@ project reactor는 Reactive Streams([https://www.reactive-streams.org/](https://
 
 IBM의 글에서 '비동기', '논블로킹' 모델 하나만 가져오자면 아래와 같다.
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 블로킹과 논블로킹을 가르는 핵심은 요청자 측에서 요청 직후 '다른 일을 할 수 있는가'의 기준이다. 스레드 입장에서 보면 요청 직후 결과가 어찌되었건 상태가 waiting이 되는 것이 아니라 runnable을 그대로 유지할 수 있어야만 '논블로킹'하다고 할 수 있다.

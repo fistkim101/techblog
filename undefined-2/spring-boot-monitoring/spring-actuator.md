@@ -32,7 +32,7 @@ Actuator와 prometheus 연동을 위해서는 스프링 어플리케이션의 �
 
 쉽게 말해 여러가지 유명한 모니터링 시스템들에게 facade 하게 인터페이스를 제공해주는 라이브러리이다. 그림으로 보면 아래와 같다.
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 

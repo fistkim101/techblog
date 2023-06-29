@@ -204,6 +204,7 @@
 * [java enum은 메모리에 언제, 어떻게 할당되는가](undefined-2/java-enum.md)
 * [Checked Exception vs UnChecked Exception](undefined-2/checked-exception-vs-unchecked-exception.md)
 * [Reactive Streams 원리탐구 - 간단한 예제 직접 작성해보기](undefined-2/reactive-streams.md)
+* [기술 관련 포스팅 읽기](undefined-2/undefined-2.md)
 * [Flutter](undefined-2/flutter/README.md)
   * [Flutter Basic](undefined-2/flutter/page-6.md)
   * [StatefulWidget 생명주기](undefined-2/flutter/statefulwidget.md)

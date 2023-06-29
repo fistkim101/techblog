@@ -162,7 +162,7 @@ subscribeOn()과 publishOn()의 가장 큰 차이점은 publishOn()은 operator 
 
 
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 subscribeOn 은 동작하는 것이 약간 다르다. 위 publishOn과는 달리 숫자의 순서가 subscribe가 1이 아닌 것을 알 수 있다. Flux를 구성할때 안에 subscribeOn 이 있으면 무조건 subscribe 를 시작할때 subscribeOn이 지정해준 thread 로 시작을 한다는 의미이다.
 
