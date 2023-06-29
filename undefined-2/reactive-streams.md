@@ -110,4 +110,4 @@ public class ReactiveStudyApplication {
 [FistSubscriber] onComplete called
 ```
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
