@@ -229,4 +229,4 @@
   * [제로투원](undefined-3/business-model/undefined-3.md)
   * [MIT 스타트업 바이블](undefined-3/business-model/mit.md)
   * [린치핀](undefined-3/business-model/undefined-4.md)
-* [백로그](undefined-2/undefined-1.md)
+* [백로그 종합](undefined-2/undefined-1.md)
