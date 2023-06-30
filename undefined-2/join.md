@@ -81,7 +81,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 ### Sort Merge Join <a href="#sort-merge-join" id="sort-merge-join"></a>
 
-<figure><img src="../.gitbook/assets/image (8) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 

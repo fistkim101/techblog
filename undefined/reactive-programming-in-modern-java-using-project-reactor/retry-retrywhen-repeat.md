@@ -121,7 +121,7 @@ retryWhen은 공식 문서의 설명이 너무 길어서 마블 다이어그램�
 * Use it when you have an use-case to subscribe to same publisher again
 * This operator works as long as No Exception is thrown
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 다시 구독(=반복)을 하기 위한 연산자이다. 강의에서도 설명하고 있고, 공식 문서에도 나와있듯이 onComplete() 이 실행되어야만 반복 구독을 실행한다. retry() 와 마찬가지로 parameter를 넣어주지 않으면 무한히 반복하고 parameter로 반복 횟수를 제한 할 수 있다.&#x20;
 
