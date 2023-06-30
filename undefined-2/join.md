@@ -81,7 +81,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 ### Sort Merge Join <a href="#sort-merge-join" id="sort-merge-join"></a>
 
-<figure><img src="../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -94,7 +94,7 @@ Left Outer Join 과 같은 맥락이다. 벤다이어 그램은 생략한다.
 
 ### Hash Join <a href="#hash-join" id="hash-join"></a>
 
-<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Hash Join 은 네스티드 루프 조인의 랜덤 액세스 문제와 Sort 머지 조인의 정렬 비용 문제를 해결한 방식이다. 네스티드 루프 조인에서 인덱스가 따로 존재하지 않아서 랜덤 액세스가 발생해야 하는 경우나 소트 머지 조인이 부적합한 경우 사용할 수 있다.
 
