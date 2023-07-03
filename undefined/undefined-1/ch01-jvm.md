@@ -2,7 +2,7 @@
 
 ## JRE, JDK, JVM
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 위 그림은 JDK, JRE, JVM 간의 관계를 나타내는 그림이다. JVM 은 밑에서 다루기로 하고 JRE와 JDK 관계만 보자.
 
