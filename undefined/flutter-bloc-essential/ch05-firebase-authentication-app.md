@@ -75,7 +75,7 @@ child: BlocConsumer<SigninCubit, SigninState>(
 
 Navigator.pushNamedAndRemoveUntil 에 대해서 잠깐 알아보자.
 
-***
+
 
 #### Navigator.pushNamedAndRemoveUntil <a href="#navigatorpushnamedandremoveuntil" id="navigatorpushnamedandremoveuntil"></a>
 
@@ -93,7 +93,7 @@ Navigator.pushNamedAndRemoveUntil(
 );
 ```
 
-***
+
 
 도큐먼트를 보면 아래와 같이 나와있다.
 
