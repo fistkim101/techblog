@@ -144,6 +144,7 @@
   * [(+) Application Layer - l10n](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-l10n.md)
   * [(+) Application Layer - DI](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-di.md)
   * [(+) Application Layer - environment](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-environment.md)
+  * [(+) Application Layer - go\_router](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-go\_router.md)
 
 ## 도서
 
