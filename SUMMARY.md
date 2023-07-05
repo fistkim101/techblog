@@ -139,6 +139,7 @@
   * [CH02 Clean Architecture 4 Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch02-clean-architecture-4-layer.md)
   * [CH03 MVVM](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch03-mvvm.md)
   * [CH04 Data Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer/README.md)
+  * [(+) Data Layer - response to model](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-data-layer-response-to-model.md)
   * [(+) Data Layer - Network](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch04-data-layer/+-data-layer-network.md)
   * [CH05 Domain Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch05-domain-layer.md)
   * [CH06 Presentation Layer](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch06-presentation-layer.md)
