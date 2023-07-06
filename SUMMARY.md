@@ -92,7 +92,7 @@
   * [(+) 스프링 의존성 관리](undefined/undefined-3/+.md)
   * [(+) 생성자 주입 장점](undefined/undefined-3/+-1.md)
 * [코딩으로 학습하는 GoF의 디자인 패턴](undefined/gof/README.md)
-  * [생성](undefined/gof/page-10.md)
+  * [객체 생성](undefined/gof/page-10.md)
     * [싱글톤](undefined/gof/undefined/undefined.md)
     * [Page 9](undefined/gof/page-9.md)
   * [구조](undefined/gof/page-8.md)
