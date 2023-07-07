@@ -25,7 +25,7 @@
 웹 성능 예산
 -------
 
-[웹 성능 예산](http://localhost:4000/infra/2021-04-13-NEXTSTEP-%EC%9D%B8%ED%94%84%EB%9D%BC%EA%B3%B5%EB%B0%A9-%EC%9B%B9%EC%84%B1%EB%8A%A5%EC%A7%84%EB%8B%A8%ED%95%98%EA%B8%B0.html) 이란 쉽게 말해서 ‘성능을 위해서 최소한 이 예산은 넘지말자’ 라는 맥락에서 여러 지표들을 나타낸 것이다. 지표들은 정량/시간/성능 이렇게 세 카테고리로 분류될 수 있다. [웹 성능 예산에 대해 잘 정리된 브런치](https://brunch.co.kr/@sangjinkang/23) 가 있어 따로 정리하진 않겠다.
+웹 성능 예산 이란 쉽게 말해서 ‘성능을 위해서 최소한 이 예산은 넘지말자’ 라는 맥락에서 여러 지표들을 나타낸 것이다. 지표들은 정량/시간/성능 이렇게 세 카테고리로 분류될 수 있다. [웹 성능 예산에 대해 잘 정리된 브런치](https://brunch.co.kr/@sangjinkang/23) 가 있어 따로 정리하진 않겠다.
 
 성능 부분에 관해서는 구글에서 [Page Speed Insight](https://developers.google.com/speed/pagespeed/insights/) 라는 것을 제공하고 있다. 여기서 원하는 웹 사이트의 성능을 점검해볼 수 있다.
 

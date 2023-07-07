@@ -22,7 +22,7 @@ Creator 가 만들어야 할 대상이 동일한 논리적 단위에 속하지�
 
 
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 위  UML 에 기반하여 코드레벨에서 설명하자면 예전에는 클라이언트가 각각의 구분된 Product 를 생성했다면 팩토리 메소드 패턴 적용시 큰 논리적 단위인 Product 를 구체적인 Creator 에 위임해서 생성하는 것이다.
 
