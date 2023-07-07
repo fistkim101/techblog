@@ -18,7 +18,7 @@
 
 ## 요구사항
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 첫 미션이다보니 비교적 간단한 미션이다.
 
