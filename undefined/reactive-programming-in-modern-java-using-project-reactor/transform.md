@@ -136,7 +136,7 @@ cf. 참고 : concatenate(1.사슬같이 잇다; 연쇄시키다; <사건 등을>
 
 ## Flux.flatMapSequential
 
-<figure><img src="../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (70) (1).png" alt=""><figcaption></figcaption></figure>
 
 flatMap 처럼 inner publisher 를 비동기적으로 subscribe 하지만 inner publisher 로 부터 emit 되는 값들을 모두 queue 에 담아뒀다가 최종적으로 down-stream 을 구성할 때에는 up-stream의 source order에 맞춰서 merge 하는 연산자이다.
 

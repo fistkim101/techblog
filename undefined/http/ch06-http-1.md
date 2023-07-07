@@ -28,15 +28,9 @@ HTTP는 메시지 본문(message body)을 통해 표현 데이터를 전달한�
 
 협상 헤더에는 적용에 있어 우선순위 개념이 있는데 이는 강의자료 첨부로 정리를 대체한다.
 
-<figure><img src="http://localhost:4000/assets/images/infra/http-priority-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="http://localhost:4000/assets/images/infra/http-priority-2.png" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="http://localhost:4000/assets/images/infra/http-priority-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 ## **일반정보**
 

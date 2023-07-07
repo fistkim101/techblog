@@ -13,4 +13,4 @@ Form 데이터를 설명하다가 Multipart 에 대해서 짧게 알아보고 �
 
 아무튼, 재밌는 점은 아래와 같이 boundary 라는 값으로 바디의 경계를 정하고 그 경계에 따라서 값을 나눠서 보낸다는 점이다.
 
-<figure><img src="http://localhost:4000/assets/images/infra/http-multipart.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>

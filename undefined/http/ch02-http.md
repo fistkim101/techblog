@@ -43,7 +43,7 @@
 
 ## **메세지**
 
-<figure><img src="http://localhost:4000/assets/images/infra/http-structure.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 **start-line은 요청이냐 응답이냐에 따라서 request-line, status-line으로 구분된다**
 

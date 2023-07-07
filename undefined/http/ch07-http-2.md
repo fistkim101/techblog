@@ -13,15 +13,9 @@
 
 ## **If-Modified-Since : Last-Modified 활용한 캐시 처리 절차**
 
-<figure><img src="http://localhost:4000/assets/images/infra/header-cache-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="http://localhost:4000/assets/images/infra/header-cache-2.png" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="http://localhost:4000/assets/images/infra/header-cache-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### **body가 없다는 것에서 속도 향상 = 네트워크 부소하 감소**
 
@@ -43,15 +37,11 @@ Last-Modified, If-Modified-Since 단점
   * 예) ETag: “aaaaa” -> ETag: “bbbbb”
 * 진짜 단순하게 ETag만 보내서 같으면 유지, 다르면 다시 받기!
 
-<figure><img src="http://localhost:4000/assets/images/infra/header-etag-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 
-
-<figure><img src="http://localhost:4000/assets/images/infra/header-etag-2.png" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="http://localhost:4000/assets/images/infra/header-etag-3.png" alt=""><figcaption></figcaption></figure>
 
 아래는 인프라 공방 수강시 강의 자료에 있던 내용이다. Etag 관련 내용이라 옮겨왔다.
 
