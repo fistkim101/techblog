@@ -32,7 +32,7 @@ ON TableA.name = TableB.name
 >
 > 이 경우 왼쪽편 테이블이 바깥쪽 반복문에 있어야 하므로 LEFT OUTER JOIN 이다.
 
-<figure><img src="../.gitbook/assets/image (9) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2) (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 ```sql
 SELECT * FROM TableA

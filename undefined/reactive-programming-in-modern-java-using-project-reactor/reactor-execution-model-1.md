@@ -38,7 +38,7 @@ description: 리액터의 동작 모델&원리에 관한 탐구
 
 ## Spring MVC의 처리방식
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 Spring MVC는 **request per thread** 가 원칙이다. 즉, 각 요청에 대해서 스레드풀 내에 있는 하나의 스레드가 이를 전적으로 책임지고 끝까지 로직을 처리하여 응답을 주는 것이다. 위 그림은 이에 대한 설명이다. 브라우저의 요청에 대해서 스레드풀의 6번째 스레드가 이를 받아 처리하는 모습이다. (일반적으로 톰캣의 기본 스레드 설정은 200개 이다.)&#x20;
 

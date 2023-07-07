@@ -22,13 +22,13 @@ Creator 가 만들어야 할 대상이 동일한 논리적 단위에 속하지�
 
 
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 위  UML 에 기반하여 코드레벨에서 설명하자면 예전에는 클라이언트가 각각의 구분된 Product 를 생성했다면 팩토리 메소드 패턴 적용시 큰 논리적 단위인 Product 를 구체적인 Creator 에 위임해서 생성하는 것이다.
 
 강의 노트에 실린 UML 을 다시 보자.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 팩토리 메소드 패턴 적용 전에는 ConcreteCreator(피자 가게)가 ConcreteProduct(페페로니 피자, 불고기 피자 등 구분된 객체 타입)을 각각 생성했었다.
 
@@ -170,7 +170,7 @@ public class PizzaStore {
 
 
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 public interface PizzaFactory {

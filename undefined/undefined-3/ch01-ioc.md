@@ -14,7 +14,7 @@ IOC 는 말 그대로 제어의 역전을 의미한다. 제어는 뭘 제어한�
 
 아래 예시 코드를 보자.
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 public class UserService {
