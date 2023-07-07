@@ -50,7 +50,7 @@ Cache-Control: private, max-age=600
 
 다음은 강의에서 소개된 cache 관련 정책 결정의 기준이 될 수 있는 의사결정 트리이다.
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 ## 3. cache 실습 <a href="#3-cache" id="3-cache"></a>
 

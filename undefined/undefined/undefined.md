@@ -261,7 +261,7 @@ FilterChainProxy filterChainProxy = new FilterChainProxy(securityFilterChains);
 
 <figure><img src="../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
 
 관리자에서 ROLE 을 사용할 일이 종종 있었다. 커스텀을 하게 될 경우 참고해두자. 참고로 아래와 같이 ROLE 의 하이라키 설정도 가능하다. 근데 잘 안 쓸 것 같다.
 
@@ -298,7 +298,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 예외 처리
 
-<figure><img src="../../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (49) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 기본적으로 저 필터에서 예외처리가 발생하고 있고 인증 및 인가 예외에 대한 처리는 내가 커스텀하게 처리가 가능하다. 아래 코드는 내가 실제로 작성한 코드이다.
 
@@ -315,7 +315,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 지원 필터들 순서별 목록(예전 버전이므로 최신 버전은 조금씩 다르다. 참고만 하기, 최신은 위 스크린샷 참고)
 
-<figure><img src="../../.gitbook/assets/image (36) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 
 

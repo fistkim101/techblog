@@ -22,7 +22,7 @@ Service Discovery 의 필요성에 대해서 요약하자면 아래의 그림으
 
 client side 는 client 가 로드밸런싱의 책임을 갖고 있는 형태이다. service instance들이 registry 에 등록하는 것은 맞는데 여기서 client 가 registry 에 질의한 후 알아서 로드밸런싱 판단을 해야하는 것이다. Netflix OSS 가 대표적인 client side discovery pattern 이라고 한다.
 
-<figure><img src="../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

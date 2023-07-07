@@ -58,8 +58,8 @@ HTTP 1.1과 HTTP 2.0의 가장 큰 차이는 클라이언트의 요청과 서버
 
 아래는 강의에서 사용된 HTTP 2의 flow 이다.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 인터넷을 돌아다니던 중 아래의 그림이 http 1.1 과 http 2 비교를 잘 해둔 것 같아서 가져왔다.
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
