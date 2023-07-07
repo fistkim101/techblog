@@ -2,7 +2,7 @@
 
 ## 아키텍처 구성
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption><p>출처: 강의자료</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60) (1).png" alt=""><figcaption><p>출처: 강의자료</p></figcaption></figure>
 
 강의에서는 위 아키텍처를 세부적으로 나눠서 알아봤고 마지막 순서로 이를 종합 및 요약해서 설명해주고 있다. 전체적으로 위와 같은 구조로 실제로 동작하는지 디버거를 통해서 내부적으로 들여다보고, 필요시 부분적으로 상세히 정리한다.
 
@@ -315,7 +315,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 지원 필터들 순서별 목록(예전 버전이므로 최신 버전은 조금씩 다르다. 참고만 하기, 최신은 위 스크린샷 참고)
 
-<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -2,7 +2,7 @@
 
 둘의 차이를 간단히 말하자면 '명시적으로 에러 처리(check)를 강요(안하면 컴파일에서부터 에러가 난다)' 당하면 checked exception 이고 그렇지 않다면 unchecked exception 라고 할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 

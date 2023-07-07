@@ -9,7 +9,7 @@
 \
 
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
 **현재 미션대로 수행한 서버의 구조는 위와 같이 3 티어 구성**
 
@@ -20,7 +20,7 @@
 
 ## 1. USE 방법론 <a href="#1-use" id="1-use"></a>
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 위 그림은 강의 자료에서 사용된 [USE 방법론](http://www.brendangregg.com/usemethod.html) 에 대한 자료이다. 결국 ‘에러에 대해서 어떤 생각의 틀로 접근 해야 가장 빨리 문제의 원인을 찾고 이를 해결할 수 있을까’라는 고민에 대한 대답 중 하나의 형태라고 생각한다.
 
@@ -41,7 +41,7 @@ $ tail -f /var/log/syslog
 
 ### **B. 사용률**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -54,13 +54,13 @@ $ tail -f /var/log/syslog
 \
 
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 **TIME\_WAIT, CLOSE\_WAIT 상태를 이해하기 위해서는 위 과정에 대해 알고 있어야 한다.**
 
 
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
 ```
 이 중 ESTABLISHED 이후 종료 과정에서 어플리케이션의 close() 호출 부분을 추가로 표시했습니다.

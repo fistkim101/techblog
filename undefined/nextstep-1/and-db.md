@@ -2,7 +2,9 @@
 
 ## 수직적 탐색 vs 수평적 탐색 <a href="#vs" id="vs"></a>
 
-<figure><img src="http://localhost:4000/assets/images/infra/index_btree.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 **index 구조 - B tree**
 
@@ -33,9 +35,7 @@ index를 이용한 탐색은 수직적 탐색과 수평적 탐색으로 나뉜�
 
 ### **1) Index Range Scan**
 
-![](http://localhost:4000/assets/images/infra/index\_range\_scan.png)
-
-
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 인덱스 루트 블록에서 리프 블록까지 수직적으로 탐색한 후에 리프 블록을 필요한 범위만 스캔하는 방식이다. 여기서 말하는 ‘필요한 범위’란 조건에 맞지 않는 데이터를 만나면 탐색을 멈춘다는 의미이다.
 
@@ -53,9 +53,7 @@ where 생년월일 between '20200101' and '20200131'
 
 ### **2) Index Full Scan**
 
-<figure><img src="http://localhost:4000/assets/images/infra/index_full_scan.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 수직적 탐색 없이 인덱스 리프 블록을 처음부터 끝까지 수평적으로 탐색하는 방식이며 최적의 인덱스가 없을 때 차선으로 선택한다.
 
@@ -69,9 +67,7 @@ SELECT COUNT(*) FROM subway.programmer
 
 **3) Index Unique Scan**
 
-<figure><img src="http://localhost:4000/assets/images/infra/index_unique_scan.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 수직적 탐색만으로 데이터를 찾는 스캔 방식이다. unique 인덱스를 통해 “=” 조건으로 탐색하는 경우에 작동하며, 중복되지 않은 unique한 값을 “=”조건으로 검색할 경우 해당 데이터 한 건을 찾는 순간 더 이상 탐색 하지 않는 방식이다.
 
@@ -79,8 +75,6 @@ SELECT COUNT(*) FROM subway.programmer
 SELECT * FROM subway.programmer WHERE id = 10
 ```
 
-\
-\
 
 
 ## 인덱스 튜닝 <a href="#undefined" id="undefined"></a>
@@ -100,7 +94,7 @@ where deptno =30
 
 예를 들어서 위와 같은 조건에서 탐색이 발생하면 deptno=30 에 해당하는 ROWID들을 가지고 랜덤하게 테이블 레코드를 탐색하게 된다.
 
-<figure><img src="http://localhost:4000/assets/images/infra/random_scan.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 **deptno 가 30을 만족하는 ROWID를 가지고 랜덤하게 조회해보는 그림**
 

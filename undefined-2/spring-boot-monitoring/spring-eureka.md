@@ -10,7 +10,7 @@ eureka 에 대해서 알아보기 전에 Service discovery 의 필요성이나 �
 
 Service Discovery 의 필요성에 대해서 요약하자면 아래의 그림으로 설명할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 예전과는 다르게 오늘날의 cloud-based MSA 에서는 위와 같이 service instance 들이 network location 을  동적으로 할당받게 된다. 왜냐하면 autoscaling 이 발생하기 때문이다. 결과적으로 client 가 어디로 통신해야할지 모르는 상황이 발생할 수 있다. 이 때 service instance 들의 network location을 파악하는 행위를 service discovery 라고 할 수 있다.
 
@@ -40,7 +40,7 @@ AWS ELB가 server side discovery pattern의 예시라고 한다.
 
 ## Self-Registration Pattern
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 위에서 다뤘듯이 client side나 server side나 instance 가 Service Registry 에 등록을 한다는 사실은 변함이 없다. 이 때 등록을 어떤식으로 하는지에 대한 것을 Self-Registration 이라는 개념으로 설명하고 있다.
 

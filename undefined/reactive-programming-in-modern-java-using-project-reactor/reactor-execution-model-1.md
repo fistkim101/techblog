@@ -68,7 +68,7 @@ Spring WebFlux는 Event Loop 방식으로 동작한다. 즉, 사용자들의 요
 
 Spring WebFlux는 reactor 와 netty를 기반으로 동작하는데 위 장표에도 나와있다시피 netty의 스레드 풀의 스레드 개수는 코어 \* 2 이다.
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

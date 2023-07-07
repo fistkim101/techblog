@@ -77,7 +77,7 @@ merge, mergeWith의 차이는 concat과 concatWith과 유사하게 static 이면
 
 ## Flux.mergeSequantial
 
-<figure><img src="../../.gitbook/assets/image (24) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 static 함수로 가변인자로 받은 source들을 eagerly 하게 subsribe() 하지만 최종적으로 반환해주는 down-stream은 호출을 시작한 순서대로 조합하여 구성해준다.
 
