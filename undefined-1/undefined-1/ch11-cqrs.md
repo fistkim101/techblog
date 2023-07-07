@@ -22,6 +22,6 @@
 
 극단적으로는 아래와 같이 아예 명령과 조회를 위한 저장소까지 구분할 수 있다. 이때 데이터 동기화는 필수이다.
 
-<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 성능 향상에는 유리할 지 모르나 일단 복잡도가 올라가고 구현해야 할 양이 많아진다.

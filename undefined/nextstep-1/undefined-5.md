@@ -2,15 +2,11 @@
 
 ## 들어가며 <a href="#0" id="0"></a>
 
-<figure><img src="http://localhost:4000/assets/images/infra/performence-architecture.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **강의자료 초반에 있던 클라이언트-서버 구조도인데 성능과 밀접한 관련이 있는 cache를 잘 시각화 해둔 것 같다**
-
-
-
-첫 회사에서 항상 아쉬웠던 것은 B2B로 정해진 유저들을 대상으로 하는 서비스를 만들다보니 트래픽이 항상 한정적이었고, 그만큼 성능이슈가 발생할 일이 없었던 것이다. 사실 사용자가 1명이든 100명이든 그 이상이든 사용자 수와 상관없이 어플리케이션은 최선의 성능을 낼 수 있어야 한다. 하지만, 성능을 위해서라면 크게는 설계부터 작게는 개별 기능의 코드까지 충분한 고민의 시간이 필요한데 납기가 정해져있고 빨리 만들어서 빨리 팔아야하는 비즈니스 형태의 틀에서는 사실 작업 기간이 곧 비용이기 때문에 공수 확보가 쉽지 않다. 더 정확히는 의사 결정자를 ‘설득’할 명분이 없다. 특히 테크 베이스가 아닌 사람이 이러한 구조에서 결정권을 갖고 있으면 개인적인 경험으로는 설득이 거의 불가능에 가까웠다.
-
-아무튼 개인적으로 단순히 돌아가게만 하는 것이 아니라, 성능에 대한 고민을 하며 어플리케이션을 만든다는 것은 인프라, 코드 설계, DB 구조 등 고민 해야 할 포인트들이 매우 많다는 것이고 이것이 곧 실력 향상과 밀접한 관련이 있다고 믿기 때문에 이번 챕터가 더 기다려졌다. 조금 아쉬웠던 것은 이번 소챕터 하나는 ‘웹 사이트’에 대한 성능 측정에 방점이 있었다는 것이었는데 목차를 보니 차후 부하테스트 부터 캐싱까지 해보고 싶었던 것들이 매우 많아서 굉장히 반갑고 좋았다.
 
 
 
@@ -36,15 +32,13 @@
 \
 
 
-<figure><img src="http://localhost:4000/assets/images/infra/pagespeed-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **테스트로 네이버를 돌려 봤는데 점수가 너무 낮다**
 
-\
-\
 
 
-<figure><img src="http://localhost:4000/assets/images/infra/pagespeed-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 **개선을 어떻게 해야할지 전략까지 짜준다**\
 

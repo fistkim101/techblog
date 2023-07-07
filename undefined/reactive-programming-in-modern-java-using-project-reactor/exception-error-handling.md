@@ -312,7 +312,7 @@ Process finished with exit code 0
 
 ## onErrorMap
 
-<figure><img src="../../.gitbook/assets/image (30) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -349,7 +349,7 @@ recover 하진 않고 error를 바꿔준다. onErrorMap 의 parameter 자체가 
 
 ## doOnError
 
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 error 가 발생 했을때 부가적으로 처리하고자 하는 것이 있을때 사용한다. 일반적인 doOn\~ 의 순서처럼 target event 보다 먼저 실행됨을 기억해두기.
 

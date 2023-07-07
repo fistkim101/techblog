@@ -10,7 +10,7 @@
 
 각 부분 모두 잘 파싱해야겠지만 특히 start line 의 정보를 가지고 이를 처리할 적절한 핸들러에 위임을 해야할 것이다. 아래는 강의 자료에 소개된 요청과 응답의 예시이다.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
 
 이걸 파싱하는 로직을 개발하는 것이 step1 의 미션이었다.
 
@@ -18,7 +18,7 @@
 
 ## 요구사항
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 첫 미션이다보니 비교적 간단한 미션이다.
 

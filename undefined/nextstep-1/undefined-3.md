@@ -4,26 +4,23 @@
 
 장애가 발생하면 자주 발생하는 실수가 ‘피해자’에 대해서 집중하는 것인데, 강사님은 ‘피해자’에 집중하지 말고 원인에 집중하는 것을 강조. 이번 챕터는 이 장애의 원인이 무엇인가를 규명하는데 있어 사용하기 좋은 방법론인 USE 방법론의 틀을 익히고, 세부적으로 어떤 도구와 절차들로 장애의 원인이 무엇인지 규명하면 좋을지를 학습한다.
 
+
+
 \
 
 
-<figure><img src="http://localhost:4000/assets/images/infra/3tier.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 **현재 미션대로 수행한 서버의 구조는 위와 같이 3 티어 구성**
 
-\
 
 
 서버가 위와 같은 구조라면 장애가 날 수 있는 포인트도 웹서버, application host, db 이렇게 세 포인트가 된다. 이게 당연한 이야기라 할지라도 장애가 났을 때 위와 같은 큰 구조 속에서 문제를 찾고자 하는 태도와 막연하게 ‘에러가 뭐야’라고 접근하는 것은 해결 속도에 있어서 차이가 있다고 생각한다.\
 
 
-1\. USE 방법론\
- <a href="#1-use" id="1-use"></a>
----------------------------------
+## 1. USE 방법론 <a href="#1-use" id="1-use"></a>
 
-<figure><img src="http://localhost:4000/assets/images/infra/use-method.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 위 그림은 강의 자료에서 사용된 [USE 방법론](http://www.brendangregg.com/usemethod.html) 에 대한 자료이다. 결국 ‘에러에 대해서 어떤 생각의 틀로 접근 해야 가장 빨리 문제의 원인을 찾고 이를 해결할 수 있을까’라는 고민에 대한 대답 중 하나의 형태라고 생각한다.
 
@@ -44,7 +41,7 @@ $ tail -f /var/log/syslog
 
 ### **B. 사용률**
 
-<figure><img src="http://localhost:4000/assets/images/infra/utilization.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -57,25 +54,13 @@ $ tail -f /var/log/syslog
 \
 
 
-![](http://localhost:4000/assets/images/infra/tcp-4way.png)
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 **TIME\_WAIT, CLOSE\_WAIT 상태를 이해하기 위해서는 위 과정에 대해 알고 있어야 한다.**
 
 
 
-\
-
-
-<figure><img src="http://localhost:4000/assets/images/infra/time-wait.png" alt=""><figcaption></figcaption></figure>
-
-
-
-\
-
-
-<figure><img src="http://localhost:4000/assets/images/infra/close-wait.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ```
 이 중 ESTABLISHED 이후 종료 과정에서 어플리케이션의 close() 호출 부분을 추가로 표시했습니다.
