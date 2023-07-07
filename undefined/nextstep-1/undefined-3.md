@@ -44,7 +44,7 @@ $ tail -f /var/log/syslog
 
 ### **B. 사용률**
 
-![](http://localhost:4000/assets/images/infra/utilization.png)
+<figure><img src="http://localhost:4000/assets/images/infra/utilization.png" alt=""><figcaption></figcaption></figure>
 
 
 
