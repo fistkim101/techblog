@@ -79,7 +79,7 @@ Spring WebFlux는 reactor 와 netty를 기반으로 동작하는데 위 장표�
 * 스레드의 수 자체가 적어서 CPU 경합시 발생하는 오버헤드가 상대적으로 적다.
 * 스레드가 블로킹되지 않아서 context switching 으로 인한 오버헤드 비용이 줄어든다.
 
-![](<../../.gitbook/assets/image (36) (1).png>)
+<figure><img src="../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 결국 위 그림과 같이 스레드들이 블로킹 되지 않는 시간적 구간에 다른 일을 처리할 수 있어서 성능을 쥐어 짤 수 있다. 위 MVC 때와 비교하자면 1번 스레드가 Task 1 을 수행하고 블로킹이 된 상태로 무의미하게 대기를 했었는데 WebFlux의 경우에는 그 시간에 다른 일을 처리할 수 있는 것이다.
 

@@ -32,7 +32,7 @@ JVM 의 역할을 한 문장으로 요약하자면 '.class 파일을 실행해�
 
 <figure><img src="../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### [클래스 로더](https://app.gitbook.com/s/Q0ynUCwOcYxaUYkg5rP6/\~/changes/197/undefined/undefined-1/+)
 

@@ -28,7 +28,7 @@ Creator 가 만들어야 할 대상이 동일한 논리적 단위에 속하지�
 
 강의 노트에 실린 UML 을 다시 보자.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (5).png" alt=""><figcaption></figcaption></figure>
 
 팩토리 메소드 패턴 적용 전에는 ConcreteCreator(피자 가게)가 ConcreteProduct(페페로니 피자, 불고기 피자 등 구분된 객체 타입)을 각각 생성했었다.
 
@@ -170,7 +170,7 @@ public class PizzaStore {
 
 
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 public interface PizzaFactory {
