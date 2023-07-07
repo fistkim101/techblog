@@ -32,7 +32,7 @@ JVM 의 역할을 한 문장으로 요약하자면 '.class 파일을 실행해�
 
 <figure><img src="../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ### [클래스 로더](https://app.gitbook.com/s/Q0ynUCwOcYxaUYkg5rP6/\~/changes/197/undefined/undefined-1/+)
 
@@ -75,7 +75,7 @@ JIT 컴파일러의 JIT는 Just-In-Time 이라는 뜻이다. 실시간으로 컴
 
 더 이상 참조되지 않는 객체를 모아서 정리한다. 자세한 사항은 따로 정리해둔 페이지를 참고하자. 위에 이미 썼지만 메모리 내 힙이 GC 의 활동 영역이다.
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### 네이티브 메소드 인터페이스(Java Native Interface)
 

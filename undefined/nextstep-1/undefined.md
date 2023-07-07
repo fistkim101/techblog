@@ -33,7 +33,7 @@
 
 ## 망 분리 원리 <a href="#3" id="3"></a>
 
-<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 망 분리 원리를 알기 위해서는 기본적으로 여러 대의 노드들이 어떤 식으로 연결되는지 장비 측면에서의 이해가 필요하다.
 
