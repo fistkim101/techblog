@@ -20,7 +20,7 @@
 
 ### **A. 다중화**
 
-<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (82) (1).png" alt=""><figcaption></figcaption></figure>
 
 [단일 장애점](https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9D%BC\_%EC%9E%A5%EC%95%A0%EC%A0%90) 을 없애는 행위라고도 볼 수 있으며, 다중화의 대상은 Server, Load balancer, Network Device, DB 등이다. [단일 장애점](https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9D%BC\_%EC%9E%A5%EC%95%A0%EC%A0%90) 의 개념 자체가 ‘전체 시스템의 중단’을 내포하고 있으므로 다중화의 중요성은 따로 강조하지 않아도 될 것 같다. 하지만 다중화는 곧 비용을 증가시키므로 적절한 수준에서 다중화를 이뤄야한다.
 
@@ -119,7 +119,7 @@
 
 #### [**LOAD TEST**](https://en.wikipedia.org/wiki/Load\_testing)
 
-<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (77) (1).png" alt=""><figcaption></figcaption></figure>
 
 LOAD TEST가 강의자료의 설명만 봐서는 와닿지 않았는데, 위키를 보니 좀 이해가 되었다. 위키에 보면 아래와 같이 나와있다.
 

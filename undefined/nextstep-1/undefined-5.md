@@ -4,7 +4,7 @@
 
 
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (7).png" alt=""><figcaption></figcaption></figure>
 
 **강의자료 초반에 있던 클라이언트-서버 구조도인데 성능과 밀접한 관련이 있는 cache를 잘 시각화 해둔 것 같다**
 

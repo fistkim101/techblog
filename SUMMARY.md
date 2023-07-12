@@ -96,6 +96,7 @@
   * [객체 생성](undefined/gof/page-10.md)
     * [싱글톤 패턴](undefined/gof/undefined/undefined.md)
     * [팩토리 메소드 패턴](undefined/gof/page-9.md)
+    * [추상 팩토리 패턴](undefined/gof/undefined/undefined-2.md)
   * [구조](undefined/gof/page-8.md)
     * [Page 3](undefined/gof/undefined-1/page-3.md)
     * [Page 7](undefined/gof/page-7.md)

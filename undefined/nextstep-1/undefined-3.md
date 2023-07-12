@@ -54,13 +54,13 @@ $ tail -f /var/log/syslog
 \
 
 
-<figure><img src="../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (81) (1).png" alt=""><figcaption></figcaption></figure>
 
 **TIME\_WAIT, CLOSE\_WAIT 상태를 이해하기 위해서는 위 과정에 대해 알고 있어야 한다.**
 
 
 
-<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (79) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 이 중 ESTABLISHED 이후 종료 과정에서 어플리케이션의 close() 호출 부분을 추가로 표시했습니다.
