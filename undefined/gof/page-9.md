@@ -44,7 +44,7 @@ Creator 가 만들어야 할 대상이 동일한 논리적 단위에 속하지�
 
 [디자인 패턴에 관해 삽화와 정리된 사이트](https://refactoring.guru/ko/design-patterns/factory-method)를 발견했는데 UML이 가장 깔끔하다.
 
-<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -182,7 +182,7 @@ public class PizzaStore {
 
 
 
-<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 public interface PizzaFactory {

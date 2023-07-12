@@ -53,7 +53,7 @@ test {
 
 이렇게 해두면 test 라는 Task 가 jacocoTestReport에 연결된다. 즉 test를 실행하면 test -> jacocoTestReport 로 task의 의존성이 맺어져서 자동으로 흐름이 이어진다. 그래서 test를 할 때마다 build > jacocoHtml > index.html 이 새로 갱신되고, 여기서 코드 커버리지를 알 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 원리는 jacoco가 바이트코드를 읽어서 코드 커버리지로 체크해야할 포인트를 세어 두고 테스트시 해당 포인트를 지나갔는지를 체크해서 이걸 백분율로 보여주는 것이다.
 
@@ -61,6 +61,6 @@ test {
 > 2. JaCoCo 에이전트는 JVM에 연결되어 클래스 파일이 로드되는 시점에 바이트 코드를 조작합니다. 이 때, 추가적인 코드를 삽입하여 코드 커버리지 정보를 수집하는 데 사용됩니다.
 > 3. 프로그램이 실행되는 동안 JaCoCo 에이전트는 코드 커버리지 정보를 수집하고, 이를 보고서로 출력하거나 다른 도구와 통합하여 분석할 수 있습니다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 거쳐간 부분은 초록색, 거쳐가지 않은 부분은 빨간색으로 코드를 line by line 으로 보여준다. 노란색은 분기문에서 일부만 테스트가 되었을 때에 노란색 다이아몬드가 나온다.
