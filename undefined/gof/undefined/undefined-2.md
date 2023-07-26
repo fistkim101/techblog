@@ -10,7 +10,7 @@
 
 ## 팩토리 메소드 패턴과 추상 팩토리 패턴의 차이점
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 강의에서는 위와 같이 설명하고 있다. 제일 처음 짚어본 것처럼 팩토리 메소드든 추상 팩토리든 둘다 결국 객체의 생성 과정을 캡슐화 해서 이를 클라이언트로부터 디커플링 시키는 것이다. 하지만 팩토리 메소드의 경우 캡슐화 시키고자 하는 객체가 하나이고, 추상 팩토리의 경우 생성 과정을 캡슐화 시키고자 하는 객체'들'이 존재한다.
 
@@ -63,7 +63,7 @@
 
 2번 상황이 [이 사이트](https://refactoring.guru/ko/design-patterns/abstract-factory)에 소개된 추상 팩토리 패턴의 구현이다.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 
 
