@@ -229,6 +229,7 @@
 ## 기타
 
 * [작업일지](undefined-2/undefined/README.md)
+  * [2023. 08](undefined-3/undefined/2023.-08.md)
   * [2023. 07](undefined-3/undefined/2023.-07.md)
   * [2023. 06](undefined-2/undefined/2023.-06.md)
   * [2023. 05](undefined-2/undefined/2023.-05.md)

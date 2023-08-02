@@ -16,13 +16,13 @@
 
 이 추상적인 개념이 지니는 속성의 수가 늘어나거나 각 속성이 처리해야할 책임이 다변화 된다고 해도 각 처리를 다른 객체에 분할하여 위임할 수 있는 형태로 간다면 구조적 복잡도를 최소화 할 수 있다.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 [이 사이트](https://refactoring.guru/ko/design-patterns/bridge)에도 잘 설명되어 있는데 브릿지 패턴에서 말하는 '브릿지' 는 결코 어떤 구체적인 객체가 아니다. 브릿지 패턴에서 말하는 '브릿지'는 '참조' 그 자체이다. 윗 문단에서 이야기한 추상적인 개념(1)이 가져야할 구체적 특성들(N)을 참조하는 것이다.
 
 위 다이어그램은 강의에 사용된 다이어그램인데 썩 좋지 못하다. 왜냐면 구체적 특성들은 여러가지가 나올 수 있는데 집합 관계를 제대로 나타내고 있지 않다. 아래는 [다른 곳](https://refactoring.guru/ko/design-patterns/bridge)에서 찾은 다이어그램이다.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 브릿지 패턴의 핵심은 '위임' 이다. '추상'적인 것들은 정말 말 그대로 추상적인 메타적인 개념에 대한 선언일 뿐이고 구체적인 책임들은 모두 이를 구성하는 각 객체들에 위임하는 것이 핵심이다.
 

@@ -18,7 +18,7 @@
 
 객체가 초기화 되는 케이스가 다양할 수록 도메인 요구사항에 따라 이를 패턴화 해서 생성시킨다. 또한 개별 생성시 어떤 프로퍼티를 세팅했고 어떤 프로퍼티를 세팅하지 않았으며, 세팅한 프로퍼티에는 어떤 값을 넣는지 쉽게 인지할 수 있는 방식으로 코드를 구현한다.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
