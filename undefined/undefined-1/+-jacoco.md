@@ -53,7 +53,7 @@ test {
 
 이렇게 해두면 test 라는 Task 가 jacocoTestReport에 연결된다. 즉 test를 실행하면 test -> jacocoTestReport 로 task의 의존성이 맺어져서 자동으로 흐름이 이어진다. 그래서 test를 할 때마다 build > jacocoHtml > index.html 이 새로 갱신되고, 여기서 코드 커버리지를 알 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 원리는 jacoco가 바이트코드를 읽어서 코드 커버리지로 체크해야할 포인트를 세어 두고 테스트시 해당 포인트를 지나갔는지를 체크해서 이걸 백분율로 보여주는 것이다.
 
