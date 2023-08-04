@@ -2,7 +2,7 @@
 
 ## AOP
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 cross cutting 이라는 용어가 '횡단적인'의 의미를 가진다. AOP 에서의 cross cutting concern 은 결국 위 그림에서 볼 수 있듯이 여러 Class 들을 두고 '횡단으로 봤을때의 (공통된) 관심사' 를 말한다. 여러 모듈 혹은 객체를 가로지르는 공통된 관심사이며 이것에 대한 처리를 분산시켜 놓을 것이 아니라 한 곳에서 모듈화해서 처리하도록 하는 것이 AOP 라고 할 수 있다.
 
