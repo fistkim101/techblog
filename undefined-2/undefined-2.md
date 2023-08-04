@@ -11,4 +11,4 @@
 
 
 * [ ] [쏘카의 대규모 인증토큰 트래픽 대응 : 개발기](https://tech.socarcorp.kr/dev/2023/06/27/handling-authentication-token-traffic-01.html)
-* [ ] [멀티모듈 설계 이야기 with Spring, Gradle](https://techblog.woowahan.com/2637/)
+* [x] [멀티모듈 설계 이야기 with Spring, Gradle](https://techblog.woowahan.com/2637/)
