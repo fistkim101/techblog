@@ -160,6 +160,7 @@
   * [(+) Application Layer - environment](undefined/flutter-advanced-course-clean-architecture-with-mvvm/ch07-application-layer/+-application-layer-environment.md)
   * [(+) Application Layer - go\_router](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-go\_router.md)
 * [자바 알고리즘 입문](undefined/undefined-5/README.md)
+  * [CH01 문자열](undefined/undefined-5/ch01.md)
   * [Page 1](undefined/undefined-5/page-1.md)
 
 ## 도서
@@ -203,7 +204,6 @@
   * [CH15 고급 주제와 성능 최적화](undefined-1/orm-jpa/ch15.md)
   * [CH16 트랜잭션과 락, 2차 캐시](undefined-1/orm-jpa/ch16-2.md)
 * [코드와 그림으로 마스터하는 알고리즘](undefined-1/undefined-2/README.md)
-  * [CH01 문자열](undefined-1/undefined-2/ch01.md)
   * [Page](undefined-1/undefined-2/page.md)
 
 ## 토픽
