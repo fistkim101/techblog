@@ -1,3 +1,5 @@
-# 코드와 그림으로 마스터하는 알고리즘
+# 소프트웨어 세상을 여는 컴퓨터과학
 
-코드와 그림으로 마스터하는 알고리즘 - 이상진
+F-Lab 권장 도서라서 읽게 되었다.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

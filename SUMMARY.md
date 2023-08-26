@@ -202,11 +202,9 @@
   * [CH14 컬렉션과 부가 기능](undefined-1/orm-jpa/ch14.md)
   * [CH15 고급 주제와 성능 최적화](undefined-1/orm-jpa/ch15.md)
   * [CH16 트랜잭션과 락, 2차 캐시](undefined-1/orm-jpa/ch16-2.md)
-* [코드와 그림으로 마스터하는 알고리즘](undefined-1/undefined-2/README.md)
-  * [(작성중)](undefined-1/undefined-2/undefined.md)
-* [소프트웨어 세상을 여는 컴퓨터과학](undefined-1/undefined-3/README.md)
-  * [CH01 컴퓨터 과학 소개](undefined-1/undefined-3/ch01.md)
-  * [CH02 데이터 표현과 디지털 논리](undefined-1/undefined-3/ch02.md)
+* [소프트웨어 세상을 여는 컴퓨터과학](undefined-1/undefined-2/README.md)
+  * [CH01 컴퓨터 과학 소개](undefined-1/undefined-2/ch01.md)
+  * [CH02 데이터 표현과 디지털 논리](undefined-1/undefined-2/ch02.md)
 
 ## 토픽
 
