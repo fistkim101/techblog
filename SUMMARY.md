@@ -208,6 +208,9 @@
 
 ## 토픽
 
+* [서버 모니터링](undefined-2/undefined/README.md)
+  * [CPU 사용량](undefined-2/undefined/cpu.md)
+  * [메모리 사용량](undefined-2/undefined/undefined.md)
 * [Spring Boot Monitoring](undefined-2/spring-boot-monitoring/README.md)
   * [Spring actuator](undefined-2/spring-boot-monitoring/spring-actuator.md)
   * [Spring eureka](undefined-2/spring-boot-monitoring/spring-eureka.md)
@@ -215,13 +218,13 @@
   * [grafana](undefined-2/spring-boot-monitoring/grafana.md)
   * [Spring actuator + Prometheus + grafana](undefined-2/spring-boot-monitoring/spring-actuator-+-prometheus-+-grafana.md)
 * [JAVA GC](undefined-2/java-gc.md)
-* [데이터베이스 구성 및 작동 흐름](undefined-2/undefined.md)
+* [데이터베이스 구성 및 작동 흐름](undefined-2/undefined-1.md)
 * [데이터베이스 JOIN 원리](undefined-2/join.md)
-* [객체지향생활체조 원칙](<undefined-2/undefined-1 (1).md>)
+* [객체지향생활체조 원칙](undefined-2/undefined-2.md)
 * [java enum은 메모리에 언제, 어떻게 할당되는가](undefined-2/java-enum.md)
 * [Checked Exception vs UnChecked Exception](undefined-2/checked-exception-vs-unchecked-exception.md)
 * [Reactive Streams 원리탐구 - 간단한 예제 직접 작성해보기](undefined-2/reactive-streams.md)
-* [기술 관련 포스팅 읽기](undefined-2/undefined-2.md)
+* [기술 관련 포스팅 읽기](undefined-2/undefined-3.md)
 * [Flutter](undefined-2/flutter/README.md)
   * [Flutter Basic](undefined-2/flutter/page-6.md)
   * [StatefulWidget 생명주기](undefined-2/flutter/statefulwidget.md)
@@ -231,7 +234,7 @@
 
 ## 기타
 
-* [작업일지](undefined-2/undefined/README.md)
+* [작업일지](<undefined-2/undefined/README (1).md>)
   * [2023. 08](undefined-3/undefined/2023.-08.md)
   * [2023. 07](undefined-3/undefined/2023.-07.md)
   * [2023. 06](undefined-2/undefined/2023.-06.md)
@@ -248,4 +251,4 @@
   * [제로투원](undefined-3/business-model/undefined-3.md)
   * [MIT 스타트업 바이블](undefined-3/business-model/mit.md)
   * [린치핀](undefined-3/business-model/undefined-4.md)
-* [백로그 종합](undefined-2/undefined-1.md)
+* [백로그 종합](<undefined-2/undefined-1 (1).md>)
