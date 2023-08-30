@@ -52,9 +52,9 @@ AWS ELB가 server side discovery pattern의 예시라고 한다.
 
 위 그림과 위 설명에 나와있듯이 service instance가 등록의 책임을 갖고 있다. 그리고 등록을 한뒤 일정하게 heartbeat을 보내서 regitstry 에서 사라지는 것을 방지한다. 같은 맥락에서 registry 는 일정 기간 생존신고를 하지 않는 instance 는 죽었다고 판단하고 instance 정보에서 삭제한다. 그림에서 unregister() 가 있는데, service instance가 내려갈때 '나 죽는다' 라고 신고까지 한다.  또 그림에서 나오진 않았는데 eureka client는 registry 에 등록된 모든 다른 instance 정보들도 가져간다.
 
-정리하자면 eureka 기준으로 client 가 하는 행위를 목록화 하면 아래와 같다.
+정리하자면 eureka 기준으로 instance 가 하는 행위를 목록화 하면 아래와 같다.
 
-1. r**egister(1회)**
+1. **register(1회)**
 2. **heartbeat(지속적으로)**
 3. **fetch(registry 에 등록된 다른 app들의 정보(최초 1회 이후 delta 로 변화만 받아감))**
 4. **unregister(1회)**

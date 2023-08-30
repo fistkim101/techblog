@@ -161,6 +161,7 @@
   * [(+) Application Layer - go\_router](undefined/flutter-advanced-course-clean-architecture-with-mvvm/+-application-layer-go\_router.md)
 * [자바 알고리즘 입문](undefined/undefined-5/README.md)
   * [CH01 문자열](undefined/undefined-5/ch01.md)
+  * [CH02 Array(1, 2 차원 배열)](undefined/undefined-5/ch02-array-1-2.md)
 
 ## 도서
 
