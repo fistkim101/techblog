@@ -10,7 +10,7 @@ stateless 에 관한 설명은 이미 김영한님 강의(모든 개발자를 �
 
 ## Session
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 출처 : NEXTSTEP
 
