@@ -45,7 +45,7 @@ JVM 의 역할을 한 문장으로 요약하자면 '.class 파일을 실행해�
 
 ### 메모리
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 메모리가 어떻게 구성되어 있고 각 부분들이 어떤 역할을 하는지에 대해서 이해하는 것이 핵심이다.
 

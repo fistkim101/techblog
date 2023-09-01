@@ -13,9 +13,9 @@
 
 ## **If-Modified-Since : Last-Modified 활용한 캐시 처리 절차**
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (6).png" alt=""><figcaption></figcaption></figure>
 
 ### **body가 없다는 것에서 속도 향상 = 네트워크 부소하 감소**
 

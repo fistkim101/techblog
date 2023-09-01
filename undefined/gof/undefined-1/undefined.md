@@ -16,7 +16,7 @@
 
 가장 간단하게는 클라이언트가 사용하고자 하는 그 객체가 클라이언트가 사용하는 인터페이스를 구현하면 된다. 하지만 이렇게 되면 변경점이 더 커지므로 중간에 어댑터를 두고 어댑터 객체가 클라이언트가 사용하는 인터페이스를 구현한 뒤 어댑터가 사용되면서 어댑터는 내부에서 타겟 객체를 호출한다.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
