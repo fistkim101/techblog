@@ -163,6 +163,8 @@
   * [CH01 문자열](undefined/undefined-5/ch01.md)
   * [CH02 Array(1, 2 차원 배열)](undefined/undefined-5/ch02-array-1-2.md)
   * [CH03 Two pointers, Sliding window\[효율성: O(n^2)-->O(n)\]](undefined/undefined-5/ch03-two-pointers-sliding-window-o-n-2-greater-than-o-n.md)
+  * [CH04 HashMap, TreeSet (해쉬, 정렬지원 Set)](undefined/undefined-5/ch04-hashmap-treeset-set.md)
+  * [CH05 Stack, Queue(자료구조)](undefined/undefined-5/ch05-stack-queue.md)
 
 ## 도서
 
