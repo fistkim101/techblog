@@ -237,6 +237,7 @@
   * [application layer](undefined-2/flutter-layer/application-layer/README.md)
     * [environment](undefined-2/flutter-layer/application-layer/environment.md)
     * [dependency injection](undefined-2/flutter-layer/application-layer/dependency-injection.md)
+    * [go\_router](undefined-2/flutter-layer/application-layer/go\_router.md)
   * [data layer](undefined-2/flutter-layer/data-layer.md)
   * [domain layer](undefined-2/flutter-layer/domain-layer.md)
   * [presentation layer](undefined-2/flutter-layer/presentation-layer.md)
