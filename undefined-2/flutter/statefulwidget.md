@@ -1,4 +1,4 @@
-# StatefulWidget 생명주기
+# Flutter StatefulWidget 생명주기
 
 flutter basic 페이지에 이미 정리해두긴 했는데 중요한 내용이라 subPage 를 따로 만들어서 중복 정리한다.
 
