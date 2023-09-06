@@ -221,6 +221,8 @@
   * [Prometheus](undefined-2/spring-boot-monitoring/prometheus.md)
   * [grafana](undefined-2/spring-boot-monitoring/grafana.md)
   * [Spring actuator + Prometheus + grafana](undefined-2/spring-boot-monitoring/spring-actuator-+-prometheus-+-grafana.md)
+* [JAVA 데일리 토픽](undefined-2/java/README.md)
+  * [equals()와 hashCode()](undefined-2/java/equals-hashcode.md)
 * [JAVA GC](undefined-2/java-gc.md)
 * [데이터베이스 구성 및 작동 흐름](undefined-2/undefined-1.md)
 * [데이터베이스 JOIN 원리](undefined-2/join.md)
