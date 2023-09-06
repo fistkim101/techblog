@@ -1,8 +1,4 @@
----
-description: firebase_cli 이용한 firebase 와 flutter 연동
----
-
-# (+) Flutter + Firebase 연동
+# firebase 연동
 
 ## 1. firebase-cli 를 설치해야한다. mac 에서는 brew 로 설치가 가능하다. firebase 에 생성된 프로젝트 정보들을 가져오기 위해서 필요하다. <a href="#1-firebase-cli-mac-brew-firebase" id="1-firebase-cli-mac-brew-firebase"></a>
 
@@ -45,7 +41,7 @@ flutterfire configure
 
 ## 5. [공식문서](https://firebase.flutter.dev/docs/overview) 에 따라 아래 코드를 main 에 넣어준다. <a href="#5-main" id="5-main"></a>
 
-```
+```dart
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
