@@ -14,7 +14,7 @@
 $ flutter pub add dio
 ```
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 data 레이어 내에 network 말고 response, request, repository 를 둘 수 있다. 나중에 domain 영역에서도 정리하겠지만 repository 의 경우 domain 레이어에 인터페이스를 두고 data 레이어에서 구현체를 만들어서 사용하는 것이 엄격하게 클린 아키텍처를 구현하는 것이다. 하지만 프로젝트를 해보니 데이터 소싱 전략이 전체적으로 바뀐다던가 하지 않는 이상 불필요하게 계층을 나누는 행위라고 느껴졌다. 결론적으로 repository 는 data 레이어에만 바로 구현체를 두는 것이 좋은 것 같다.
 

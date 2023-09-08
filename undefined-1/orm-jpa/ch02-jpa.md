@@ -36,7 +36,7 @@ try {
 
 ## JPA 구성요소간 관계도
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (2) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 외울 것도 없고 흐름에 맞춰서 생각해보면 당연한 내용들이다. Persistence Unit 은 아래와 같이 Database 접속 정보를 가지고 있는 configuration 이라고 보면 된다.
 
