@@ -2,7 +2,7 @@
 
 ## Web Server, WAS
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Web Server 는 정적 페이지 전달을 담당한다. WAS 는 동적 페이지 전달을 담당한다. 톰캣이 WAS 에 해당하며 톰캣이 자체적으로 Web Server 역할도 같이 수행한다.
 
@@ -24,7 +24,7 @@ Web Server 는 정적 페이지 전달을 담당한다. WAS 는 동적 페이지
 
 ## 서블릿 컨테이너 작동 흐름
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **그림출처 : NEXTSTEP**
 

@@ -1,6 +1,6 @@
 # 패키지 구조 및 레이어 설명
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 도메인 레이어는 자세히 다룰 것은 없다. 다만 repository 를 인터페이스로 선언하고 이를 data 레이어에서 구현해서 사용하는게 정석인데, 불필요한 것 같아서 다음 프로젝트는 계층을 나누지 않을 생각이다.
 
