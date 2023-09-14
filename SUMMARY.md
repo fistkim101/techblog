@@ -235,6 +235,7 @@
 * [데이터베이스 구성 및 작동 흐름](undefined-2/undefined-1.md)
 * [데이터베이스 JOIN 원리](undefined-2/join.md)
 * [객체지향생활체조 원칙](undefined-2/undefined-2.md)
+* [상태(state), 상속(inheritance), 합성(composition) 의 상관관계](undefined-2/state-inheritance-composition.md)
 * [java enum은 메모리에 언제, 어떻게 할당되는가](undefined-2/java-enum.md)
 * [Checked Exception vs UnChecked Exception](undefined-2/checked-exception-vs-unchecked-exception.md)
 * [Reactive Streams 원리탐구 - 간단한 예제 직접 작성해보기](undefined-2/reactive-streams.md)
