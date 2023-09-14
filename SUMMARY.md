@@ -175,6 +175,7 @@
   * [CH05 객체 지향 설계 5 원칙 - SOLID](undefined-1/undefined/ch05-5-solid.md)
   * [CH06 스프링이 사랑한 디자인 패턴](<undefined-1/undefined/ch06 (1).md>)
   * [CH07 스프링 삼각형과 설정 정보](<undefined-1/undefined/ch07 (1).md>)
+  * [(부록) 람다(lambda)](undefined-1/undefined/lambda.md)
 * [객체지향의 사실과 오해](undefined-1/undefined/README.md)
   * [CH01 협력하는 객체들의 공동체](undefined-1/undefined/ch01.md)
   * [CH02 이상한 나라의 객체](undefined-1/undefined/ch02.md)
