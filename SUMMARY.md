@@ -217,6 +217,8 @@
 * [소프트웨어 세상을 여는 컴퓨터과학](undefined-1/undefined-3/README.md)
   * [CH01 컴퓨터 과학 소개](undefined-1/undefined-3/ch01.md)
   * [CH02 데이터 표현과 디지털 논리](undefined-1/undefined-3/ch02.md)
+* [이펙티브 자바](undefined-1/undefined-4/README.md)
+  * [Page 1](undefined-1/undefined-4/page-1.md)
 
 ## 토픽
 
