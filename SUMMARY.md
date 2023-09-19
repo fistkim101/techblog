@@ -218,7 +218,9 @@
   * [CH01 컴퓨터 과학 소개](undefined-1/undefined-3/ch01.md)
   * [CH02 데이터 표현과 디지털 논리](undefined-1/undefined-3/ch02.md)
 * [이펙티브 자바](undefined-1/undefined-4/README.md)
-  * [Page 1](undefined-1/undefined-4/page-1.md)
+  * [1 장 들어가기](undefined-1/undefined-4/1.md)
+  * [2장 객체 생성과 파괴](undefined-1/undefined-4/2.md)
+  * [\[01\] 생성자 대신 정적 팩터리 메서드를 고려하라](undefined-1/undefined-4/01.md)
 
 ## 토픽
 
