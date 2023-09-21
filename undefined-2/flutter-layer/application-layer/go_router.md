@@ -1,4 +1,4 @@
-# go\_router
+# go\_router
 
 ## go\_router 용도(=라우팅 패키지 사용 목적)
 
@@ -8,7 +8,7 @@
 
 ## 왜 go\_router 사용하는가
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Flutter Favorite 이고 아주 보편적인 라이브러리다. 라우터 이동 관련해서 여러 라이브러리가 있지만 장단을 따질 것 없이 제일 보편적이어서 일단 채택했다.
 
@@ -28,7 +28,7 @@ Flutter Favorite 이고 아주 보편적인 라이브러리다. 라우터 이동
 flutter pub add go_router
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```dart
 class RouterLocation {
