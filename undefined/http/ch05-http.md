@@ -73,7 +73,7 @@ GET 요청에 대한 응답에만 쓰지 않는다. 하지만 실무에서는 GE
 
 POST - REDIRECT - GET 의 줄임말로 강의에서 소개된 패턴인데, 실무에서 자주 사용했던 익숙한 패턴이다. 나는 관리자 만들때 썼던 것 같고, 그 외에 강의 같은 것들에서도 예제로 많이 쓰였던 것 같다. 긴 설명보다는 강의 자료에서 사용된 flow 이미지 첨부가 좋을 것 같다.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 

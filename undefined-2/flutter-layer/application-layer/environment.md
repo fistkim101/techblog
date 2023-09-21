@@ -22,7 +22,7 @@
 
 현재 템플릿 코드의 초반이라서 다른 레이어들도 들어갔는데 application > environments 만 보면 된다.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
