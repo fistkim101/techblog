@@ -163,6 +163,7 @@
   * [CH03 Two pointers, Sliding window\[효율성: O(n^2)-->O(n)\]](undefined/undefined-5/ch03-two-pointers-sliding-window-o-n-2-greater-than-o-n.md)
   * [CH04 HashMap, TreeSet (해쉬, 정렬지원 Set)](undefined/undefined-5/ch04-hashmap-treeset-set.md)
   * [CH05 Stack, Queue(자료구조)](undefined/undefined-5/ch05-stack-queue.md)
+  * [CH06 Sorting and Searching(정렬, 이분검색과 결정알고리즘)](undefined/undefined-5/ch06-sorting-and-searching.md)
 
 ## 도서
 
