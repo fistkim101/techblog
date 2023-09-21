@@ -1,6 +1,6 @@
 # CH06 Sorting and Searching(정렬, 이분검색과 결정알고리즘)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 package 정렬_new.main1;
@@ -33,7 +33,7 @@ public class Main {
 }
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 package 정렬_new.main2;
@@ -66,7 +66,7 @@ public class Main {
 }
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 package 정렬_new.main3;
@@ -103,7 +103,7 @@ public class Main {
 }
 ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 package 정렬_new.main4;
@@ -152,7 +152,7 @@ public class Main {
 }
 ```
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 package 정렬.main5;
@@ -216,13 +216,185 @@ public class Main {
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ```java
+package 정렬_new.main6;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        int[] correctOrder = new int[n];
+        for (int i = 0; i < n; i++) {
+            int value = scanner.nextInt();
+            arr[i] = value;
+            correctOrder[i] = value;
+        }
+
+        Arrays.sort(correctOrder);
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != correctOrder[i]) {
+                System.out.print(i + 1 + " ");
+            }
+        }
+    }
+}
 ```
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+```java
+package 정렬_new.main7;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
+class Point implements Comparable<Point> {
+    int x;
+    int y;
 
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
+    @Override
+    public int compareTo(Point o) {
+        Point target = (Point) o;
+        if (this.x == target.x) {
+            return this.y - target.y;
+        } else {
+            return this.x - target.x;
+        }
+    }
 
+    public void print() {
+        System.out.println(this.x + " " + this.y);
+    }
+}
 
+public class Main {
+    public static void main(String[] args) {
+        final Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        final List<Point> points = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            Point point = new Point(scanner.nextInt(), scanner.nextInt());
+            points.add(point);
+        }
+
+        Collections.sort(points);
+        for (Point p : points) {
+            p.print();
+        }
+    }
+}
+
+```
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+```java
+package 정렬_new.main8;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int target = scanner.nextInt();
+
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        Arrays.sort(arr);
+        int lt = 0;
+        int rt = n - 1;
+        int answer = 0;
+        while (lt <= rt) {
+            int mid = (lt + rt) / 2;
+            int midValue = arr[mid];
+
+            if (midValue == target) {
+                answer = mid + 1;
+                break;
+            }
+
+            if (midValue > target) {
+                rt = mid - 1;
+            } else {
+                lt = mid + 1;
+            }
+        }
+
+        System.out.println(answer);
+    }
+}
+```
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+```java
+package 정렬_new.main9;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int limitCount = scanner.nextInt();
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        int lt = Arrays.stream(arr).max().getAsInt();
+        int rt = Arrays.stream(arr).sum();
+        int answer = 0;
+        while (lt <= rt) {
+            int midValue = (lt + rt) / 2;
+
+            if (count(arr, midValue) <= limitCount) {
+                answer = midValue;
+                rt = midValue - 1;
+            } else {
+                lt = midValue + 1;
+            }
+        }
+
+        System.out.println(answer);
+    }
+
+    private static int count(int[] arr, int capacity) {
+        int count = 1;
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (sum + arr[i] > capacity) {
+                count++;
+                sum = arr[i];
+            } else {
+                sum += arr[i];
+            }
+        }
+
+        return count;
+    }
+}
+```
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+```java
+```
 
