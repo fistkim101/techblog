@@ -224,6 +224,7 @@
   * [1 장 들어가기](undefined-1/undefined-4/1.md)
   * [2장 객체 생성과 파괴](undefined-1/undefined-4/2.md)
   * [\[01\] 생성자 대신 정적 팩터리 메서드를 고려하라](undefined-1/undefined-4/01.md)
+  * [\[02\] 생성자에 매개변수가 많다면 빌더를 고려하라](undefined-1/undefined-4/02.md)
 
 ## 토픽
 
