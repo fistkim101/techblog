@@ -240,6 +240,7 @@
   * [grafana](undefined-2/spring-boot-monitoring/grafana.md)
   * [Spring actuator + Prometheus + grafana](undefined-2/spring-boot-monitoring/spring-actuator-+-prometheus-+-grafana.md)
 * [JAVA 데일리 토픽](undefined-2/java/README.md)
+  * [serialVersionUID 이해하기](undefined-2/java/serialversionuid.md)
   * [함수형 인터페이스](undefined-2/java/undefined.md)
   * [메소드  참조](undefined-2/java/undefined-1.md)
   * [equals()와 hashCode()가 무엇이고 역할이 무엇인지](<undefined-2/java/equals-hashcode (1).md>)
