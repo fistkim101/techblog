@@ -225,6 +225,7 @@
   * [2장 객체 생성과 파괴](undefined-1/undefined-4/2.md)
   * [\[01\] 생성자 대신 정적 팩터리 메서드를 고려하라](undefined-1/undefined-4/01.md)
   * [\[02\] 생성자에 매개변수가 많다면 빌더를 고려하라](undefined-1/undefined-4/02.md)
+  * [\[03\] private 생성자나 열거 타입으로 싱글턴임을 보증하라](undefined-1/undefined-4/03-private.md)
 
 ## 토픽
 
@@ -239,6 +240,8 @@
   * [grafana](undefined-2/spring-boot-monitoring/grafana.md)
   * [Spring actuator + Prometheus + grafana](undefined-2/spring-boot-monitoring/spring-actuator-+-prometheus-+-grafana.md)
 * [JAVA 데일리 토픽](undefined-2/java/README.md)
+  * [함수형 인터페이스](undefined-2/java/undefined.md)
+  * [메소드  참조](undefined-2/java/undefined-1.md)
   * [equals()와 hashCode()가 무엇이고 역할이 무엇인지](<undefined-2/java/equals-hashcode (1).md>)
   * [StringBuffer vs StringBuilder](undefined-2/java/stringbuffer-vs-stringbuilder.md)
   * [String vs StringBuilder, StringBuffer](undefined-2/java/equals-hashcode.md)
