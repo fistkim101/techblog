@@ -222,12 +222,12 @@
   * [CH02 데이터 표현과 디지털 논리](undefined-1/undefined-3/ch02.md)
 * [이펙티브 자바](undefined-1/undefined-4/README.md)
   * [1 장 들어가기](undefined-1/undefined-4/1.md)
-  * [2장 객체 생성과 파괴](undefined-1/undefined-4/2.md)
-  * [\[01\] 생성자 대신 정적 팩터리 메서드를 고려하라](undefined-1/undefined-4/01.md)
-  * [\[02\] 생성자에 매개변수가 많다면 빌더를 고려하라](undefined-1/undefined-4/02.md)
-  * [\[03\] private 생성자나 열거 타입으로 싱글턴임을 보증하라](undefined-1/undefined-4/03-private.md)
-  * [\[04\] 인스턴스화를 막으려거든 private 생성자를 사용하라](undefined-1/undefined-4/04-private.md)
-  * [\[05\] 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](undefined-1/undefined-4/05.md)
+  * [2장 객체 생성과 파괴](undefined-1/undefined-4/2/README.md)
+    * [\[01\] 생성자 대신 정적 팩터리 메서드를 고려하라](undefined-1/undefined-4/2/01.md)
+    * [\[02\] 생성자에 매개변수가 많다면 빌더를 고려하라](undefined-1/undefined-4/2/02.md)
+    * [\[03\] private 생성자나 열거 타입으로 싱글턴임을 보증하라](undefined-1/undefined-4/2/03-private.md)
+    * [\[04\] 인스턴스화를 막으려거든 private 생성자를 사용하라](undefined-1/undefined-4/2/04-private.md)
+    * [\[05\] 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](undefined-1/undefined-4/2/05.md)
 
 ## 토픽
 
