@@ -229,6 +229,7 @@
     * [\[04\] 인스턴스화를 막으려거든 private 생성자를 사용하라](undefined-1/undefined-4/2/04-private.md)
     * [\[05\] 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](undefined-1/undefined-4/2/05.md)
     * [\[06\] 불필요한 객체 생성을 피하라](undefined-1/undefined-4/2/06.md)
+    * [\[07\] 다 쓴 객체 참조를 해제하라](undefined-1/undefined-4/2/07.md)
 
 ## 토픽
 
@@ -243,6 +244,7 @@
   * [grafana](undefined-2/spring-boot-monitoring/grafana.md)
   * [Spring actuator + Prometheus + grafana](undefined-2/spring-boot-monitoring/spring-actuator-+-prometheus-+-grafana.md)
 * [JAVA 데일리 토픽](undefined-2/java/README.md)
+  * [Mark And Compact](undefined-2/java/mark-and-compact.md)
   * [serialVersionUID 이해하기](undefined-2/java/serialversionuid.md)
   * [함수형 인터페이스](undefined-2/java/undefined.md)
   * [메소드  참조](undefined-2/java/undefined-1.md)

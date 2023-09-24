@@ -10,7 +10,7 @@ stateless 에 관한 설명은 이미 김영한님 강의(모든 개발자를 �
 
 ## Session
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 출처 : NEXTSTEP
 
@@ -74,6 +74,6 @@ public class SessionStorage {
 
 ## 세션의 문제점
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 세션은 서버에서 상태를 가지고 있는 것이기에 당연히 스케일 아웃이 발생하면 문제가 생길 수 있다. 그래서 Sticky Session 같은 것을 사용한다. 실제로 빈스토크에 보면 관련 설정이 있다. 난 실무에서는 클라이언트가 웹이 아니라 모바일 앱이었기 때문에 딱히 이런 부분을 실무에서는 고민할 필요는 없었긴 하다.

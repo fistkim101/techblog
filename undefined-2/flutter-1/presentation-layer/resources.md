@@ -1,6 +1,6 @@
 # resources
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 presentation 레이어에서 사용되는 모든 자원에 대해서 자원의 성격별로 나눠서 이를 관리하는 책임 수행하는 -manager 들이다.
 
