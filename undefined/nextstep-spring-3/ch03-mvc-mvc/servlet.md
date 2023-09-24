@@ -24,7 +24,7 @@ Web Server 는 정적 페이지 전달을 담당한다. WAS 는 동적 페이지
 
 ## 서블릿 컨테이너 작동 흐름
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **그림출처 : NEXTSTEP**
 

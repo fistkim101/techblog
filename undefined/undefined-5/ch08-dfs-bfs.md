@@ -3,25 +3,25 @@
 <figure><img src="../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 ```java
-package dfsbfs.main1;
+package dfsbfs_new.main1;
 
 import java.util.Scanner;
 
 public class Main {
-    static int[] arr;
+    static int[] numbers;
     static int total = 0;
+    static boolean stopNow = false;
 
     static String answer = "NO";
 
-    static boolean stopNow = false;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();
-            total += arr[i];
+        int count = scanner.nextInt();
+        numbers = new int[count];
+        for (int i = 0; i < count; i++) {
+            int value = scanner.nextInt();
+            numbers[i] = value;
+            total += value;
         }
 
         Main main = new Main();
@@ -29,20 +29,21 @@ public class Main {
         System.out.println(answer);
     }
 
-    private void DFS(int index, int sum) {
-        if (sum > total / 2 || stopNow) {
-            return;
-        }
+    private void DFS(int L, int sum) {
+        if (sum > total - sum || stopNow) return;
 
-        if (index == arr.length - 1) {
-            if (sum == total - sum) {
+
+        if (L == numbers.length - 1) {
+            if (total - sum == sum) {
                 answer = "YES";
                 stopNow = true;
+                return;
             }
         } else {
-            DFS(index + 1, sum + arr[index]);
-            DFS(index + 1, sum);
+            DFS(L + 1, sum + numbers[L]);
+            DFS(L + 1, sum);
         }
+
     }
 }
 ```
@@ -50,41 +51,37 @@ public class Main {
 <figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
 ```java
-package dfsbfs.main2;
+package dfsbfs_new.main2;
 
 import java.util.Scanner;
 
 public class Main {
+    static int limit;
+    static int[] dogs;
 
-    static int max = 0;
-    static int limit = 0;
-    static int[] weights;
+    static int max = Integer.MIN_VALUE;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         limit = scanner.nextInt();
-        int count = scanner.nextInt();
-        weights = new int[count];
-        for (int i = 0; i < count; i++) {
-            weights[i] = scanner.nextInt();
+        dogs = new int[scanner.nextInt()];
+        for (int w = 0; w < dogs.length; w++) {
+            dogs[w] = scanner.nextInt();
         }
-
         Main main = new Main();
         main.DFS(0, 0);
-
         System.out.println(max);
     }
 
-    private void DFS(int index, int sum) {
-        if (sum > limit) {
-            return;
-        }
+    private void DFS(int L, int sum) {
+        if (sum > limit) return;
 
-        if (index == weights.length) {
-            max = Math.max(sum, max);
+        if (L == dogs.length) {
+            max = Math.max(max, sum);
+            return;
         } else {
-            DFS(index + 1, sum + weights[index]);
-            DFS(index + 1, sum);
+            DFS(L + 1, sum + dogs[L]);
+            DFS(L + 1, sum);
         }
     }
 }
@@ -272,11 +269,10 @@ public class Main {
 }
 ```
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
+```java
+```
 
 
 

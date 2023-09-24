@@ -228,6 +228,7 @@
     * [\[03\] private 생성자나 열거 타입으로 싱글턴임을 보증하라](undefined-1/undefined-4/2/03-private.md)
     * [\[04\] 인스턴스화를 막으려거든 private 생성자를 사용하라](undefined-1/undefined-4/2/04-private.md)
     * [\[05\] 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](undefined-1/undefined-4/2/05.md)
+    * [\[06\] 불필요한 객체 생성을 피하라](undefined-1/undefined-4/2/06.md)
 
 ## 토픽
 
@@ -248,6 +249,7 @@
   * [equals()와 hashCode()가 무엇이고 역할이 무엇인지](<undefined-2/java/equals-hashcode (1).md>)
   * [StringBuffer vs StringBuilder](undefined-2/java/stringbuffer-vs-stringbuilder.md)
   * [String vs StringBuilder, StringBuffer](undefined-2/java/equals-hashcode.md)
+  * [String interning](undefined-2/java/string-interning.md)
 * [JAVA GC](undefined-2/java-gc.md)
 * [데이터베이스 구성 및 작동 흐름](undefined-2/undefined-1.md)
 * [데이터베이스 JOIN 원리](undefined-2/join.md)
