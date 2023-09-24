@@ -166,6 +166,7 @@
   * [CH06 Sorting and Searching(정렬, 이분검색과 결정알고리즘)](undefined/undefined-5/ch06-sorting-and-searching.md)
   * [CH07 Recursive, Tree, Graph(DFS, BFS 기초)](undefined/undefined-5/page.md)
   * [CH08 DFS, BFS 활용](undefined/undefined-5/ch08-dfs-bfs.md)
+  * [CH09 Greedy Algorithm](undefined/undefined-5/ch09-greedy-algorithm.md)
 
 ## 도서
 
