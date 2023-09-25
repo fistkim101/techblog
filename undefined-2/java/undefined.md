@@ -1,55 +1,44 @@
-# 함수형 인터페이스
+# 객체 참조의 유형
 
-## 함수형 인터페이스란
+## 어떤 유형들이 있나
 
-'오직 하나의 추상 메서드만 가지고 있는 인터페이스'를 함수형 인터페이스라고 한다. 이 경우 모두 함수형 인터페이스로 간주된다. @FunctionalInterface 어노테이션을 사용해주면 더 명시적으로 함수형 인터페이스 선언이 가능하다. 이를 붙여주지 않으면 두 개 이상의 함수를 정의해도 에러가 나지 않기 때문에 선언해주는 것이 좋다.
-
-
-
-## 람다식을 활용한 함수형 인터페이스 구현
-
-```java
-@FunctionalInterface
-public interface MyFunctionalInterface {
-    void execute();
-}
-```
-
-```java
-MyFunctionalInterface mfi = () -> System.out.println("Executing...");
-mfi.execute();
-```
-
-람다식을 이용하면 위와 같이 깔끔하게 구현이 가능하다.
+자바에서는 객체의 참조 유형이 나뉘어 있다. Strong, Soft, Weak, Phantom 이렇게 네 가지가 있다.
 
 
 
-## 자주 사용되는 표준 함수형 인터페이스
+## 각 참조별 특징
 
-```java
-public class Main {
-    public static void main(String[] args) {
-        Function<Integer, String> intToString1 = i -> i.toString();
-        String result1 = intToString1.apply(1);
-        System.out.println(result1); // 1
 
-        Function<Integer, String> intToString2 = Object::toString;
-        String result2 = intToString2.apply(1);
-        System.out.println(result2); // 1
 
-        Supplier<String> newString = () -> "hello";
-        String result3 = newString.get(); // hello
-        System.out.println(result3);
+### Strong **Reference**
 
-        Consumer<String> sayHello1 = (str) -> System.out.println(str);
-        sayHello1.accept("sayHello1"); // sayHello1
+보통 내가 할당하면 생기는 참조의 유형이다. 객체를 직접 참조하는 경우로 '도달 가능' 하면 곧 활성 객체로 분류되어 GC의 대상이 되지 않는다.
 
-        Consumer<String> sayHello2 = System.out::println;
-        sayHello1.accept("sayHello2"); // sayHello1
 
-        Predicate<Person> isAdult = (person) -> person.getAge() > 19;
-        System.out.println(isAdult.test(new Person(20))); // true
-        System.out.println(isAdult.test(new Person(18))); // false
-    }
-}
-```
+
+### Soft **Reference**
+
+메모리 공간이 부족할 때만 회수된다. 점점 쌓이다 쌓이다 도저히 안될때, JVM 이 포기하고 GC 가 회수하도록 한다는 것으로 이해하자. 캐싱에 유용하게 쓰일 수 있다는데 쓰이는걸 전혀 못봤다. 그냥 레디스나 헤이즐캐스트 쓰면 썼지 자체적으로 캐시 풀로 운용할 컬렉션을 만든다면 써봄직은 한 것 같다.
+
+
+
+### **Weak Reference**
+
+이건 외부 설명을 그대로 첨부한다.
+
+* 다음 가비지 컬렉션 사이클에서 회수될 가능성이 높습니다.
+* `WeakHashMap`과 같은 데이터 구조에서 키가 더 이상 사용되지 않으면 관련 항목을 자동으로 제거하고자 할 때 유용합니다.
+
+
+
+### **Phantom Reference**
+
+* `java.lang.ref.PhantomReference` 클래스를 사용하여 참조합니다.
+* 이 참조는 다른 종류의 참조와는 다르게, 객체의 실제 접근은 허용되지 않습니다.
+* 주로 객체가 메모리에서 완전히 제거되기 전에 어떤 종류의 작업을 수행하기 위해 사용됩니다.
+
+설명을 봐도 언제 쓰이는지 도통 감이 안와서 GPT 한테 물어봤다. '실제로 대부분의 자바 개발자는 일상적인 작업에서 `PhantomReference`를 사용할 필요가 없습니다.' 라고 할 정도로 딱히 쓰임이 없는 것 같다. 이런게 있다 정도만 알고 넘어간다.
+
+
+
+객체 참조 유형에도 이렇게 네 가지가 있고(단순히 하나가 아니라는거), Strong, Soft 의 차이만 잘 인지하면 될 것 같다.

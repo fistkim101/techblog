@@ -232,6 +232,7 @@
     * [\[05\] 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](undefined-1/undefined-4/2/05.md)
     * [\[06\] 불필요한 객체 생성을 피하라](undefined-1/undefined-4/2/06.md)
     * [\[07\] 다 쓴 객체 참조를 해제하라](undefined-1/undefined-4/2/07.md)
+    * [\[08\] finalizer 와 cleaner 사용을 피하라](undefined-1/undefined-4/2/08-finalizer-cleaner.md)
 
 ## 토픽
 
@@ -246,10 +247,13 @@
   * [grafana](undefined-2/spring-boot-monitoring/grafana.md)
   * [Spring actuator + Prometheus + grafana](undefined-2/spring-boot-monitoring/spring-actuator-+-prometheus-+-grafana.md)
 * [JAVA 데일리 토픽](undefined-2/java/README.md)
+  * [메모리 누수(memory leak)](undefined-2/java/memory-leak.md)
+  * [객체 참조의 유형](undefined-2/java/undefined.md)
+  * [커스텀 스레드 풀](undefined-2/java/undefined-1.md)
   * [Mark And Compact](undefined-2/java/mark-and-compact.md)
   * [serialVersionUID 이해하기](undefined-2/java/serialversionuid.md)
-  * [함수형 인터페이스](undefined-2/java/undefined.md)
-  * [메소드  참조](undefined-2/java/undefined-1.md)
+  * [함수형 인터페이스](undefined-2/java/undefined-2.md)
+  * [메소드  참조](undefined-2/java/undefined-3.md)
   * [equals()와 hashCode()가 무엇이고 역할이 무엇인지](<undefined-2/java/equals-hashcode (1).md>)
   * [StringBuffer vs StringBuilder](undefined-2/java/stringbuffer-vs-stringbuilder.md)
   * [String vs StringBuilder, StringBuffer](undefined-2/java/equals-hashcode.md)
