@@ -28,7 +28,7 @@ Flutter Favorite 이고 아주 보편적인 라이브러리다. 라우터 이동
 flutter pub add go_router
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```dart
 class RouterLocation {

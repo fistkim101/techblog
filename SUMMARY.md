@@ -167,6 +167,7 @@
   * [CH07 Recursive, Tree, Graph(DFS, BFS 기초)](undefined/undefined-5/page.md)
   * [CH08 DFS, BFS 활용](undefined/undefined-5/ch08-dfs-bfs.md)
   * [CH09 Greedy Algorithm](undefined/undefined-5/ch09-greedy-algorithm.md)
+  * [CH10 dynamic programming(동적계획법)](undefined/undefined-5/ch10-dynamic-programming.md)
 
 ## 도서
 
