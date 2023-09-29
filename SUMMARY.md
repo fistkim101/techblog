@@ -265,6 +265,8 @@
 * [프로그래머스 문제 풀기](undefined-2/undefined-1/README.md)
   * [해시](undefined-2/undefined-1/undefined.md)
   * [스택/큐](undefined-2/undefined-1/undefined-1.md)
+  * [힙(Heap)](undefined-2/undefined-1/heap.md)
+  * [정렬](undefined-2/undefined-1/undefined-2.md)
 * [데이터베이스 구성 및 작동 흐름](undefined-2/undefined-2.md)
 * [데이터베이스 JOIN 원리](undefined-2/join.md)
 * [객체지향생활체조 원칙](undefined-2/undefined-3.md)
@@ -302,6 +304,7 @@
 ## 기타
 
 * [작업일지](<undefined-2/undefined/README (1).md>)
+  * [2023. 10](undefined-3/undefined/2023.-10.md)
   * [2023. 09](undefined-3/undefined/2023.-09.md)
   * [2023. 08](undefined-3/undefined/2023.-08.md)
   * [2023. 07](undefined-3/undefined/2023.-07.md)
