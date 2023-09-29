@@ -233,6 +233,9 @@
     * [\[06\] 불필요한 객체 생성을 피하라](undefined-1/undefined-4/2/06.md)
     * [\[07\] 다 쓴 객체 참조를 해제하라](undefined-1/undefined-4/2/07.md)
     * [\[08\] finalizer 와 cleaner 사용을 피하라](undefined-1/undefined-4/2/08-finalizer-cleaner.md)
+    * [\[09\] try-finally 보다는 try-with-resources 를 사용하라](undefined-1/undefined-4/2/09-try-finally-try-with-resources.md)
+  * [3장 모든 객체의 공통 메서드](undefined-1/undefined-4/3/README.md)
+    * [\[10\] equals는 일반 규약을 지켜 재정의하라](undefined-1/undefined-4/3/10-equals.md)
 
 ## 토픽
 
