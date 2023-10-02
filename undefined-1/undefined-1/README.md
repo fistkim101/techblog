@@ -1,3 +1,5 @@
-# 도메인 주도 개발 시작하기
+# 스프링 입문을 위한 자바 객체 지향의 원리와 이해
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+F-Lab 멘토링 도서로 읽게 되었다.
+
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>

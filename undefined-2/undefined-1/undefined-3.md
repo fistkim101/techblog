@@ -70,27 +70,57 @@ class Main {
 }
 ```
 
-## 소수 찾기
-
-```java
-```
-
 ## 카펫
 
 ```java
+package programers.search.solution4;
+
+class Solution {
+    public int[] solution(int brown, int yellow) {
+        int total = brown + yellow;
+        for (int i = 1; i <= Math.sqrt(total); i++) {
+            if (total % i == 0) {
+                int height = i;
+                int weight = total / height;
+
+                if ((weight - 2) * (height - 2) == yellow) {
+                    return new int[]{weight, height};
+                }
+            }
+        }
+
+        int[] answer = {};
+        return answer;
+    }
+
+}
 ```
 
 ## 피로도
 
 ```java
-```
+class Solution {
+    public int solution(int k, int[][] dungeons) {
+        int[] visited = new int[dungeons.length];
+        explore(dungeons, visited, k, 0);
 
-## 전력망을 둘로 나누기
+        return max;
+    }
 
-```java
-```
+    private int max = 0;
 
-## 모음사전
+    private void explore(int[][] dungeons, int[] visited, int k, int count) {
+        for (int i = 0; i < dungeons.length; i++) {
+            if (visited[i] == 0 && k >= dungeons[i][0]) {
+                visited[i] = 1;
+                explore(dungeons, visited, k - dungeons[i][1], count + 1);
+                visited[i] = 0;
+            }
+        }
 
-```java
+        if (max < count) {
+            max = count;
+        }
+    }
+}
 ```
