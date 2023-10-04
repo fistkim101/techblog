@@ -238,6 +238,7 @@
   * [3장 모든 객체의 공통 메서드](undefined-1/undefined-5/3/README.md)
     * [\[10\] equals는 일반 규약을 지켜 재정의하라](undefined-1/undefined-5/3/10-equals.md)
     * [\[11\] equals 를 재정의하려거든 hashCode도 재정의하라](undefined-1/undefined-5/3/11-equals-hashcode.md)
+    * [\[12\] toString 을 항상 재정의하라](undefined-1/undefined-5/3/12-tostring.md)
 
 ## 토픽
 
