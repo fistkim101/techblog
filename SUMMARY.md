@@ -239,6 +239,7 @@
     * [\[10\] equals는 일반 규약을 지켜 재정의하라](undefined-1/undefined-5/3/10-equals.md)
     * [\[11\] equals 를 재정의하려거든 hashCode도 재정의하라](undefined-1/undefined-5/3/11-equals-hashcode.md)
     * [\[12\] toString 을 항상 재정의하라](undefined-1/undefined-5/3/12-tostring.md)
+    * [\[13\] clone 재정의는 주의해서 진행하라](undefined-1/undefined-5/3/13-clone.md)
 
 ## 토픽
 
