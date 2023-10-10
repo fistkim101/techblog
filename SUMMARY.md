@@ -171,14 +171,20 @@
 
 ## 도서
 
-* [만들면서 배우는 클린 아키텍처](undefined-1/undefined/README.md)
+* [만들면서 배우는 클린 아키텍처](undefined-1/undefined.md)
   * [학습목표](undefined-1/undefined/undefined.md)
   * [CH01 계층형 아키텍처의 문제는 무엇일까?](undefined-1/undefined/ch01.md)
   * [CH02 의존성 역전하기](undefined-1/undefined/ch02.md)
   * [CH03 코드 구성하기](undefined-1/undefined/ch03.md)
   * [CH04 유스케이스 구현하기](undefined-1/undefined/ch04.md)
   * [CH05 웹 어댑터 구현하기](undefined-1/undefined/ch05.md)
-  * [Page](undefined-1/undefined/page.md)
+  * [CH06 영속성 어댑터 구현하기](undefined-1/undefined/ch06.md)
+  * [CH07 아키텍처 요소 테스트하기](undefined-1/undefined/ch07.md)
+  * [CH08 경계 간 매핑하기](undefined-1/undefined/ch08.md)
+  * [CH09 어플리케이션 조립하기](undefined-1/undefined/ch09.md)
+  * [CH10 아키텍처 경계 강제하기](undefined-1/undefined/ch10.md)
+  * [CH11 의식적으로 지름길 사용하기](undefined-1/undefined/ch11.md)
+  * [CH12 아키텍처 스타일 결정하기](undefined-1/undefined/ch12.md)
 * [스프링 입문을 위한 자바 객체 지향의 원리와 이해](undefined-1/undefined-1/README.md)
   * [CH01 사람을 사랑한 기술](undefined-1/undefined-1/ch01.md)
   * [CH02 자바와 절차적/구조적 프로그래밍](undefined-1/undefined-1/ch02.md)
