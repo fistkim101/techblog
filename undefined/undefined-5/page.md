@@ -1,6 +1,6 @@
 # CH07 Recursive, Tree, Graph(DFS, BFS 기초)
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```java
 package 재귀.main1;
