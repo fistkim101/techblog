@@ -188,6 +188,7 @@
 * [클린 아키텍처](<undefined-1/undefined-1/README (1).md>)
   * [들어가며](undefined-1/undefined-1/undefined.md)
   * [1장 설계와 아키텍처란?](undefined-1/undefined-1/1.md)
+  * [2장 두 가지 가치에 대한 이야기](undefined-1/undefined-1/2.md)
 * [스프링 입문을 위한 자바 객체 지향의 원리와 이해](undefined-1/undefined-1/README.md)
   * [CH01 사람을 사랑한 기술](undefined-1/undefined-1/ch01.md)
   * [CH02 자바와 절차적/구조적 프로그래밍](undefined-1/undefined-1/ch02.md)
