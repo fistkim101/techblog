@@ -90,6 +90,7 @@
   * [CH05 HTTP 상태코드](undefined/http/ch05-http.md)
   * [CH06 HTTP 헤더1 - 일반 헤더](undefined/http/ch06-http-1.md)
   * [CH07 HTTP 헤더2 - 캐시와 조건부 요청](undefined/http/ch07-http-2.md)
+  * [(+) HTTPS 원리](undefined/http/+-https.md)
 * [스프링 프레임워크 핵심 기술](undefined/undefined-3/README.md)
   * [CH01 IOC 컨테이너](undefined/undefined-3/ch01-ioc.md)
   * [CH02 AOP](undefined/undefined-3/ch02-aop.md)
