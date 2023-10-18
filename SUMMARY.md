@@ -206,6 +206,8 @@
     * [12장 컴포넌트](undefined-1/undefined-1/4/12.md)
     * [13장 컴포넌트 응집도](undefined-1/undefined-1/4/13.md)
     * [14장 컴포넌트 결합](undefined-1/undefined-1/4/14.md)
+  * [5부](undefined-1/undefined-1/5/README.md)
+    * [15장 아키텍처란?](undefined-1/undefined-1/5/15.md)
 * [스프링 입문을 위한 자바 객체 지향의 원리와 이해](undefined-1/undefined-1/README.md)
   * [CH01 사람을 사랑한 기술](undefined-1/undefined-1/ch01.md)
   * [CH02 자바와 절차적/구조적 프로그래밍](undefined-1/undefined-1/ch02.md)
